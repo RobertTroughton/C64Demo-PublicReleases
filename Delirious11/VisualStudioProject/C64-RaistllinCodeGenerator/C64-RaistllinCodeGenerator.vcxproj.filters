@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="000-Main.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="BedIntro.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="EndCredits.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="GreetingsPart.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageConversion.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="MassiveLogo.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickCreditsPart.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="RotatingStars.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenEOR.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenHashChars.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="SinTables.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteBobs.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteEffects.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="UpScrollCredits.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="000-Main.h">
+      <Filter>CodeGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>CodeGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageConversion.h">
+      <Filter>CodeGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="SinTables.h">
+      <Filter>CodeGenerator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CodeGenerator">
+      <UniqueIdentifier>{429ba414-9dde-4fa6-9448-6777d3ae79a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASM">
+      <UniqueIdentifier>{2d88738e-e969-471d-9a74-ab661288b55d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildStuff">
+      <UniqueIdentifier>{aa5b8734-6a8d-4d63-a298-09f5580c8fbc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\SourceCode\PreAndPostCreditsFade-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\RotatingStars-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\ScreenHash-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\SimpleCredits-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\SpriteBobs-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\StartupScreenFade2-Rasters-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\StartupScreenFade-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\TheEye-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\UpScrollCredits-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\WavyLineCircle-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\BedIntro-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\EndCredits-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\FullScreenRasters-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Greetings-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\LogoFader-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Main-CommonDefines.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Main-IRQManager.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\MassiveLogo-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Headache-Main.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\script">
+      <Filter>BuildStuff</Filter>
+    </None>
+    <None Include="..\..\00-BuildAll.bat">
+      <Filter>BuildStuff</Filter>
+    </None>
+  </ItemGroup>
+</Project>

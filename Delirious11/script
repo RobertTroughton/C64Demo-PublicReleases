@@ -1,0 +1,152 @@
+#STARTUP
+Intermediate\Main.prg 0200 2
+Music\Demo-MCH.sid 1000 7e
+
+#IRQMANAGER_AND_SCREENFADE
+Intermediate\Main-IRQManager.prg 0500 2
+Intermediate\StartupScreenFade-Main.prg c000 2
+Intermediate\Built\SpriteEffects-FadeSprites.bin a000
+Intermediate\StartupScreenFade2-Rasters-Main.prg c400 2
+
+#BEDINTRO
+Intermediate\BedIntro-Main.prg 3800 2
+SourceData\0000-BEDINTRO-koala-data.bin 6000 2 1f40
+SourceData\0000-BEDINTRO-koala-screen.bin 4000 2 3e8
+SourceData\0000-BEDINTRO-koala-colour.bin 4400 2 3e8
+Intermediate\Built\0000-BEDINTRO-spritenumbers.bin 4800
+Intermediate\Built\0000-BEDINTRO-spriteanims.bin 4d00
+Intermediate\Built\0000-BEDINTRO-AlarmClock-SinTable.bin 5fc0
+
+#FULLSCREENRASTERS_AND_INTROLOGO-QUOTE
+Intermediate\FullScreenRasters-Main.prg 5000 2
+Intermediate\LogoFader-Main.prg c000 2
+Intermediate\Built\RandomScreenPointers.bin 8000 0 1800
+SourceData\000-Quote-data.bin a000 2 1f40
+SourceData\000-Quote-screen.bin 9800 2 3e8
+SourceData\000-Quote-colour.bin 9c00 2 3e8
+
+#INTROLOGO-GP
+SourceData\0-GP-data.bin a000 2 1f40
+SourceData\0-GP-screen.bin 9800 2 3e8
+SourceData\0-GP-colour.bin 9c00 2 3e8
+
+#INTROLOGO-PRESENTS
+SourceData\1-Presents-data.bin a000 2 1f40
+SourceData\1-Presents-screen.bin 9800 2 3e8
+SourceData\1-Presents-colour.bin 9c00 2 3e8
+
+#INTROLOGO-DELIRIOUS11
+SourceData\2-Delirious11-data.bin a000 2 1f40
+SourceData\2-Delirious11-screen.bin 9800 2 3e8
+SourceData\2-Delirious11-colour.bin 9c00 2 3e8
+Intermediate\Built\2-Delirious11-TopSprites.bin 3800 0 180
+Intermediate\Built\2-Delirious11-BottomSprites.bin 3980 0 280
+Intermediate\Built\2-Delirious11-SunSprites.bin 3c00 0 c0
+
+#INTROLOGO-JUSTSTRIPES
+SourceData\00-Stripes-Data.bin a000 2 1f40
+SourceData\00-Stripes-Screen.bin 9800 2 3e8
+SourceData\00-Stripes-Colour.bin 9c00 2 3e8
+
+#FULLSCREENRASTERS(2)
+Intermediate\FullScreenRasters-Main.prg 5000 2
+
+#PREPOSTCREDITSFADE_AND_CREDITS_CODE_RAISTLIN
+Intermediate\PreAndPostCreditsFade-Main.prg b000 2
+Intermediate\Built\002-CREDITS-ClearSprites.bin a800
+Intermediate\SimpleCredits-Main.prg 3000 2
+Intermediate\Built\002-CREDITS-SinTables.bin 3e00
+Intermediate\Built\002-CREDITS-Code-Data.bin a000
+Intermediate\Built\002-CREDITS-Code-Screen.bin b800
+Intermediate\Built\002-CREDITS-BLANKNAME.bin 8800
+Intermediate\Built\002-CREDITS-Raistlin.bin 9000
+
+#CREDITS_SOUND_MCH
+Intermediate\Built\002-CREDITS-MCH.bin 9800
+Intermediate\Built\002-CREDITS-Sound-Data.bin a000
+Intermediate\Built\002-CREDITS-Sound-Screen.bin b800
+
+#CREDITS_ART_RAZORBACK
+Intermediate\Built\002-CREDITS-Razorback.bin 9000
+Intermediate\Built\002-CREDITS-Art-Data.bin a000
+Intermediate\Built\002-CREDITS-Art-Screen.bin b800
+
+#CREDITS_REDCRAB
+Intermediate\Built\002-CREDITS-Redcrab.bin 9800
+
+#HEADACHE
+Intermediate\Headache-Main.prg c400 2
+SourceData\Headache-Data.bin e000 2 1f40
+Intermediate\Built\SpriteEffects-GrowingCircles-Sprites.bin d000
+Intermediate\Built\SpriteEffects-GrowingCircles-SinTable.bin cc00
+SourceData\Headache-Screen.bin bc00 2 3e8
+SourceData\Headache-Colour.bin b800 2 3e8
+
+#SPRITEBOBS1
+Intermediate\SpriteBobs-Main.prg 3000 2
+
+#SPRITEBOBS2
+Intermediate\MassiveLogo-Main.prg e000 2
+Intermediate\Built\MassiveLogo-GPBigData.bin b800
+Intermediate\Built\MassiveLogo-SinTables.bin ce00
+
+#THEEYE_PIC
+Intermediate\TheEye-Main.prg c000 2
+SourceData\001-NewEye-Data.bin A000 2 1f40
+SourceData\001-NewEye-Screen.bin 8c00 2 3e8
+SourceData\001-NewEye-Colour.bin d800! 2 3e8
+
+#SCREENHASH
+Intermediate\ScreenHash-Main.prg 3800 2
+Intermediate\Built\ScreenHashChars-SinTable.bin 3000 0 500
+Intermediate\Built\ScreenHashChars-Chars.bin 5800
+Intermediate\Built\ScreenHashChars-Sprites.bin 6000
+
+#GREETINGS
+Intermediate\Greetings-Main.prg 8000 2
+Intermediate\Built\Greetings-SpriteFont.bin d000
+
+Intermediate\Built\Greetings-SpriteFont.bin 5000
+Intermediate\Built\Greetings-SinTable.bin 3b00
+
+#ROTATING_STARS
+Intermediate\Built\RotatingStars-CharSet.bin c000 0
+Intermediate\Built\RotatingStars-SinTable.bin fe00 0
+Intermediate\Built\Greetings-Sprites0.bin e000
+Intermediate\Built\RotatingStars-ScreenAnims.bin 8000 0
+Intermediate\RotatingStars-Main.prg 3000 2
+Intermediate\Built\Greetings-SpriteSinTables.bin 4a00
+Intermediate\Built\Greetings-Sprites1.bin ec00
+
+Intermediate\Built\Greetings-Sprites2.bin e000
+
+Intermediate\Built\Greetings-Sprites3.bin ec00
+
+Intermediate\Built\Greetings-Sprites4.bin e000
+
+Intermediate\Built\Greetings-Sprites5.bin ec00
+
+Intermediate\Built\Greetings-Sprites6.bin e000
+
+Intermediate\Built\Greetings-Sprites7.bin ec00
+
+Intermediate\Built\Greetings-Sprites8.bin e000
+
+#WAVYLINECIRCLE
+Intermediate\WavyLineCircle-Main.prg e000 2
+Intermediate\Built\WavyLineCircle-Chars.bin 8000
+Intermediate\Built\WavyLineCircle-Sprites.bin a000
+Intermediate\Built\WavyLineCircle-SpriteSinTable.bin 9f00
+
+#ENDMUSIC AND UPSCROLL CREDITS
+Music\MCH-Loopin.sid 1000 7e
+Intermediate\UpScrollCredits-Main.prg c000 2
+Intermediate\Built\UpScrollCredits-2x2Font.bin f000
+Intermediate\Built\UpScrollCredits-ScrollText.bin ca00
+
+#ENDCREDITS
+Intermediate\Built\999-END-BitmapData.bin 2100
+Intermediate\EndCredits-Main.prg 9000 2
+Intermediate\Built\999-END-ColourData.bin 8000
+
+Intermediate\Built\999-END-ScreenData.bin c000

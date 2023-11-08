@@ -1,0 +1,3 @@
+.label JmpTab=$f800
+.label YTab=$4000
+.label XTab=$7f00

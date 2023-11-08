@@ -1,0 +1,3 @@
+.label JmpTab=$7A00
+.label YTab=$8200
+.label XTab=$C100

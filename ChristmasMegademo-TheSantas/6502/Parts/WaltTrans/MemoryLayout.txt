@@ -1,0 +1,33 @@
+//------------------------------------------------------
+//------------------------------------------------------
+//         Kick Assembler v5.13 by Mads Nielsen         
+//------------------------------------------------------
+//------------------------------------------------------
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: WaltTrans_Basic.prg
+Writing prg file: WaltTrans_HeaderCode.prg
+Writing prg file: WaltTrans_SKIP HeaderCode RTS.prg
+Writing prg file: WaltTrans_SKIP framework substitute.prg
+Writing prg file: WaltTrans_SKIP Music.prg
+Writing prg file: WaltTrans_CodeAt0400.prg
+
+Memory Map
+----------
+Default-segment:
+  *$00c0-$00d0 Zero page zero filled
+  *$0700-$07ff Color table
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  *$087f-$087f PartDone
+  $0880-$0885 HeaderCode
+  $0886-$0886 SKIP HeaderCode RTS
+  $0900-$09e4 SKIP framework substitute
+  $0f84-$1a73 SKIP Music
+  $2000-$2178 CodeAt0400
+
+Writing Vice symbol file: WaltTrans.vs
+Writing Symbol file: WaltTrans.sym

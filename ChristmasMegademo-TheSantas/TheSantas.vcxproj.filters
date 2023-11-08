@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PC">
+      <UniqueIdentifier>{d973b931-7f16-4d42-bb27-4f6af492c1d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PC\Common">
+      <UniqueIdentifier>{9f9173b8-3b7b-4771-9960-e6b749a6751f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PC\Parts">
+      <UniqueIdentifier>{d0a186c8-0fa7-42b1-ab62-fdd25e28bdba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PC\ThirdParty">
+      <UniqueIdentifier>{a013def6-c1fc-4354-aeb1-64ec1b92195d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PC\ThirdParty\FMT">
+      <UniqueIdentifier>{1e4d29c7-2a6f-4788-a0e0-17039c6d4d26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PC\ThirdParty\FMT\src">
+      <UniqueIdentifier>{617cfd42-16ff-472c-a2c0-9bbf6303fd3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502">
+      <UniqueIdentifier>{0d08a3c7-f485-4440-be74-6bbe89c2183a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Main">
+      <UniqueIdentifier>{b2ef3ca2-e8cf-4fe4-bbd4-c491663e8853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts">
+      <UniqueIdentifier>{c55ddfc1-fd07-426a-aa6b-31110137ea53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\ChristmasBall">
+      <UniqueIdentifier>{d4d074a0-5ba3-4656-a831-9769fc2364c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\EgoRayTrace">
+      <UniqueIdentifier>{496c0987-618f-4d46-b2b6-c61555c4f842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\LeuatXmasFader">
+      <UniqueIdentifier>{93f0e2e2-7fd2-4df0-b1a0-79f9bf4538de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\LeuatScroller">
+      <UniqueIdentifier>{2fa0dee8-9a19-4f16-ba96-2d141fa7142b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\SnowflakeZoomer">
+      <UniqueIdentifier>{e666802b-162d-4bb3-899b-2de738372705}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\TrapDigiLamer">
+      <UniqueIdentifier>{96417f0c-9914-42aa-9d9b-1a139248028b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\TechTechTree">
+      <UniqueIdentifier>{0d43aa18-1d91-40e3-9b0e-658d924a280a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\GreetingScroller">
+      <UniqueIdentifier>{3b3a2469-5dc5-475a-bbe2-3889ad3d0efc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\DrScienceBox">
+      <UniqueIdentifier>{113b49ff-8ef0-43ac-9c9b-484c16b5e287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\DrScienceLayerPart">
+      <UniqueIdentifier>{941c5909-c285-48c8-909b-d31b3f4da511}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\LeuatRotatingSantas">
+      <UniqueIdentifier>{48d0ae96-21b7-42c6-850d-0a0762be6a1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\MarchingSnowflakes1">
+      <UniqueIdentifier>{ee8ed74b-fd05-49ef-814a-d7fa4f52e90a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\MarchingSnowflakes2">
+      <UniqueIdentifier>{8a826301-aa5f-4bae-ac3c-66eb51113af9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\PerplexSnow">
+      <UniqueIdentifier>{e6e88415-e02a-4672-aed6-8e0d550aeaff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\QzerowXmastree">
+      <UniqueIdentifier>{75e1940a-c02b-4dc7-acea-5665c3290d24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\ShadowChristmastree">
+      <UniqueIdentifier>{45cfd12c-7f00-492d-887a-005a34590ffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\StreptoColourCycler">
+      <UniqueIdentifier>{f3f15790-df76-4b54-b9d9-66741fedc94e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\Trap2021">
+      <UniqueIdentifier>{8234af89-9c67-4501-b8ab-4ead198183ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\TrapXmasBalls">
+      <UniqueIdentifier>{d0068740-a65e-4ccd-889d-25c1bf141243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\VisageMCScroller">
+      <UniqueIdentifier>{4505a750-28b2-4be7-b117-6294ab7ae971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\WaltCandy">
+      <UniqueIdentifier>{e45cdb3c-2be9-47ee-8810-3f3c87dff75a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\WaltLetter">
+      <UniqueIdentifier>{683166d7-b8a1-4afc-8d8c-b90147d2d4b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\QzerowYellowSnow">
+      <UniqueIdentifier>{32579980-b320-421d-8dfd-68b5afec5b24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\DrScienceTextDisplayer">
+      <UniqueIdentifier>{1bb6d443-0d5a-4fa0-a30e-447e4c5c4f79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\PlayLastChristmas">
+      <UniqueIdentifier>{3796bc3b-fbb8-4315-99f8-6d5f30e717c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\QzerowBumpmas">
+      <UniqueIdentifier>{bfcc270f-bb0f-4d3d-b7e7-0c1b77e0426f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\RasterFader">
+      <UniqueIdentifier>{e21b27f7-2a85-4c1f-8417-ecc1152545d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\TrapXmasDiagFader">
+      <UniqueIdentifier>{22a3754a-5d6c-4d39-a12e-f1cf939759aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\WaltBasicWipe">
+      <UniqueIdentifier>{819f4df6-3fd7-4b1d-8bbf-089b8108778c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\WaltHeartFader">
+      <UniqueIdentifier>{4be5a129-14bd-4a86-9553-b3bbeeabfbd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\ProudlyPresent">
+      <UniqueIdentifier>{242ef108-1ac7-41d1-bc93-b3682da19fd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\DrScienceToplessSanta">
+      <UniqueIdentifier>{c77e83b6-63e7-4384-bff5-152adb942733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\QzerowSledgeFade">
+      <UniqueIdentifier>{890bfa7b-355d-43cb-8556-4763e4f2ecad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\TrapApproved">
+      <UniqueIdentifier>{5af84798-0897-4302-8eb5-ab5dde7ed2c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\WaltTrans">
+      <UniqueIdentifier>{a1d3ff31-0d35-4735-9038-67d23ba4fb64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PC\Common\Common.h">
+      <Filter>PC\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\Common\GPImage.h">
+      <Filter>PC\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\Common\ImageConversion.h">
+      <Filter>PC\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\Common\SinTables.h">
+      <Filter>PC\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\Common\CodeGen.h">
+      <Filter>PC\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\format-inl.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\locale.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\ostream.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\posix.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\printf.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\ranges.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\time.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\chrono.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\color.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\core.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\format.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\Main.h">
+      <Filter>PC</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PC\Common\GPImage.cpp">
+      <Filter>PC\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Common\ImageConversion.cpp">
+      <Filter>PC\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Common\SinTables.cpp">
+      <Filter>PC\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Common\CodeGen.cpp">
+      <Filter>PC\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Common\Common.cpp">
+      <Filter>PC\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\ThirdParty\FMT\src\format.cc">
+      <Filter>PC\ThirdParty\FMT\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\ThirdParty\FMT\src\posix.cc">
+      <Filter>PC\ThirdParty\FMT\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Main.cpp">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\ChristmasBall.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\TechTechTree.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\GreetingsScroller.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\ProudlyPresent.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="6502\makefile">
+      <Filter>6502</Filter>
+    </None>
+    <None Include="6502\Main\Main-BaseCode.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\Main-CommonDefines.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\Main-CommonMacros.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\TheSantas.sls">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\Entry.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Parts\ChristmasBall\ChristmasBall.sls">
+      <Filter>6502\Parts\ChristmasBall</Filter>
+    </None>
+    <None Include="6502\Parts\ChristmasBall\DISK-ChristmasBall.asm">
+      <Filter>6502\Parts\ChristmasBall</Filter>
+    </None>
+    <None Include="6502\Parts\ChristmasBall\ChristmasBall.asm">
+      <Filter>6502\Parts\ChristmasBall</Filter>
+    </None>
+    <None Include="6502\Parts\EgoRaytrace\EgoRaytrace.sls">
+      <Filter>6502\Parts\EgoRayTrace</Filter>
+    </None>
+    <None Include="6502\Parts\EgoRaytrace\DISK-EgoRaytrace.asm">
+      <Filter>6502\Parts\EgoRayTrace</Filter>
+    </None>
+    <None Include="6502\Parts\LeuatScroller\LeuatScroller.sls">
+      <Filter>6502\Parts\LeuatScroller</Filter>
+    </None>
+    <None Include="6502\Parts\LeuatScroller\DISK-LeuatScroller.asm">
+      <Filter>6502\Parts\LeuatScroller</Filter>
+    </None>
+    <None Include="6502\Parts\LeuatScroller\LeuatScroller.bin">
+      <Filter>6502\Parts\LeuatScroller</Filter>
+    </None>
+    <None Include="6502\Parts\LeuatXmasFader\LeuatXmasFader.sls">
+      <Filter>6502\Parts\LeuatXmasFader</Filter>
+    </None>
+    <None Include="6502\Parts\LeuatXmasFader\DISK-LeuatXmasFader.asm">
+      <Filter>6502\Parts\LeuatXmasFader</Filter>
+    </None>
+    <None Include="6502\Parts\SnowflakeZoomer\SnowflakeZoomer.asm">
+      <Filter>6502\Parts\SnowflakeZoomer</Filter>
+    </None>
+    <None Include="6502\Parts\SnowflakeZoomer\SnowflakeZoomer.sls">
+      <Filter>6502\Parts\SnowflakeZoomer</Filter>
+    </None>
+    <None Include="6502\Parts\SnowflakeZoomer\SnowflakeZoomerScript.sls">
+      <Filter>6502\Parts\SnowflakeZoomer</Filter>
+    </None>
+    <None Include="6502\Parts\SnowflakeZoomer\DISK-SnowflakeZoomer.asm">
+      <Filter>6502\Parts\SnowflakeZoomer</Filter>
+    </None>
+    <None Include="6502\Main\DISK-EndOfDisk.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\Entry-WithDigi.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Parts\TrapDigiLamer\TrapDigiLamer.asm">
+      <Filter>6502\Parts\TrapDigiLamer</Filter>
+    </None>
+    <None Include="6502\Parts\TechTechTree\TechTechTree.asm">
+      <Filter>6502\Parts\TechTechTree</Filter>
+    </None>
+    <None Include="6502\Parts\TechTechTree\TechTechTree.sls">
+      <Filter>6502\Parts\TechTechTree</Filter>
+    </None>
+    <None Include="6502\Parts\TechTechTree\DISK-TechTechTree.asm">
+      <Filter>6502\Parts\TechTechTree</Filter>
+    </None>
+    <None Include="6502\Parts\GreetingScroller\DISK-GreetingScroller.asm">
+      <Filter>6502\Parts\GreetingScroller</Filter>
+    </None>
+    <None Include="6502\Parts\GreetingScroller\GreetingScroller.asm">
+      <Filter>6502\Parts\GreetingScroller</Filter>
+    </None>
+    <None Include="6502\Parts\GreetingScroller\GreetingScroller.sls">
+      <Filter>6502\Parts\GreetingScroller</Filter>
+    </None>
+    <None Include="6502\Parts\DrScienceBox\DrScienceBox.sls">
+      <Filter>6502\Parts\DrScienceBox</Filter>
+    </None>
+    <None Include="6502\Parts\DrScienceBox\DISK-DrScienceBox.asm">
+      <Filter>6502\Parts\DrScienceBox</Filter>
+    </None>
+    <None Include="6502\Parts\DrScienceLayerPart\DISK-DrScienceLayerPart.asm">
+      <Filter>6502\Parts\DrScienceLayerPart</Filter>
+    </None>
+    <None Include="6502\Parts\DrScienceLayerPart\DrScienceLayerPart.sls">
+      <Filter>6502\Parts\DrScienceLayerPart</Filter>
+    </None>
+    <None Include="6502\Parts\LeuatRotatingSantas\DISK-LeuatRotatingSantas.asm">
+      <Filter>6502\Parts\LeuatRotatingSantas</Filter>
+    </None>
+    <None Include="6502\Parts\LeuatRotatingSantas\LeuatRotatingSantas.sls">
+      <Filter>6502\Parts\LeuatRotatingSantas</Filter>
+    </None>
+    <None Include="6502\Parts\MarchingSnowflakes1\DISK-MarchingSnowflakes1.asm">
+      <Filter>6502\Parts\MarchingSnowflakes1</Filter>
+    </None>
+    <None Include="6502\Parts\MarchingSnowflakes1\MarchingSnowflakes1.asm">
+      <Filter>6502\Parts\MarchingSnowflakes1</Filter>
+    </None>
+    <None Include="6502\Parts\MarchingSnowflakes1\MarchingSnowflakes1.sls">
+      <Filter>6502\Parts\MarchingSnowflakes1</Filter>
+    </None>
+    <None Include="6502\Parts\MarchingSnowflakes2\MarchingSnowflakes2.asm">
+      <Filter>6502\Parts\MarchingSnowflakes2</Filter>
+    </None>
+    <None Include="6502\Parts\MarchingSnowflakes2\MarchingSnowflakes2.sls">
+      <Filter>6502\Parts\MarchingSnowflakes2</Filter>
+    </None>
+    <None Include="6502\Parts\MarchingSnowflakes2\DISK-MarchingSnowflakes2.asm">
+      <Filter>6502\Parts\MarchingSnowflakes2</Filter>
+    </None>
+    <None Include="6502\Parts\PerplexSnow\PerplexSnow.sls">
+      <Filter>6502\Parts\PerplexSnow</Filter>
+    </None>
+    <None Include="6502\Parts\PerplexSnow\DISK-PerplexSnow.asm">
+      <Filter>6502\Parts\PerplexSnow</Filter>
+    </None>
+    <None Include="6502\Parts\QzerowXmastree\QzerowXmastree.sls">
+      <Filter>6502\Parts\QzerowXmastree</Filter>
+    </None>
+    <None Include="6502\Parts\QzerowXmastree\DISK-QzerowXmastree.asm">
+      <Filter>6502\Parts\QzerowXmastree</Filter>
+    </None>
+    <None Include="6502\Parts\ShadowChristmastree\DISK-ShadowChristmastree.asm">
+      <Filter>6502\Parts\ShadowChristmastree</Filter>
+    </None>
+    <None Include="6502\Parts\ShadowChristmastree\ShadowChristmastree.sls">
+      <Filter>6502\Parts\ShadowChristmastree</Filter>
+    </None>
+    <None Include="6502\Parts\StreptoColorcycler\DISK-StreptoColorcycler.asm">
+      <Filter>6502\Parts\StreptoColourCycler</Filter>
+    </None>
+    <None Include="6502\Parts\StreptoColorcycler\StreptoColorcycler.sls">
+      <Filter>6502\Parts\StreptoColourCycler</Filter>
+    </None>
+    <None Include="6502\Parts\Trap2021\DISK-Trap2021.asm">
+      <Filter>6502\Parts\Trap2021</Filter>
+    </None>
+    <None Include="6502\Parts\Trap2021\Trap2021.sls">
+      <Filter>6502\Parts\Trap2021</Filter>
+    </None>
+    <None Include="6502\Parts\TrapXmasBalls\DISK-TrapXmasballs.asm">
+      <Filter>6502\Parts\TrapXmasBalls</Filter>
+    </None>
+    <None Include="6502\Parts\TrapXmasBalls\TrapXmasballs.sls">
+      <Filter>6502\Parts\TrapXmasBalls</Filter>
+    </None>
+    <None Include="6502\Parts\VisageMCScroller\VisageMCScroller.sls">
+      <Filter>6502\Parts\VisageMCScroller</Filter>
+    </None>
+    <None Include="6502\Parts\VisageMCScroller\VisageMCScrollerInclude.sls">
+      <Filter>6502\Parts\VisageMCScroller</Filter>
+    </None>
+    <None Include="6502\Parts\VisageMCScroller\DISK-VisageMCScroller.asm">
+      <Filter>6502\Parts\VisageMCScroller</Filter>
+    </None>
+    <None Include="6502\Parts\WaltCandy\WaltCandy.sls">
+      <Filter>6502\Parts\WaltCandy</Filter>
+    </None>
+    <None Include="6502\Parts\WaltCandy\DISK-WaltCandy.asm">
+      <Filter>6502\Parts\WaltCandy</Filter>
+    </None>
+    <None Include="6502\Parts\WaltLetter\DISK-WaltLetter.asm">
+      <Filter>6502\Parts\WaltLetter</Filter>
+    </None>
+    <None Include="6502\Parts\WaltLetter\WaltLetter.sls">
+      <Filter>6502\Parts\WaltLetter</Filter>
+    </None>
+    <None Include="6502\Parts\QzerowYellowSnow\QzerowYellowSnow.sls">
+      <Filter>6502\Parts\QzerowYellowSnow</Filter>
+    </None>
+    <None Include="6502\Parts\QzerowYellowSnow\DISK-QzerowYellowSnow.asm">
+      <Filter>6502\Parts\QzerowYellowSnow</Filter>
+    </None>
+    <None Include="6502\Parts\GreetingScroller\GreetingScroller-CommonDefines.asm">
+      <Filter>6502\Parts\GreetingScroller</Filter>
+    </None>
+    <None Include="6502\Parts\DrScienceTextDisplayer\DrScienceTextDisplayer.sls">
+      <Filter>6502\Parts\DrScienceTextDisplayer</Filter>
+    </None>
+    <None Include="6502\Parts\DrScienceTextDisplayer\DISK-DrScienceTextDisplayer.asm">
+      <Filter>6502\Parts\DrScienceTextDisplayer</Filter>
+    </None>
+    <None Include="6502\Parts\QzerowBumpmas\QzerowBumpmas.sls">
+      <Filter>6502\Parts\QzerowBumpmas</Filter>
+    </None>
+    <None Include="6502\Parts\QzerowBumpmas\DISK-QzerowBumpmas.asm">
+      <Filter>6502\Parts\QzerowBumpmas</Filter>
+    </None>
+    <None Include="6502\Parts\RasterFader\DISK-RasterFader.asm">
+      <Filter>6502\Parts\RasterFader</Filter>
+    </None>
+    <None Include="6502\Parts\RasterFader\RasterFader.asm">
+      <Filter>6502\Parts\RasterFader</Filter>
+    </None>
+    <None Include="6502\Parts\RasterFader\RasterFader.sls">
+      <Filter>6502\Parts\RasterFader</Filter>
+    </None>
+    <None Include="6502\Parts\TrapXmasDiagFader\TrapXmasDiagEnd.asm">
+      <Filter>6502\Parts\TrapXmasDiagFader</Filter>
+    </None>
+    <None Include="6502\Parts\WaltBasicWipe\WaltBasicWipe.sls">
+      <Filter>6502\Parts\WaltBasicWipe</Filter>
+    </None>
+    <None Include="6502\Parts\WaltBasicWipe\DISK-WaltBasicWipe.asm">
+      <Filter>6502\Parts\WaltBasicWipe</Filter>
+    </None>
+    <None Include="6502\Parts\WaltHeartFader\WaltHeartFader.sls">
+      <Filter>6502\Parts\WaltHeartFader</Filter>
+    </None>
+    <None Include="6502\Parts\WaltHeartFader\DISK-WaltHeartFader.asm">
+      <Filter>6502\Parts\WaltHeartFader</Filter>
+    </None>
+    <None Include="6502\Main\DISK-LoadSID.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\DISK-NextSide.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\DISK-EndWithLoop.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\Entry-WithDigiNoSID.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\Entry-Side1.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Parts\ProudlyPresent\ProudlyPresent.asm">
+      <Filter>6502\Parts\ProudlyPresent</Filter>
+    </None>
+    <None Include="6502\Parts\ProudlyPresent\DISK-ProudlyPresent.asm">
+      <Filter>6502\Parts\ProudlyPresent</Filter>
+    </None>
+    <None Include="6502\Parts\ProudlyPresent\ProudlyPresent.sls">
+      <Filter>6502\Parts\ProudlyPresent</Filter>
+    </None>
+    <None Include="6502\Parts\QzerowSledgeFade\DISK-QzerowSledgeFade.asm">
+      <Filter>6502\Parts\QzerowSledgeFade</Filter>
+    </None>
+    <None Include="6502\Parts\QzerowSledgeFade\QzerowSledgeFade.sls">
+      <Filter>6502\Parts\QzerowSledgeFade</Filter>
+    </None>
+    <None Include="6502\Parts\TrapApproved\TrapApproved.sls">
+      <Filter>6502\Parts\TrapApproved</Filter>
+    </None>
+    <None Include="6502\Parts\TrapApproved\DISK-TrapApproved.asm">
+      <Filter>6502\Parts\TrapApproved</Filter>
+    </None>
+    <None Include="6502\Parts\WaltTrans\DISK-WaltTrans.asm">
+      <Filter>6502\Parts\WaltTrans</Filter>
+    </None>
+    <None Include="6502\Parts\WaltTrans\DISK-WaltTransPreps.asm">
+      <Filter>6502\Parts\WaltTrans</Filter>
+    </None>
+    <None Include="6502\Parts\WaltTrans\WaltTrans.sls">
+      <Filter>6502\Parts\WaltTrans</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="6502\Parts\DrScienceBox\DrScienceBox.txt">
+      <Filter>6502\Parts\DrScienceBox</Filter>
+    </Text>
+    <Text Include="6502\Parts\DrScienceLayerPart\driver-code.txt">
+      <Filter>6502\Parts\DrScienceLayerPart</Filter>
+    </Text>
+    <Text Include="6502\Parts\WaltCandy\MemoryLayout.txt">
+      <Filter>6502\Parts\WaltCandy</Filter>
+    </Text>
+    <Text Include="6502\Parts\WaltLetter\MemoryLayout.txt">
+      <Filter>6502\Parts\WaltLetter</Filter>
+    </Text>
+    <Text Include="6502\Parts\WaltBasicWipe\MemoryLayout.txt">
+      <Filter>6502\Parts\WaltBasicWipe</Filter>
+    </Text>
+    <Text Include="6502\Parts\WaltHeartFader\MemoryLayout.txt">
+      <Filter>6502\Parts\WaltHeartFader</Filter>
+    </Text>
+    <Text Include="6502\Parts\WaltTrans\MemoryLayout.txt">
+      <Filter>6502\Parts\WaltTrans</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,36 @@
+//------------------------------------------------------
+//------------------------------------------------------
+//         Kick Assembler v5.13 by Mads Nielsen         
+//------------------------------------------------------
+//------------------------------------------------------
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: Wipe_Basic.prg
+Writing prg file: Wipe_HeaderCode.prg
+Writing prg file: Wipe_SKIP HeaderCode RTS.prg
+Writing prg file: Wipe_SKIP framework substitute.prg
+Writing prg file: Wipe_SKIP Music.prg
+Writing prg file: Wipe_Data.prg
+Writing prg file: Wipe_Code.prg
+
+Memory Map
+----------
+Default-segment:
+  *$0040-$0043 Zero page uninit
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  *$087f-$087f PartDone
+  $0880-$0885 HeaderCode
+  $0886-$0886 SKIP HeaderCode RTS
+  $0900-$09c1 SKIP framework substitute
+  $0f84-$1a73 SKIP Music
+  *$2d00-$2fff Tables
+  $3000-$3223 Code
+  $3400-$34ff Data
+  *$3800-$3fff Empty font
+
+Writing Vice symbol file: Wipe.vs
+Writing Symbol file: Wipe.sym

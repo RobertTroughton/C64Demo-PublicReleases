@@ -1,0 +1,40 @@
+.label DummyIRQ=$503 {
+}
+.namespace PseudoFramework {
+  .label Frames=$977
+  .label IRQdummy=$9c8
+  .label EndLoop=$9b2
+  .label StartFramework=$900
+  .label NMI=$9e4
+}
+.label IRQ1Cont=$417
+.label _start=$49c
+.label IRQ2=$484 {
+}
+.label IRQ=$406 {
+}
+.label HeaderCode=$880
+.label Init=$400
+.label PartDone=$87f
+.label Main2=$547
+.label PosLow=$cd
+.label EndIRQ=$47b
+.label TopRaster=$43b
+.label SetupColTab=$531
+.label HandleCols=$55d
+.label RasStartTop=$c7
+.label Loop=$441
+.label Speed=$559
+.label RasLine=$c5
+.label Mode=$c6
+.label RasCountTop=$c8
+.label ClearZP=$528
+.label _end=$4bd
+.label Cols=$c0
+.label Pos=$c9
+.label RasLoop=$49e
+.label ColTab=$700
+.label ZP1=$c5
+.label Init2=$524
+.label ZP2=$d1
+.label Main=$403

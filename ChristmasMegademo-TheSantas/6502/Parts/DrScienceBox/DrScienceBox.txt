@@ -1,0 +1,22 @@
+
+The Fader Segments:
+
+File3-segment:	$6a00-$6dff Performers
+File1-segment:	$9a00-$9ef2 Main Code
+File2-segment:	$cd00-$cf7b sinus and Tabs
+
+
+Main Part Segments:
+
+File1-segment:	$4800-$4fff Charset Ram 1
+		$5000-$57ff Charset Ram 2
+		$5800-$5a3f Sprites Santa Falling
+		$5a40-$5c3f Logo
+		$5c40-$69ff Sprites Charset small & big
+File3-segment:	$6e00-$7e75 Main Code
+		$8000-$82ef Sinus
+		$8500-$b1ff Screens 01-30
+		$b200-$cc57 Charsets 02,03,04,05
+File2-segment:	$2000-$3df7 Charsets 13_01,06,07,12
+		$3e00-$3fe4 Tabs
+File4-segment:	$e000-$f967 Charsets 08,09,10,11

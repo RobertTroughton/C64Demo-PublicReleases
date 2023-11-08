@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PC\Common\CodeGen.h" />
+    <ClInclude Include="PC\Common\Common.h" />
+    <ClInclude Include="PC\Common\GPImage.h" />
+    <ClInclude Include="PC\Common\ImageConversion.h" />
+    <ClInclude Include="PC\Common\SinTables.h" />
+    <ClInclude Include="PC\Main.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\chrono.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\color.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\core.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\format-inl.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\format.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\locale.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\ostream.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\posix.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\printf.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\ranges.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PC\Common\CodeGen.cpp" />
+    <ClCompile Include="PC\Common\Common.cpp" />
+    <ClCompile Include="PC\Common\GPImage.cpp" />
+    <ClCompile Include="PC\Common\ImageConversion.cpp" />
+    <ClCompile Include="PC\Common\SinTables.cpp" />
+    <ClCompile Include="PC\Main.cpp" />
+    <ClCompile Include="PC\Parts\ChristmasBall.cpp" />
+    <ClCompile Include="PC\Parts\GreetingsScroller.cpp" />
+    <ClCompile Include="PC\Parts\ProudlyPresent.cpp" />
+    <ClCompile Include="PC\Parts\TechTechTree.cpp" />
+    <ClCompile Include="PC\ThirdParty\FMT\src\format.cc" />
+    <ClCompile Include="PC\ThirdParty\FMT\src\posix.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="6502\Main\DISK-EndOfDisk.asm" />
+    <None Include="6502\Main\DISK-EndWithLoop.asm" />
+    <None Include="6502\Main\DISK-LoadSID.asm" />
+    <None Include="6502\Main\DISK-NextSide.asm" />
+    <None Include="6502\Main\Entry-Side1.asm" />
+    <None Include="6502\Main\Entry-WithDigi.asm" />
+    <None Include="6502\Main\Entry-WithDigiNoSID.asm" />
+    <None Include="6502\Main\Entry.asm" />
+    <None Include="6502\Main\Main-BaseCode.asm" />
+    <None Include="6502\Main\Main-CommonDefines.asm" />
+    <None Include="6502\Main\Main-CommonMacros.asm" />
+    <None Include="6502\Main\TheSantas.sls" />
+    <None Include="6502\makefile" />
+    <None Include="6502\Parts\ChristmasBall\ChristmasBall.asm" />
+    <None Include="6502\Parts\ChristmasBall\ChristmasBall.sls" />
+    <None Include="6502\Parts\ChristmasBall\DISK-ChristmasBall.asm" />
+    <None Include="6502\Parts\DrScienceBox\DISK-DrScienceBox.asm" />
+    <None Include="6502\Parts\DrScienceBox\DrScienceBox.sls" />
+    <None Include="6502\Parts\DrScienceLayerPart\DISK-DrScienceLayerPart.asm" />
+    <None Include="6502\Parts\DrScienceLayerPart\DrScienceLayerPart.sls" />
+    <None Include="6502\Parts\DrScienceTextDisplayer\DISK-DrScienceTextDisplayer.asm" />
+    <None Include="6502\Parts\DrScienceTextDisplayer\DrScienceTextDisplayer.sls" />
+    <None Include="6502\Parts\EgoRaytrace\DISK-EgoRaytrace.asm" />
+    <None Include="6502\Parts\EgoRaytrace\EgoRaytrace.sls" />
+    <None Include="6502\Parts\GreetingScroller\DISK-GreetingScroller.asm" />
+    <None Include="6502\Parts\GreetingScroller\GreetingScroller.asm" />
+    <None Include="6502\Parts\GreetingScroller\GreetingScroller.sls" />
+    <None Include="6502\Parts\GreetingScroller\GreetingScroller-CommonDefines.asm" />
+    <None Include="6502\Parts\LeuatRotatingSantas\DISK-LeuatRotatingSantas.asm" />
+    <None Include="6502\Parts\LeuatRotatingSantas\LeuatRotatingSantas.sls" />
+    <None Include="6502\Parts\LeuatScroller\DISK-LeuatScroller.asm" />
+    <None Include="6502\Parts\LeuatScroller\LeuatScroller.bin" />
+    <None Include="6502\Parts\LeuatScroller\LeuatScroller.sls" />
+    <None Include="6502\Parts\LeuatXmasFader\DISK-LeuatXmasFader.asm" />
+    <None Include="6502\Parts\LeuatXmasFader\LeuatXmasFader.sls" />
+    <None Include="6502\Parts\MarchingSnowflakes1\DISK-MarchingSnowflakes1.asm" />
+    <None Include="6502\Parts\MarchingSnowflakes1\MarchingSnowflakes1.asm" />
+    <None Include="6502\Parts\MarchingSnowflakes1\MarchingSnowflakes1.sls" />
+    <None Include="6502\Parts\MarchingSnowflakes2\DISK-MarchingSnowflakes2.asm" />
+    <None Include="6502\Parts\MarchingSnowflakes2\MarchingSnowflakes2.asm" />
+    <None Include="6502\Parts\MarchingSnowflakes2\MarchingSnowflakes2.sls" />
+    <None Include="6502\Parts\PerplexSnow\DISK-PerplexSnow.asm" />
+    <None Include="6502\Parts\PerplexSnow\PerplexSnow.sls" />
+    <None Include="6502\Parts\ProudlyPresent\DISK-ProudlyPresent.asm" />
+    <None Include="6502\Parts\ProudlyPresent\ProudlyPresent.asm" />
+    <None Include="6502\Parts\ProudlyPresent\ProudlyPresent.sls" />
+    <None Include="6502\Parts\QzerowBumpmas\DISK-QzerowBumpmas.asm" />
+    <None Include="6502\Parts\QzerowBumpmas\QzerowBumpmas.sls" />
+    <None Include="6502\Parts\QzerowSledgeFade\DISK-QzerowSledgeFade.asm" />
+    <None Include="6502\Parts\QzerowSledgeFade\QzerowSledgeFade.sls" />
+    <None Include="6502\Parts\QzerowXmastree\DISK-QzerowXmastree.asm" />
+    <None Include="6502\Parts\QzerowXmastree\QzerowXmastree.sls" />
+    <None Include="6502\Parts\QzerowYellowSnow\DISK-QzerowYellowSnow.asm" />
+    <None Include="6502\Parts\QzerowYellowSnow\QzerowYellowSnow.sls" />
+    <None Include="6502\Parts\RasterFader\DISK-RasterFader.asm" />
+    <None Include="6502\Parts\RasterFader\RasterFader.asm" />
+    <None Include="6502\Parts\RasterFader\RasterFader.sls" />
+    <None Include="6502\Parts\ShadowChristmastree\DISK-ShadowChristmastree.asm" />
+    <None Include="6502\Parts\ShadowChristmastree\ShadowChristmastree.sls" />
+    <None Include="6502\Parts\SnowflakeZoomer\DISK-SnowflakeZoomer.asm" />
+    <None Include="6502\Parts\SnowflakeZoomer\SnowflakeZoomer.asm" />
+    <None Include="6502\Parts\SnowflakeZoomer\SnowflakeZoomer.sls" />
+    <None Include="6502\Parts\SnowflakeZoomer\SnowflakeZoomerScript.sls" />
+    <None Include="6502\Parts\StreptoColorcycler\DISK-StreptoColorcycler.asm" />
+    <None Include="6502\Parts\StreptoColorcycler\StreptoColorcycler.sls" />
+    <None Include="6502\Parts\TechTechTree\DISK-TechTechTree.asm" />
+    <None Include="6502\Parts\TechTechTree\TechTechTree.asm" />
+    <None Include="6502\Parts\TechTechTree\TechTechTree.sls" />
+    <None Include="6502\Parts\Trap2021\DISK-Trap2021.asm" />
+    <None Include="6502\Parts\Trap2021\Trap2021.sls" />
+    <None Include="6502\Parts\TrapApproved\DISK-TrapApproved.asm" />
+    <None Include="6502\Parts\TrapApproved\TrapApproved.sls" />
+    <None Include="6502\Parts\TrapDigiLamer\TrapDigiLamer.asm" />
+    <None Include="6502\Parts\TrapXmasBalls\DISK-TrapXmasballs.asm" />
+    <None Include="6502\Parts\TrapXmasBalls\TrapXmasballs.sls" />
+    <None Include="6502\Parts\TrapXmasDiagFader\TrapXmasDiagEnd.asm" />
+    <None Include="6502\Parts\VisageMCScroller\DISK-VisageMCScroller.asm" />
+    <None Include="6502\Parts\VisageMCScroller\VisageMCScroller.sls" />
+    <None Include="6502\Parts\VisageMCScroller\VisageMCScrollerInclude.sls" />
+    <None Include="6502\Parts\WaltBasicWipe\DISK-WaltBasicWipe.asm" />
+    <None Include="6502\Parts\WaltBasicWipe\WaltBasicWipe.sls" />
+    <None Include="6502\Parts\WaltCandy\DISK-WaltCandy.asm" />
+    <None Include="6502\Parts\WaltCandy\WaltCandy.sls" />
+    <None Include="6502\Parts\WaltHeartFader\DISK-WaltHeartFader.asm" />
+    <None Include="6502\Parts\WaltHeartFader\WaltHeartFader.sls" />
+    <None Include="6502\Parts\WaltLetter\DISK-WaltLetter.asm" />
+    <None Include="6502\Parts\WaltLetter\WaltLetter.sls" />
+    <None Include="6502\Parts\WaltTrans\DISK-WaltTrans.asm" />
+    <None Include="6502\Parts\WaltTrans\DISK-WaltTransPreps.asm" />
+    <None Include="6502\Parts\WaltTrans\WaltTrans.sls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="6502\Parts\DrScienceBox\DrScienceBox.txt" />
+    <Text Include="6502\Parts\DrScienceLayerPart\driver-code.txt" />
+    <Text Include="6502\Parts\WaltBasicWipe\MemoryLayout.txt" />
+    <Text Include="6502\Parts\WaltCandy\MemoryLayout.txt" />
+    <Text Include="6502\Parts\WaltHeartFader\MemoryLayout.txt" />
+    <Text Include="6502\Parts\WaltLetter\MemoryLayout.txt" />
+    <Text Include="6502\Parts\WaltTrans\MemoryLayout.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3A7C3A54-1B33-45E1-97DB-3BC491CA2062}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>TheSantas</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)Out\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)Out\VisualStudio\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Out\VisualStudio\</OutDir>
+    <IntDir>$(SolutionDir)Out\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)Out\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)Out\VisualStudio\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)Out\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)Out\VisualStudio\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>PC\ThirdParty</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;winmm.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>PC\ThirdParty</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

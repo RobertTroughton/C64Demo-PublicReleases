@@ -1,0 +1,32 @@
+// Part1 = $2000
+// Part2 = $2003
+// Part3 = $2006
+// Part4 = $2009
+// Driver Code logic:
+//          jsr Part1               // Init everything and launch RasterFX IRQ
+//          jsr Load File2-segment  // Load File2 Segment with Charset $4000-$44ff
+//          jsr Load File3-segment  // Load File3 Segment with Speedcode, Map Data and Charset ($8000-$c4ff)
+//!:        lda PartDone ($087f)    // Is the RasterFX done?
+//          cmp #1
+//          bne !-
+//          lda #$00                // Reset Pointer
+//          sta PartDone ($087f)
+//          jsr Part2               // Launch Main Part which Fades In the CharsetLogo first
+//          jsr Load File4-segment  // Load Sprites Bank1 ($4c00-$7bff)
+//          jsr Load File5-segment  // Load Sprites Bank3 ($cc00-$fd3f)
+//          jsr Part3               // Fade In the Sprites --> Remark! This will start at different Frames depending on Speed of Disk/Real Drive etc.
+                                    // Maybe add here a Checkpoint from the Main Framecounter to always start at the same time???
+//!:        lda PartDone ($087f)    // We show the full part for $0200 Frames (can be adjusted), then we fade Out the Screen with Charlogo
+//          cmp #1
+//          bne !-
+//          lda #$00                // Reset Pointer
+//          sta PartDone ($087f)
+//          jsr Pre-Load_Stuff_Next_Part        // Free to load $8000-$bfff
+//          jsr Part4               // FadeOut Sprites & Start FadeOutRasterFX
+//          jsr Load_Next_Part      // Free to load from $3200-$ffff
+//!:        lda PartDone ($087f)    // Just Make sure the RasterFX is finished....
+//          cmp #1
+//          bne !-
+//          lda #$00                // Reset Pointer
+//          sta PartDone ($087f)
+//          ...load rest of next part/start next part.....

@@ -1,0 +1,76 @@
+.label PP=$c8
+.label PathDone=$9644
+.namespace PseudoFramework {
+  .label Frames=$95a
+  .label IRQdummy=$9ab
+  .label EndLoop=$995
+  .label StartFramework=$900
+  .label NMI=$9c7
+}
+.label SprCols=$91be
+.label CopyLine=$93d0
+.label SprPtr1=$5bf8
+.label SprPtr2=$5ff8
+.label BottomLoop=$9679
+.label NoBottom=$96a5
+.label Delay=$ca
+.label HeaderCode=$880
+.label Init=$9000
+.label PartDone=$87f
+.label BotDel=$9695
+.label Sprites=$8000
+.label FillBottom=$9070
+.label IRQ6a=$9308 {
+}
+.label SpritesBlank=$4000
+.label DeleteLine=$9519
+.label bottom=$cc
+.label Screen2=$5c00
+.label bottomcount=$d4
+.label NoPause=$962c
+.label TopDel=$9666
+.label Cols=$5400
+.label SSrc=$c4
+.label ZP1=$c0
+.label TopLoop=$9654
+.label BDst=$c2
+.label ZP2=$d5
+.label NoEnd=$961d
+.label _clr=$904a
+.label Screen=$5800
+.label IRQ2=$9217 {
+}
+.label IRQ=$908d {
+}
+.label IRQ3=$924e {
+}
+.label NoTop=$966c
+.label IRQ6=$935e {
+}
+.label IRQ7=$938e {
+}
+.label IRQ4=$9280 {
+}
+.label IRQ5=$92c2 {
+}
+.label NextSP1=$91c9
+.label NextSP2=$91f0
+.label Bitmap=$a000
+.label SDst=$c6
+.label EndIRQ=$9355
+.label NextY=$919f
+.label BSrc=$c0
+.label _colpos=$90e6
+.label NoDelay=$960f
+.label Path=$96ae
+.label _clr2=$9058
+.label BitmapBlank=$6000
+.label PathLoop=$9637
+.label ClearZP=$9004
+.label DrawBottom=$9675
+.label DrawTop=$95fc
+.label SetY=$91a5
+.label _extra=$9600
+.label SprHigh=$9f00
+.label Main=$9076
+.label SprLow=$9e00

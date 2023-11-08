@@ -1,0 +1,37 @@
+.label IRQDone=$3183 {
+}
+.namespace PseudoFramework {
+  .label Frames=$954
+  .label IRQdummy=$9a5
+  .label EndLoop=$98f
+  .label StartFramework=$900
+  .label NMI=$9c1
+}
+.label Done=$3171 {
+}
+.label IRQ2=$3051 {
+}
+.label IRQ=$3000 {
+}
+.label WipeDone=$41
+.label BorderTable=$2e00
+.label BottomLoop=$30fc
+.label HeaderCode=$880
+.label Init=$31a8
+.label PartDone=$87f
+.label EmptyFont=$3800
+.label EndIRQ=$31a2
+.label ScreenTable=$2f00
+.label FontTable=$2d00
+.label WipePosTab=$3400
+.label _b=$30b0
+.label WipePos=$42
+.label PlotLoop=$3140
+.label MusicPlease=$40
+.label _orgborder=$313b
+.label _startpos=$3067
+.label TopLoop=$306b
+.label _fillFont=$31b6
+.label WipeCount=$43
+.label ScreenLoop=$309e
+.label Main=$3213

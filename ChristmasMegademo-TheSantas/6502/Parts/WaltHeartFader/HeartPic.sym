@@ -1,0 +1,36 @@
+.label ScreenPtr1=$c3
+.label OrgScreen=$5c00
+.namespace PseudoFramework {
+  .label Frames=$95a
+  .label IRQdummy=$9ab
+  .label EndLoop=$995
+  .label StartFramework=$900
+  .label NMI=$9c7
+}
+.label Frame=$cc
+.label FadeDataPtr=$c1
+.label FadeData=$4843
+.label FadeLoop=$40d3
+.label Screen=$4400
+.label IRQ2=$4094 {
+}
+.label IRQ=$4040 {
+}
+.label Count=$cb
+.label FadeInDone=$c0
+.label FadeCols=$4000
+.label Byte2=$cd
+.label HeaderCode=$880
+.label Init=$4800
+.label Bitmap=$6000
+.label PartDone=$87f
+.label ColIndex=$ce
+.label SetCols=$4804
+.label EndIRQ=$408b
+.label ScreenPtr2=$c5
+.label temp=$cf
+.label LookupPtr2=$c9
+.label LookupPtr1=$c7
+.label Cols=$5800
+.label Main=$482e
+.label Fade=$40e2

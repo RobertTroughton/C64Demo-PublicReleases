@@ -1,0 +1,135 @@
+#MAINENTRY
+Intermediate\KickAss\Entry.prg 0200 2
+
+#MAIN-DISK1
+Intermediate\KickAss\Main-Disk1.prg 0400 2
+Intermediate\KickAss\Main-DefaultIRQ.prg 0f00 2
+Music\DangerDawg.sid 1000 7e
+Intermediate\Built\0-InitialScreenClear\SinTable.bin 3000
+Intermediate\KickAss\DemoParts\AllBorders.prg 0800 2
+Intermediate\KickAss\Extra\ScreenWipe.prg c000 2
+
+#BLACKBEARDQUOTE
+Intermediate\KickAss\Extra\BitmapDisplay.prg 9c00 2
+Intermediate\Built\ScreenFadeAndTurnDisk\Sprites.bin 8000
+SourceData\00-KoalaPics\Blackbeard.kla a000 2 1f40
+SourceData\00-KoalaPics\Blackbeard.kla 8c00 1f42 3e8
+SourceData\00-KoalaPics\Blackbeard.kla 9000 232a 3e8
+
+#HORIZONTALBITMAP-PRELOAD
+Intermediate\KickAss\DemoParts\HorizontalBitmap.prg 2000 2
+Intermediate\Built\HorizontalBitmap\Bitmap-ScrollingData.map 3200 0 4e00
+Intermediate\Built\HorizontalBitmap\Bitmap-ScrollingData.scr 9000
+Intermediate\Built\HorizontalBitmap\Bitmap-InitialData.scr cc00
+Intermediate\Built\HorizontalBitmap\Bitmap-ScrollingData.col c000
+Intermediate\Built\HorizontalBitmap\Sprites.bin ff40
+Intermediate\Built\HorizontalBitmap\Sprites.bin bf40
+
+#HORIZONTALBITMAP
+Intermediate\Built\HorizontalBitmap\Bitmap-InitialData.map e000
+Intermediate\Built\HorizontalBitmap\Bitmap-ScrollingData.map 8000 4e00 1000
+Intermediate\Built\HorizontalBitmap\Sprite-XMSBEnable.bin 9c00
+Intermediate\Built\HorizontalBitmap\Bitmap-InitialData.col d800!
+
+#CREDITS
+Intermediate\KickAss\Extra\BitmapDisplay.prg 9c00 2
+Intermediate\Built\ScreenFadeAndTurnDisk\Sprites.bin 4000
+Intermediate\Built\ScreenFadeAndTurnDisk\Sprites.bin 8000
+Intermediate\KickAss\Extra\CreditSprites.prg 9800 2
+SourceData\Credits\CreditTitles.map 4800 0 100
+SourceData\00-KoalaPics\Credits-Code.kla 6000 2 1f40
+SourceData\00-KoalaPics\Credits-Code.kla 4c00 1f42 3e8
+SourceData\00-KoalaPics\Credits-Code.kla 5000 232a 3e8
+
+SourceData\Credits\CreditTitles.map 8800 200 100
+SourceData\00-KoalaPics\Credits-Graphics.kla a000 2 1f40
+SourceData\00-KoalaPics\Credits-Graphics.kla 8c00 1f42 3e8
+SourceData\00-KoalaPics\Credits-Graphics.kla 5000 232a 3e8
+
+SourceData\Credits\CreditTitles.map 4800 100 100
+SourceData\00-KoalaPics\Credits-Music.kla 6000 2 1f40
+SourceData\00-KoalaPics\Credits-Music.kla 4c00 1f42 3e8
+SourceData\00-KoalaPics\Credits-Music.kla 5000 232a 3e8
+
+SourceData\Credits\CreditTitles.map 8800 300 100
+SourceData\00-KoalaPics\Credits-Captain.kla a000 2 1f40
+SourceData\00-KoalaPics\Credits-Captain.kla 8c00 1f42 3e8
+SourceData\00-KoalaPics\Credits-Captain.kla 5000 232a 3e8
+
+#SECONDTUNE
+Music\PartyPiratesSide1.sid 6000 7e
+
+#WAVES-PRELOAD
+Intermediate\KickAss\DemoParts\Waves.prg e000 2
+Intermediate\KickAss\DemoParts\Waves-SpriteClip.prg 8000 2
+Intermediate\Built\Waves\CharSet.bin 4000
+Intermediate\Built\Waves\SinTable.bin 3000
+Intermediate\Built\Waves\SpriteSinTableRightToLeft.bin c000
+Intermediate\Built\Waves\Blank-PackedSprites.bin 6800
+Intermediate\Built\Waves\Blank-PackedLookup.bin cd80
+Intermediate\Built\Waves\Blank-ClipData.bin 3e00
+Intermediate\Built\Waves\Blank-ClipSpriteIndices.bin cd78
+Intermediate\Built\Waves\ClipData.bin b000
+
+#WAVES-LOGO0 (Genesis)
+Intermediate\Built\Waves\IntroLogos-Genesis-PackedSprites.bin 6800
+Intermediate\Built\Waves\IntroLogos-Genesis-PackedLookup.bin cd80
+Intermediate\Built\Waves\IntroLogos-Genesis-ClipData.bin 3e00
+Intermediate\Built\Waves\IntroLogos-Genesis-ClipSpriteIndices.bin cd78
+
+#WAVES-LOGO1 (Project)
+Intermediate\Built\Waves\IntroLogos-Project-PackedSprites.bin 6800
+Intermediate\Built\Waves\IntroLogos-Project-PackedLookup.bin cd80
+Intermediate\Built\Waves\IntroLogos-Project-ClipData.bin 3e00
+Intermediate\Built\Waves\IntroLogos-Project-ClipSpriteIndices.bin cd78
+
+#WAVES-LOGO2 (Presents)
+Intermediate\Built\Waves\IntroLogos-Presents-PackedSprites.bin 6800
+Intermediate\Built\Waves\IntroLogos-Presents-PackedLookup.bin cd80
+Intermediate\Built\Waves\IntroLogos-Presents-ClipData.bin 3e00
+Intermediate\Built\Waves\IntroLogos-Presents-ClipSpriteIndices.bin cd78
+
+#WAVES-LOGO3 (XMarks)
+Intermediate\Built\Waves\IntroLogos-XMarks-PackedSprites.bin 6800
+Intermediate\Built\Waves\IntroLogos-XMarks-PackedLookup.bin cd80
+Intermediate\Built\Waves\IntroLogos-XMarks-ClipData.bin 3e00
+Intermediate\Built\Waves\IntroLogos-XMarks-ClipSpriteIndices.bin cd78
+
+#SHADOWS-FLAG
+Intermediate\KickAss\DemoParts\Shadow\TextureFlag.prg 3000 2
+Intermediate\KickAss\DemoParts\Shadow\TextureFlag-Draw.prg 5400 2
+
+#TREASUREMAP-LOWER
+Intermediate\KickAss\DemoParts\TreasureMap.prg 3000 2
+Intermediate\KickAss\DemoParts\TreasureMap-SpriteDottedLine.prg 9a80 2
+Intermediate\Built\TreasureMap\LowerMap-InitialData.map e000
+Intermediate\Built\TreasureMap\LowerMap-InitialData.scr cc00
+Intermediate\Built\TreasureMap\LowerMap-ScrollingData.map 4800
+Intermediate\Built\TreasureMap\LowerMap-ScrollingData.scr 9000
+Intermediate\Built\TreasureMap\LowerMap-Path-SpriteWriteInfo.bin 9800
+Intermediate\Built\TreasureMap\LowerMap-Path-FirstSpriteToDraw.bin 9f40
+Intermediate\Built\TreasureMap\LowerMap-Path-SpriteCoords.bin 9fe0
+
+#WAVYSCROLLER
+Intermediate\KickAss\DemoParts\WavyScroller.prg e000 2
+Intermediate\KickAss\DemoParts\Blit.prg c000 2
+Intermediate\Built\WavyScroller\CharData.bin 8000
+Intermediate\Built\WavyScroller\SinTables.bin 3000
+Intermediate\Built\WavyScroller\CharInfo.bin ff00
+
+#WAVYSNAKE(00)
+Intermediate\KickAss\DemoParts\WavySnakeLR.prg e000 2
+Intermediate\Built\WavySnake\SinTables.bin c000
+Intermediate\Built\WavySnake\Charset.bin 6000 0 2000
+
+#LoboKraken
+Intermediate\KickAss\Extra\BitmapDisplay.prg 9c00 2
+Intermediate\KickAss\Extra\TurnSide.prg 9800 2
+Intermediate\Built\ScreenFadeAndTurnDisk\Sprites.bin 8000
+SourceData\00-KoalaPics\LoboKraken.kla a000 2 1f40
+SourceData\00-KoalaPics\LoboKraken.kla 8c00 1f42 3e8
+SourceData\00-KoalaPics\LoboKraken.kla 9000 232a 3e8
+SourceData\ScreenFadeAndTurnDisk\TurnDiskToSide2.map 8800
+Intermediate\Built\ScreenFadeAndTurnDisk\SinTables.bin 8a00
+
+#WAITFORSWAPDISK

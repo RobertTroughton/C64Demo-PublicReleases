@@ -1,0 +1,72 @@
+Intermediate\Built\DiagonalBitmap\BitmapData0.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData1.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData2.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData3.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData4.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData5.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData6.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData7.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData8.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData9.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData10.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData11.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData12.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData13.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData14.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData15.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData16.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData17.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData18.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData19.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData20.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData21.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData22.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData23.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData24.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData25.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData26.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData27.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData28.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData29.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData30.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData31.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData32.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData33.bin 3a00
+
+Intermediate\Built\DiagonalBitmap\BitmapData34.bin 3000
+
+Intermediate\Built\DiagonalBitmap\BitmapData35.bin 3a00
+

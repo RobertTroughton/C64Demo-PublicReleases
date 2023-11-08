@@ -1,0 +1,145 @@
+X Marks The Spot
+
+Thanks for watching our demo! This was made as a labour of love over a period of 3 months after we initially branched from Delirious 11 on August 1st 2018. Our trackmo toolset is slowly maturing and improving to allow more and more.
+
+We managed to pull together a fantastic team to work on this - and I believe it shows in the finished product.
+
+Most of the coding and linking of the demo was done by Raistlin with Shadow kind enough to supply the Crows Nest / Pirate Flag part.
+
+On the art side, Facet joined us during early production of the demo, coming from years of Amiga experience, and did an amazing job learning the C64's quirks and delivering top quality content. Razorback stunned everyone with his huge diagonal bitmap again too - those things are hellish to put together but, again, his work is incredible. Redcrab, too, did some stellar work with the pirate ship, treasure map and more!
+
+The fantastic music was kindly supplied by Steel, Stinsen and MCH - with Steel and Stinsen doing overtime to deliver the intro music (Danger Dawg Intro) and the two main themes (Party Pirates Part One and Two) and MCH delivering a last minute end-part tune.
+
+And Captain Hedning did a stellar job of ensuring that the right team members were involved, pushing them when needed to get the job done, guiding the demo with insights and ideas. 'Whips when needed ... and carrots on occasion'. Not to mention making sure that G*P was ticking on all cylinders in all other departments of course! (let's not talk about our First Release of Yoomp! as it scuppered Onslaught's plans somewhat and left them needing to changing the VN first release rules :-p)
+
+The IRQ Loader that we chose to use was, again, LFT's Spindle - which does a fantastic job of delivering the data that we needed in plenty of time. Thanks again LFT! And finally, but not least, of course we say thanks to S!nk for the DIR Art and Duce for a special 5.25" disk cover.
+
+Please spread! And, always remember, STAMPS BACK PLEASE!
+----------------------------------------------------------------------------------
+
+
+
+
+=====
+PARTS
+=====
+
+
+Blackbeard Quote
+----------------
+Image by Facet
+----------------------------------------------------------------------------------
+
+
+Genesis Project Wide Bitmap Scroller
+------------------------------------
+Image by Facet
+
+We filled 95% of the memory with this part. The bitmap is 1280 (640 'double multicolour') pixels wide and scrolls at a slinky smooth 50fps.
+----------------------------------------------------------------------------------
+
+
+Credit Logos
+------------
+Images by Facet
+----------------------------------------------------------------------------------
+
+
+Parallax Sea - Logo Credits and Pirate Ship
+-------------------------------------------
+Logos by Facet
+Pirate Ship by Redcrab
+Wave animations by Raistlin
+
+This part turned out nice I reckon, actually looking better than I envisaged that it would from concepts. Very stressful on the CPU as all the waves are moving independently - and there's an "all the sprites" multiplexer on top - using sprite interleave, of course, to prevent gaps and corruption.
+----------------------------------------------------------------------------------
+
+
+Crow's Nest / Pirate Flag
+-------------------------
+Coding by Shadow
+Graphics by Redcrab
+----------------------------------------------------------------------------------
+
+
+Wavy Scroller
+-------------
+Font by Redcrab
+
+Being totally honest, this part was a lot more work than I'd intended. Originally I had just the one scroller slinking down the screen... but an epiphany while on a toilet break made me realise that I could've made it much more easily had I just used sprites (!). So... to 'prove' that I hadn't, I added a second scroller alongside.
+----------------------------------------------------------------------------------
+
+
+Wavy Snake
+----------
+Graphics by Facet
+----------------------------------------------------------------------------------
+
+
+Lobo Kraken
+-----------
+Image by Facet
+----------------------------------------------------------------------------------
+
+
+The Wheels
+----------
+Graphics by Raistlin
+
+This is the one part of the demo that I wasn't happy with... it's a re-hash of the spinny stars part from Delirious 11. I reckon it looked much better in Delirious...
+----------------------------------------------------------------------------------
+
+
+Kraken Death
+------------
+Image by Razorback
+----------------------------------------------------------------------------------
+
+
+Spinny Thing
+------------
+Graphics by Raistlin
+----------------------------------------------------------------------------------
+
+
+Circle Eye Scroller
+-------------------
+Image by Facet
+Font by Hedning
+
+In Delirious 10, I had a 96-bob circle scroller. In Delirious 11 I improved on that through optimization - but used the spare time to have two very large logo scrollers in the background. SO for this new version I thought I'd push the number of bobs a bit and go for a record - hitting 128 of the blighters. I could go further, too, with improvements to the sprite multiplex - if nobody else does that, maybe I will for a future demo.
+
+We decreased the font size for this part to be the same as I'd used in Delirious 10 ... the larger font used in Delirious 11 became unreadable with 128 bobs as they all just overlapped all the time.
+----------------------------------------------------------------------------------
+
+
+Treasure Map
+------------
+Image by Redcrab
+----------------------------------------------------------------------------------
+
+
+X
+-
+Graphics by Raistlin
+----------------------------------------------------------------------------------
+
+
+Captain Hedning
+---------------
+Image by Redcrab
+----------------------------------------------------------------------------------
+
+
+End Diagonal Bitmap Scroller
+----------------------------
+Image by Razorback
+Font by Hedning
+
+Apparently in Delirious 11 we'd hit upon a world-first ... a 50fps diagonal bitmap scroller with a repeating 400-pixel high image.
+
+Dropping to 25fps and IRQ-loading additional bitmap data in the background we were able to triple the size of the bitmap. We did run into a small problem, though, when we found that Spindle doesn't 'officially' support re-reading of data... this would eventually become a problem for our repeating bitmap. We overcame this by 'tricking' Spindle into believing that it was doing a disk-swap. Pointing the 'next disk' back at the same as was already inserted, Spindle thankfully returned from the swap-disk-check code immediately.
+
+Spindle copes admirably with keeping up with the amount of data that we need to load to do the diagonal scroll - and with enough overhead that dirty disks and slightly-poor 1541s should still cope (nb. if the loading ever is too slow, the demo will continue - but you'll start to notice odd corruption creeping into the image).
+
+----------------------------------------------------------------------------------

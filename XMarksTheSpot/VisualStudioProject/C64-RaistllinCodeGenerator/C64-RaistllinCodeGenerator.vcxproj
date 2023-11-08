@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3A7C3A54-1B33-45E1-97DB-3BC491CA2062}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>XMarksTheSpot</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)..\Intermediate\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)..\Intermediate\VisualStudio\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\Intermediate\VisualStudio\</OutDir>
+    <IntDir>$(SolutionDir)..\Intermediate\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)..\Intermediate\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)..\Intermediate\VisualStudio\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)..\Intermediate\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)..\Intermediate\VisualStudio\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Common\Common.cpp" />
+    <ClCompile Include="Source\DemoParts\DiagonalBitmap.cpp" />
+    <ClCompile Include="Source\DemoParts\FullScreenRotatingThings.cpp" />
+    <ClCompile Include="Source\DemoParts\HorizontalBitmap.cpp" />
+    <ClCompile Include="Source\Common\ImageConversion.cpp" />
+    <ClCompile Include="Source\DemoParts\RotatingShapes.cpp" />
+    <ClCompile Include="Source\DemoParts\ScreenEffects.cpp" />
+    <ClCompile Include="Source\Common\SinTables.cpp" />
+    <ClCompile Include="Source\DemoParts\ScreenHash.cpp" />
+    <ClCompile Include="Source\DemoParts\ScreenFadeAndTurnDisk.cpp" />
+    <ClCompile Include="Source\DemoParts\TreasureMap.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\DemoParts\SpriteBobs.cpp" />
+    <ClCompile Include="Source\DemoParts\UpScrollCredits.cpp" />
+    <ClCompile Include="Source\DemoParts\Waves.cpp" />
+    <ClCompile Include="Source\DemoParts\WavyScroller.cpp" />
+    <ClCompile Include="Source\DemoParts\WavySnake.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Common\Common.h" />
+    <ClInclude Include="Source\Common\ImageConversion.h" />
+    <ClInclude Include="Source\Main.h" />
+    <ClInclude Include="Source\Common\SinTables.h" />
+    <ClInclude Include="Source\ThirdParty\CImg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Compile.bat" />
+    <None Include="..\..\Link.bat" />
+    <None Include="..\..\SourceCode\DemoParts\AllBorders.asm" />
+    <None Include="..\..\SourceCode\DemoParts\EndCredits.asm" />
+    <None Include="..\..\SourceCode\DemoParts\FullScreenRotatingThings.asm" />
+    <None Include="..\..\SourceCode\DemoParts\HorizontalBitmap.asm" />
+    <None Include="..\..\SourceCode\DemoParts\RotatingShapes.asm" />
+    <None Include="..\..\SourceCode\DemoParts\ScreenHash.asm" />
+    <None Include="..\..\SourceCode\DemoParts\Shadow\stretch_code.asm" />
+    <None Include="..\..\SourceCode\DemoParts\Shadow\textureflag-draw.asm" />
+    <None Include="..\..\SourceCode\DemoParts\Shadow\textureflag.asm" />
+    <None Include="..\..\SourceCode\DemoParts\SpriteBobs.asm" />
+    <None Include="..\..\SourceCode\DemoParts\TreasureMap-SpriteDottedLine.asm" />
+    <None Include="..\..\SourceCode\DemoParts\TreasureMap.asm" />
+    <None Include="..\..\SourceCode\DemoParts\Waves-Defines.asm" />
+    <None Include="..\..\SourceCode\DemoParts\Waves-SpriteClip.asm" />
+    <None Include="..\..\SourceCode\DemoParts\Waves.asm" />
+    <None Include="..\..\SourceCode\DemoParts\WavyScroller-Defines.asm" />
+    <None Include="..\..\SourceCode\DemoParts\WavyScroller.asm" />
+    <None Include="..\..\SourceCode\DemoParts\WavySnake.asm" />
+    <None Include="..\..\SourceCode\Extra\BitmapDisplay.asm" />
+    <None Include="..\..\SourceCode\Extra\CreditSprites.asm" />
+    <None Include="..\..\SourceCode\Extra\ScreenWipe.asm" />
+    <None Include="..\..\SourceCode\Extra\TurnSide.asm" />
+    <None Include="..\..\SourceCode\Extra\WrongDisk.asm" />
+    <None Include="..\..\SourceCode\Main-CommonCode.asm" />
+    <None Include="..\..\SourceCode\Main-CommonDefines.asm" />
+    <None Include="..\..\SourceCode\Main-DefaultIRQ.asm" />
+    <None Include="..\..\SourceCode\Main-Disk1.asm" />
+    <None Include="..\..\SourceCode\Main-Disk2.asm" />
+    <None Include="..\..\SourceCode\Main-Disk3.asm" />
+    <None Include="..\..\SourceCode\Entry.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\SpindleBuildScripts\Disk1.txt" />
+    <Text Include="..\..\SpindleBuildScripts\Disk2.txt" />
+    <Text Include="..\..\SpindleBuildScripts\Disk3.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

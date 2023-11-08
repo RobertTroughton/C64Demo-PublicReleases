@@ -1,0 +1,95 @@
+#MAIN-DISK2
+Intermediate\KickAss\Extra\WrongDisk.prg c000 2
+SourceData\WrongDisk\WrongDisk.iscr 8800
+SourceData\WrongDisk\WrongDisk.imap 8000
+
+#MAIN-DISK2-ACTUAL
+Intermediate\KickAss\Main-Disk2.prg 0600 2
+Music\PartyPiratesSide2.sid a000 7e
+
+#WAVES2
+Intermediate\KickAss\DemoParts\Waves.prg e000 2
+Intermediate\KickAss\DemoParts\Waves-SpriteClip.prg 8000 2
+Intermediate\Built\Waves\CharSet2.bin 4000
+Intermediate\Built\Waves\SinTable.bin 3000
+Intermediate\Built\Waves\SpriteSinTableLeftToRight.bin c000
+Intermediate\Built\Waves\ClipData2.bin b000
+Intermediate\Built\Waves\Blank-PackedSprites.bin 6800
+Intermediate\Built\Waves\Blank-PackedLookup.bin cd80
+Intermediate\Built\Waves\Blank-ClipData.bin 3e00
+Intermediate\Built\Waves\Blank-ClipSpriteIndices.bin cd78
+
+#WAVES-THEPIRATESHIP
+Intermediate\Built\Waves\RedcrabShip-PackedSprites.bin 6800
+Intermediate\Built\Waves\RedcrabShip-PackedLookup.bin cd80
+Intermediate\Built\Waves\RedcrabShip-ClipData.bin 3e00
+Intermediate\Built\Waves\RedcrabShip-ClipSpriteIndices.bin cd78
+
+#ROTATING_SHAPES
+Intermediate\KickAss\DemoParts\RotatingShapes.prg 3000 2
+Intermediate\Built\RotatingShapes\CharSet.bin c000 0
+Intermediate\Built\RotatingShapes\SinTable.bin fe00 0
+Intermediate\Built\RotatingShapes\ScreenAnims.bin 8000 0
+
+#FULLSCREENROTATINGTHINGS
+Intermediate\KickAss\DemoParts\FullScreenRotatingThings.prg 7000 2
+Intermediate\Built\FullScreenRotatingThings\CharSet.bin 4000
+Intermediate\Built\FullScreenRotatingThings\SinTable.bin 3f00
+Intermediate\Built\ScreenFadeAndTurnDisk\Sprites.bin 4c00
+
+#DEADKRAKEN
+Intermediate\KickAss\Extra\BitmapDisplay.prg 9c00 2
+Intermediate\Built\ScreenFadeAndTurnDisk\Sprites.bin 8000
+SourceData\00-KoalaPics\DeadKraken.kla a000 2 1f40
+SourceData\00-KoalaPics\DeadKraken.kla 8c00 1f42 3e8
+SourceData\00-KoalaPics\DeadKraken.kla 9000 232a 3e8
+
+#THEEYE-PRELOAD
+SourceData\00-KoalaPics\TheEye.kla c000 2 1f40
+SourceData\00-KoalaPics\TheEye.kla f000 1f42 3e8
+SourceData\00-KoalaPics\TheEye.kla f400 232a 3e8
+
+#THEEYE
+Intermediate\Built\ScreenFadeAndTurnDisk\Sprites.bin e000
+
+#SPRITEBOBS
+Intermediate\KickAss\DemoParts\SpriteBobs.prg 3000 2
+
+#TREASUREMAP-UPPER
+Intermediate\KickAss\DemoParts\TreasureMap.prg 3000 2
+Intermediate\KickAss\DemoParts\TreasureMap-SpriteDottedLine.prg 9a80 2
+Intermediate\Built\TreasureMap\UpperMap-InitialData.map e000
+Intermediate\Built\TreasureMap\UpperMap-InitialData.scr cc00
+Intermediate\Built\TreasureMap\UpperMap-ScrollingData.map 4800
+Intermediate\Built\TreasureMap\UpperMap-ScrollingData.scr 9000
+Intermediate\Built\TreasureMap\UpperMap-Path-SpriteWriteInfo.bin 9800
+Intermediate\Built\TreasureMap\UpperMap-Path-FirstSpriteToDraw.bin 9f40
+Intermediate\Built\TreasureMap\UpperMap-Path-SpriteCoords.bin 9fe0
+
+#SCREENHASH
+Intermediate\KickAss\DemoParts\ScreenHash.prg 3000 2
+Intermediate\Built\ScreenHash\SinTable.bin c000
+Intermediate\Built\ScreenHash\Chars.bin 7800
+
+#HEDNING
+Intermediate\KickAss\Extra\BitmapDisplay.prg 9c00 2
+Intermediate\KickAss\Extra\TurnSide.prg 9800 2
+Intermediate\Built\ScreenFadeAndTurnDisk\Sprites.bin 8000
+SourceData\00-KoalaPics\Hedning.kla a000 2 1f40
+SourceData\00-KoalaPics\Hedning.kla 8c00 1f42 3e8
+SourceData\00-KoalaPics\Hedning.kla 9000 232a 3e8
+SourceData\ScreenFadeAndTurnDisk\TurnDiskToSide3.map 8800
+Intermediate\Built\ScreenFadeAndTurnDisk\SinTables.bin 8a00
+
+#DISK3
+Intermediate\KickAss\DemoParts\EndCredits.prg 4400 2
+Intermediate\Built\UpScrollCredits\1x2Font.bin 9000
+Intermediate\Built\UpScrollCredits\ScrollText.bin 7600
+Intermediate\KickAss\Main-Disk3.prg 0400 2
+Music\MCH.sid 3000 7e
+Intermediate\Built\DiagonalBitmap\InitialBitmap.map e000
+Intermediate\Built\DiagonalBitmap\InitialBitmap.scr cc00
+Intermediate\Built\DiagonalBitmap\InitialBitmap.col c800
+Intermediate\Built\ScreenFadeAndTurnDisk\Sprites.bin c000
+
+#WAITFORSWAPDISK

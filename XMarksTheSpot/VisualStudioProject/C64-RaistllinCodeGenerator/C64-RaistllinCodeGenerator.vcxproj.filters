@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\DemoParts\DiagonalBitmap.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\FullScreenRotatingThings.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\HorizontalBitmap.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\SpriteBobs.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\UpScrollCredits.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Common.cpp">
+      <Filter>CodeGenerator\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\SinTables.cpp">
+      <Filter>CodeGenerator\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\ScreenEffects.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\Waves.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\WavySnake.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\ImageConversion.cpp">
+      <Filter>CodeGenerator\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\WavyScroller.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\ScreenHash.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\RotatingShapes.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\TreasureMap.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\ScreenFadeAndTurnDisk.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Common\Common.h">
+      <Filter>CodeGenerator\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\SinTables.h">
+      <Filter>CodeGenerator\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Main.h">
+      <Filter>CodeGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\ImageConversion.h">
+      <Filter>CodeGenerator\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\CImg.h">
+      <Filter>CodeGenerator\ThirdParty</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ASM">
+      <UniqueIdentifier>{e82bddc7-1345-4cd9-bd68-7bdb1c6a9118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeGenerator">
+      <UniqueIdentifier>{3c9ffb50-2b02-430a-aacd-aa4cf87be745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildStuff">
+      <UniqueIdentifier>{800b1df1-9906-4068-a69a-ed407d099059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASM\DemoParts">
+      <UniqueIdentifier>{1e8a6193-ec1b-4889-a005-4fbd6ce600ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeGenerator\DemoParts">
+      <UniqueIdentifier>{fa89fef5-1c22-46fc-81db-9fd56f2507ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeGenerator\Common">
+      <UniqueIdentifier>{9146c5cb-4464-40a6-8ace-785096de4d25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASM\Extra">
+      <UniqueIdentifier>{db2da7f1-85d0-4e60-8919-86bc3b968b86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeGenerator\ThirdParty">
+      <UniqueIdentifier>{7eae17b4-af86-4078-b76d-5e9e29790943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildStuff\SpindleBuildScripts">
+      <UniqueIdentifier>{f684770d-7983-4723-ba30-dfbd2ef329dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASM\DemoParts\SHADOW">
+      <UniqueIdentifier>{1c6f0735-e24a-4cc7-9ec7-fb92e9b2f69c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\SourceCode\Main-CommonDefines.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\HorizontalBitmap.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\SpriteBobs.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\Waves.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\EndCredits.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\FullScreenRotatingThings.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\WavySnake.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Main-CommonCode.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Main-DefaultIRQ.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\WavyScroller.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\ScreenHash.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Main-Disk1.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Main-Disk2.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Main-Disk3.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Entry.asm">
+      <Filter>ASM</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\AllBorders.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\RotatingShapes.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\WavyScroller-Defines.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Extra\WrongDisk.asm">
+      <Filter>ASM\Extra</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\Shadow\stretch_code.asm">
+      <Filter>ASM\DemoParts\SHADOW</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\Shadow\textureflag.asm">
+      <Filter>ASM\DemoParts\SHADOW</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\Shadow\textureflag-draw.asm">
+      <Filter>ASM\DemoParts\SHADOW</Filter>
+    </None>
+    <None Include="..\..\Link.bat">
+      <Filter>BuildStuff</Filter>
+    </None>
+    <None Include="..\..\Compile.bat">
+      <Filter>BuildStuff</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\TreasureMap.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Extra\BitmapDisplay.asm">
+      <Filter>ASM\Extra</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\Waves-Defines.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Extra\ScreenWipe.asm">
+      <Filter>ASM\Extra</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\Waves-SpriteClip.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Extra\TurnSide.asm">
+      <Filter>ASM\Extra</Filter>
+    </None>
+    <None Include="..\..\SourceCode\DemoParts\TreasureMap-SpriteDottedLine.asm">
+      <Filter>ASM\DemoParts</Filter>
+    </None>
+    <None Include="..\..\SourceCode\Extra\CreditSprites.asm">
+      <Filter>ASM\Extra</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\SpindleBuildScripts\Disk2.txt">
+      <Filter>BuildStuff\SpindleBuildScripts</Filter>
+    </Text>
+    <Text Include="..\..\SpindleBuildScripts\Disk3.txt">
+      <Filter>BuildStuff\SpindleBuildScripts</Filter>
+    </Text>
+    <Text Include="..\..\SpindleBuildScripts\Disk1.txt">
+      <Filter>BuildStuff\SpindleBuildScripts</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -72,23 +72,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\..\Intermediate\VS\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>..\..\Intermediate\VS\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)</OutDir>
+    <IntDir>$(SolutionDir)..\Intermediate\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\..\Intermediate\VS\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>..\..\Intermediate\VS\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)</OutDir>
+    <IntDir>$(SolutionDir)..\Intermediate\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\..\Intermediate\VS\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>..\..\Intermediate\VS\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)</OutDir>
+    <IntDir>$(SolutionDir)..\Intermediate\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\..\Intermediate\VS\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>..\..\Intermediate\VS\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)</OutDir>
+    <IntDir>$(SolutionDir)..\Intermediate\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

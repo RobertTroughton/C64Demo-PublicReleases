@@ -3,11 +3,6 @@
 #pragma once
 
 int BIGDYPP_Main(void);
-int BORDERBITMAP_Main(void);
-int CHROMEFONT_Main(void);
-int DYPP_Main(void);
-int DYPP_AnimTree_Main(void);
-int Font4x3_Main(void);
 int GPLogo_Main(void);
 int Misc_Main(void);
 int Quote_Main(void);

@@ -12,21 +12,6 @@ int main()
 	BIGDYPP_Main();
 
 	srand(0x98093de3);
-	BORDERBITMAP_Main();
-
-	srand(0x98093de3);
-	CHROMEFONT_Main();
-
-	srand(0x98093de3);
-	DYPP_Main();
-
-	srand(0x98093de3);
-	DYPP_AnimTree_Main();
-
-	srand(0x98093de3);
-	Font4x3_Main();
-
-	srand(0x98093de3);
 	GPLogo_Main();
 
 	srand(0x98093de3);

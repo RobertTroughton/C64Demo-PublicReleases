@@ -14,9 +14,6 @@ if %errorlevel% neq 0 goto error
 java -jar ..\..\..\Extras\KickAss\KickAss.jar ..\Parts\BigDYPP\ASM\BigDYPP.asm -odir ..\..\..\..\Intermediate\KickAss\Main\Parts
 if %errorlevel% neq 0 goto error
 
-java -jar ..\..\..\Extras\KickAss\KickAss.jar ..\Parts\BorderBitmap\ASM\BorderBitmap.asm -odir ..\..\..\..\Intermediate\KickAss\Main\Parts
-if %errorlevel% neq 0 goto error
-
 java -jar ..\..\..\Extras\KickAss\KickAss.jar ..\Parts\DeepSeaDots\ASM\DeepSeaDots.asm -odir ..\..\..\..\Intermediate\KickAss\Main\Parts
 if %errorlevel% neq 0 goto error
 

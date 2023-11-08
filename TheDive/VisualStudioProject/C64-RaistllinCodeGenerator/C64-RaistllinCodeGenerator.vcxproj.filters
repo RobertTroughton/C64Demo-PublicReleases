@@ -16,9 +16,6 @@
     <ClCompile Include="Source\Common\ImageConversion.cpp">
       <Filter>CodeGenerator\Common</Filter>
     </ClCompile>
-    <ClCompile Include="Source\DemoParts\BorderBitmap.cpp">
-      <Filter>CodeGenerator\DemoParts</Filter>
-    </ClCompile>
     <ClCompile Include="Source\DemoParts\StarWars.cpp">
       <Filter>CodeGenerator\DemoParts</Filter>
     </ClCompile>
@@ -33,18 +30,6 @@
     </ClCompile>
     <ClCompile Include="Source\ThirdParty\FMT\src\posix.cc">
       <Filter>CodeGenerator\ThirdParty\FMT\src</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\DemoParts\DYPP.cpp">
-      <Filter>CodeGenerator\DemoParts\DYPP</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\DemoParts\DYPP-AnimTree.cpp">
-      <Filter>CodeGenerator\DemoParts\DYPP</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\DemoParts\4x3FontConv.cpp">
-      <Filter>CodeGenerator\DemoParts\DYPP</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\DemoParts\ChromeFont.cpp">
-      <Filter>CodeGenerator\DemoParts</Filter>
     </ClCompile>
     <ClCompile Include="Source\DemoParts\SideBorderBitmap.cpp">
       <Filter>CodeGenerator\DemoParts</Filter>
@@ -107,9 +92,6 @@
     <Filter Include="CodeGenerator\ThirdParty\FMT\src">
       <UniqueIdentifier>{26d48052-8a0e-4274-a7d8-93edcec5d0e7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="CodeGenerator\DemoParts\DYPP">
-      <UniqueIdentifier>{a7814282-47d2-42bf-966b-caa0d9c0d24b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Build">
       <UniqueIdentifier>{e6b05596-db26-4ca3-82e9-ff5525399387}</UniqueIdentifier>
     </Filter>
@@ -128,23 +110,11 @@
     <Filter Include="Build\Parts\BigDYPP\ASM">
       <UniqueIdentifier>{2f70ed02-3900-4ae7-b36e-7e590c7c8b7c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Build\Parts\BorderBitmap">
-      <UniqueIdentifier>{13ffff30-820a-4139-a7ce-9a6074e7ac07}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Build\Parts\BorderBitmap\ASM">
-      <UniqueIdentifier>{76134d61-c0a5-4a9d-ac7d-4be3b71739bd}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Build\Parts\DeepSeaDots">
       <UniqueIdentifier>{958c08ed-e686-499d-90ff-532761151446}</UniqueIdentifier>
     </Filter>
     <Filter Include="Build\Parts\DeepSeaDots\ASM">
       <UniqueIdentifier>{6e6dee64-e53d-4c03-9624-a236dad2895f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Build\Parts\DYPP">
-      <UniqueIdentifier>{0c18ebcd-f02f-4582-a138-831685db50cd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Build\Parts\DYPP\ASM">
-      <UniqueIdentifier>{50a71142-465a-4c3e-9f6e-202cc996c4f7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Build\Parts\FullScreenRasterSweep">
       <UniqueIdentifier>{a18510e3-bd9f-4ded-b967-2cadb8b44cb9}</UniqueIdentifier>
@@ -217,14 +187,8 @@
     <Text Include="..\..\Build\Parts\BigDYPP\SpindleLayout-BigDYPP.txt">
       <Filter>Build\Parts\BigDYPP</Filter>
     </Text>
-    <Text Include="..\..\Build\Parts\BorderBitmap\SpindleLayout-BorderBitmap.txt">
-      <Filter>Build\Parts\BorderBitmap</Filter>
-    </Text>
     <Text Include="..\..\Build\Parts\DeepSeaDots\SpindleLayout-DeepSeaDots.txt">
       <Filter>Build\Parts\DeepSeaDots</Filter>
-    </Text>
-    <Text Include="..\..\Build\Parts\DYPP\SpindleLayout-DYPP.txt">
-      <Filter>Build\Parts\DYPP</Filter>
     </Text>
     <Text Include="..\..\Build\Parts\FullScreenRasterSweep\SpindleLayout-FullScreenRasterSweep.txt">
       <Filter>Build\Parts\FullScreenRasterSweep</Filter>
@@ -276,26 +240,11 @@
     <None Include="..\..\Build\Parts\BigDYPP\ASM\DISK-BigDYPP.asm">
       <Filter>Build\Parts\BigDYPP\ASM</Filter>
     </None>
-    <None Include="..\..\Build\Parts\BorderBitmap\ASM\BorderBitmap.asm">
-      <Filter>Build\Parts\BorderBitmap\ASM</Filter>
-    </None>
-    <None Include="..\..\Build\Parts\BorderBitmap\ASM\DISK-BorderBitmap.asm">
-      <Filter>Build\Parts\BorderBitmap\ASM</Filter>
-    </None>
     <None Include="..\..\Build\Parts\DeepSeaDots\ASM\DeepSeaDots.asm">
       <Filter>Build\Parts\DeepSeaDots\ASM</Filter>
     </None>
     <None Include="..\..\Build\Parts\DeepSeaDots\ASM\DISK-DeepSeaDots.asm">
       <Filter>Build\Parts\DeepSeaDots\ASM</Filter>
-    </None>
-    <None Include="..\..\Build\Parts\DYPP\ASM\DISK-DYPP.asm">
-      <Filter>Build\Parts\DYPP\ASM</Filter>
-    </None>
-    <None Include="..\..\Build\Parts\DYPP\ASM\DYPP.asm">
-      <Filter>Build\Parts\DYPP\ASM</Filter>
-    </None>
-    <None Include="..\..\Build\Parts\DYPP\ASM\DYPP-BitmapFade.asm">
-      <Filter>Build\Parts\DYPP\ASM</Filter>
     </None>
     <None Include="..\..\Build\Parts\FullScreenRasterSweep\ASM\DISK-FullScreenRasterSweep.asm">
       <Filter>Build\Parts\FullScreenRasterSweep\ASM</Filter>
@@ -360,9 +309,6 @@
     <None Include="..\..\Build\ThirdParty\NUDecrunchForward.asm">
       <Filter>Build\ThirdParty</Filter>
     </None>
-    <None Include="..\..\Build\Parts\BorderBitmap\Build-BorderBitmap.bat">
-      <Filter>Build\Parts\BorderBitmap</Filter>
-    </None>
     <None Include="..\..\Build\Parts\DeepSeaDots\Build-DeepSeaDots.bat">
       <Filter>Build\Parts\DeepSeaDots</Filter>
     </None>
@@ -371,9 +317,6 @@
     </None>
     <None Include="..\..\Build\Main\Build-Main.bat">
       <Filter>Build\Main</Filter>
-    </None>
-    <None Include="..\..\Build\Parts\DYPP\Build-DYPP.bat">
-      <Filter>Build\Parts\DYPP</Filter>
     </None>
     <None Include="..\..\Build\Parts\FullScreenRasterSweep\Build-FullScreenRasterSweep.bat">
       <Filter>Build\Parts\FullScreenRasterSweep</Filter>

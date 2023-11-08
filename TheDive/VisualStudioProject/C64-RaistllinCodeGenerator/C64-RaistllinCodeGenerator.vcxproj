@@ -157,14 +157,9 @@
   <ItemGroup>
     <ClCompile Include="Source\Common\CodeGen.cpp" />
     <ClCompile Include="Source\Common\Common.cpp" />
-    <ClCompile Include="Source\DemoParts\4x3FontConv.cpp" />
     <ClCompile Include="Source\DemoParts\BigDYPP.cpp" />
-    <ClCompile Include="Source\DemoParts\BorderBitmap.cpp" />
     <ClCompile Include="Source\Common\ImageConversion.cpp" />
     <ClCompile Include="Source\Common\SinTables.cpp" />
-    <ClCompile Include="Source\DemoParts\ChromeFont.cpp" />
-    <ClCompile Include="Source\DemoParts\DYPP-AnimTree.cpp" />
-    <ClCompile Include="Source\DemoParts\DYPP.cpp" />
     <ClCompile Include="Source\DemoParts\GPLogo.cpp" />
     <ClCompile Include="Source\DemoParts\Misc.cpp" />
     <ClCompile Include="Source\DemoParts\Quote.cpp" />
@@ -190,9 +185,7 @@
     <Text Include="..\..\Build\Main\SpindleLayout-TheDive.txt" />
     <Text Include="..\..\Build\Main\TheDiveDirArt.txt" />
     <Text Include="..\..\Build\Parts\BigDYPP\SpindleLayout-BigDYPP.txt" />
-    <Text Include="..\..\Build\Parts\BorderBitmap\SpindleLayout-BorderBitmap.txt" />
     <Text Include="..\..\Build\Parts\DeepSeaDots\SpindleLayout-DeepSeaDots.txt" />
-    <Text Include="..\..\Build\Parts\DYPP\SpindleLayout-DYPP.txt" />
     <Text Include="..\..\Build\Parts\FullScreenRasterSweep\SpindleLayout-FullScreenRasterSweep.txt" />
     <Text Include="..\..\Build\Parts\GPLogo\SpindleLayout-GPLogo.txt" />
     <Text Include="..\..\Build\Parts\RotateScroller\SpindleLayout-RotateScroller.txt" />
@@ -212,16 +205,9 @@
     <None Include="..\..\Build\Parts\BigDYPP\ASM\BigDYPP.asm" />
     <None Include="..\..\Build\Parts\BigDYPP\ASM\DISK-BigDYPP.asm" />
     <None Include="..\..\Build\Parts\BigDYPP\Build-BigDYPP.bat" />
-    <None Include="..\..\Build\Parts\BorderBitmap\ASM\BorderBitmap.asm" />
-    <None Include="..\..\Build\Parts\BorderBitmap\ASM\DISK-BorderBitmap.asm" />
-    <None Include="..\..\Build\Parts\BorderBitmap\Build-BorderBitmap.bat" />
     <None Include="..\..\Build\Parts\DeepSeaDots\ASM\DeepSeaDots.asm" />
     <None Include="..\..\Build\Parts\DeepSeaDots\ASM\DISK-DeepSeaDots.asm" />
     <None Include="..\..\Build\Parts\DeepSeaDots\Build-DeepSeaDots.bat" />
-    <None Include="..\..\Build\Parts\DYPP\ASM\DISK-DYPP.asm" />
-    <None Include="..\..\Build\Parts\DYPP\ASM\DYPP-BitmapFade.asm" />
-    <None Include="..\..\Build\Parts\DYPP\ASM\DYPP.asm" />
-    <None Include="..\..\Build\Parts\DYPP\Build-DYPP.bat" />
     <None Include="..\..\Build\Parts\FullScreenRasterSweep\ASM\DISK-FullScreenRasterSweep.asm" />
     <None Include="..\..\Build\Parts\FullScreenRasterSweep\ASM\FullScreenRasterSweep.asm" />
     <None Include="..\..\Build\Parts\FullScreenRasterSweep\Build-FullScreenRasterSweep.bat" />

@@ -3,6 +3,18 @@
 ===================================================
 
 
+Christmas Megademo (The Santas), https://csdb.dk/release/?id=198283
+------------
+
+To build and run it:-
+
+1) you'll need to open up ChristmasMegademo-TheSantas\TheSantas.sln.
+2) build and run that. It will output several intermediate files to the "Out" folder.
+3) from a VS commandline, call NMAKE from within the 6502 folder.
+4) This will generate the disk files into the D64 folder.
+
+===================================================
+
 Memento Mori (Genesis*Project), https://csdb.dk/release/?id=195841
 ------------
 

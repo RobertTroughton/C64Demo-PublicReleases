@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PC">
+      <UniqueIdentifier>{88fb2737-888e-4d39-bfe3-386f3687aa6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PC\Common">
+      <UniqueIdentifier>{34ca98c2-e5dd-49be-aabf-a00e7c9f81dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PC\Parts">
+      <UniqueIdentifier>{a88e9c92-3185-4b54-aacf-6ad00a4d6496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PC\ThirdParty">
+      <UniqueIdentifier>{ff45ec76-25c6-44ab-ac69-d6522d56d2c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PC\ThirdParty\FMT">
+      <UniqueIdentifier>{b874a66d-6021-45fd-a4dd-979b019f6a8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PC\ThirdParty\FMT\src">
+      <UniqueIdentifier>{cd393b7b-cfad-4e9d-a908-987ee80e8043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502">
+      <UniqueIdentifier>{35426306-9eca-4343-ae9d-e068896baad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Main">
+      <UniqueIdentifier>{9945251f-5886-45de-a2df-2e56eb6f0fd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts">
+      <UniqueIdentifier>{1f468b0f-4fdf-48a4-b88c-25694008b364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\AllBorderDYPP">
+      <UniqueIdentifier>{0a467c98-0c03-42bb-85bc-d403e2eb9af4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\VerticalSideBorderBitmap">
+      <UniqueIdentifier>{5d4a063f-84c4-486c-ae46-c501823ae26f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\RotatingGP">
+      <UniqueIdentifier>{73704a20-2e9a-4305-ae55-46d0d249ee95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\TurnDiskDYPP">
+      <UniqueIdentifier>{4a7acbaf-e103-443d-b7b2-e58cee81b761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\HorseMenPic">
+      <UniqueIdentifier>{3951de0f-0fb6-4efa-83a3-9f4e8c6ed082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\AllBorderDoubleDYPP">
+      <UniqueIdentifier>{6824948c-e16d-45f4-90c7-c0ce0783dd1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\RCTunnel">
+      <UniqueIdentifier>{86be602a-f105-42e7-ad7e-2b79f4bcbcf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\CircleScroller">
+      <UniqueIdentifier>{5bd729d8-a347-472a-a3d2-d8dc15e83bb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\BigScalingScroller">
+      <UniqueIdentifier>{d051a345-d7e7-40a5-915a-2b9df6b80499}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\PlotSkull">
+      <UniqueIdentifier>{44dd9267-d81d-4d36-baa3-f15a6ca9de41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\BigMMLogo">
+      <UniqueIdentifier>{3b56acdf-4180-4e85-8b3a-f778eec02dfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\Sparkle">
+      <UniqueIdentifier>{e3d3dc0d-2511-48db-b8d5-5614e1097275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\Quote">
+      <UniqueIdentifier>{6084ea7a-173c-4b08-8546-58f441e481c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\MCPlasma">
+      <UniqueIdentifier>{b25b0410-a83b-42bc-8c36-f3cfe709e0aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\Hourglass">
+      <UniqueIdentifier>{e0a3ac57-1fe5-4c9f-9ff4-bdebf314b852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\OdinQuote">
+      <UniqueIdentifier>{f6197af6-f070-4d91-b726-3389e01ed14e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6502\Parts\Presents">
+      <UniqueIdentifier>{8c5b5058-55c0-449c-93b1-5b8ab982e9f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PC\Common\GPImage.h">
+      <Filter>PC\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\Common\ImageConversion.h">
+      <Filter>PC\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\Common\SinTables.h">
+      <Filter>PC\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\Common\CodeGen.h">
+      <Filter>PC\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\Common\Common.h">
+      <Filter>PC\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\format.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\format-inl.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\locale.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\ostream.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\posix.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\printf.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\ranges.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\time.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\chrono.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\color.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\ThirdParty\FMT\core.h">
+      <Filter>PC\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\Main.h">
+      <Filter>PC</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PC\Common\ImageConversion.cpp">
+      <Filter>PC\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Common\SinTables.cpp">
+      <Filter>PC\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Common\CodeGen.cpp">
+      <Filter>PC\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Common\Common.cpp">
+      <Filter>PC\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Common\GPImage.cpp">
+      <Filter>PC\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\ThirdParty\FMT\src\format.cc">
+      <Filter>PC\ThirdParty\FMT\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\ThirdParty\FMT\src\posix.cc">
+      <Filter>PC\ThirdParty\FMT\src</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\SkullZoomer.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\SkullZoomer-PetMateOutput.c">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\VerticalSideBorderBitmap.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\AllBorderDYPP.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Main.cpp">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\RotatingGP.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\TurnDiskDYPP.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\AllBorderDoubleDYPP.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\SpriteTransitions.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\CircleScroller.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\BigScalingScroller.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\BigMMLogo.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\Quote.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Parts\SpritePlex.cpp">
+      <Filter>PC\Parts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="6502\Main\Main-BaseCode.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\Main-CommonDefines.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\Main-CommonMacros.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\SkullZoomer.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\Entry.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\MementoMori.sls">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Parts\AllBorderDYPP\AllBorderDYPP.asm">
+      <Filter>6502\Parts\AllBorderDYPP</Filter>
+    </None>
+    <None Include="6502\Parts\AllBorderDYPP\AllBorderDYPP.sls">
+      <Filter>6502\Parts\AllBorderDYPP</Filter>
+    </None>
+    <None Include="6502\Parts\AllBorderDYPP\DISK-AllBorderDYPP.asm">
+      <Filter>6502\Parts\AllBorderDYPP</Filter>
+    </None>
+    <None Include="6502\Parts\VerticalSideBorderBitmap\VerticalSideBorderBitmap.asm">
+      <Filter>6502\Parts\VerticalSideBorderBitmap</Filter>
+    </None>
+    <None Include="6502\Parts\VerticalSideBorderBitmap\VerticalSideBorderBitmap.sls">
+      <Filter>6502\Parts\VerticalSideBorderBitmap</Filter>
+    </None>
+    <None Include="6502\Parts\VerticalSideBorderBitmap\DISK-VerticalSideBorderBitmap.asm">
+      <Filter>6502\Parts\VerticalSideBorderBitmap</Filter>
+    </None>
+    <None Include="6502\makefile">
+      <Filter>6502</Filter>
+    </None>
+    <None Include="6502\Main\DISK-MementoMori-A.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\DISK-MementoMori-B.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Parts\RotatingGP\RotatingGP.sls">
+      <Filter>6502\Parts\RotatingGP</Filter>
+    </None>
+    <None Include="6502\Parts\RotatingGP\RotatingGP-LineCrunch-NoBadLines.asm">
+      <Filter>6502\Parts\RotatingGP</Filter>
+    </None>
+    <None Include="6502\Parts\RotatingGP\DISK-RotatingGP.asm">
+      <Filter>6502\Parts\RotatingGP</Filter>
+    </None>
+    <None Include="6502\Parts\RotatingGP\RotatingGP.asm">
+      <Filter>6502\Parts\RotatingGP</Filter>
+    </None>
+    <None Include="6502\Parts\TurnDiskDYPP\DISK-TurnDiskDYPP.asm">
+      <Filter>6502\Parts\TurnDiskDYPP</Filter>
+    </None>
+    <None Include="6502\Parts\TurnDiskDYPP\TurnDiskDYPP.asm">
+      <Filter>6502\Parts\TurnDiskDYPP</Filter>
+    </None>
+    <None Include="6502\Parts\TurnDiskDYPP\TurnDiskDYPP.sls">
+      <Filter>6502\Parts\TurnDiskDYPP</Filter>
+    </None>
+    <None Include="6502\Parts\HorseMenPic\HorseMenPic.asm">
+      <Filter>6502\Parts\HorseMenPic</Filter>
+    </None>
+    <None Include="6502\Parts\AllBorderDoubleDYPP\AllBorderDoubleDYPP.asm">
+      <Filter>6502\Parts\AllBorderDoubleDYPP</Filter>
+    </None>
+    <None Include="6502\Parts\AllBorderDoubleDYPP\AllBorderDoubleDYPP.sls">
+      <Filter>6502\Parts\AllBorderDoubleDYPP</Filter>
+    </None>
+    <None Include="6502\Parts\AllBorderDoubleDYPP\DISK-AllBorderDoubleDYPP.asm">
+      <Filter>6502\Parts\AllBorderDoubleDYPP</Filter>
+    </None>
+    <None Include="6502\Parts\RCTunnel\RCTunnel.asm">
+      <Filter>6502\Parts\RCTunnel</Filter>
+    </None>
+    <None Include="6502\Parts\RCTunnel\RCTunnel.sls">
+      <Filter>6502\Parts\RCTunnel</Filter>
+    </None>
+    <None Include="6502\Parts\RCTunnel\DISK-RCTunnel.asm">
+      <Filter>6502\Parts\RCTunnel</Filter>
+    </None>
+    <None Include="6502\Parts\RotatingGP\RotatingGP-Bitmap.asm">
+      <Filter>6502\Parts\RotatingGP</Filter>
+    </None>
+    <None Include="6502\Parts\CircleScroller\CircleScroller.sls">
+      <Filter>6502\Parts\CircleScroller</Filter>
+    </None>
+    <None Include="6502\Parts\CircleScroller\DISK-CircleScroller.asm">
+      <Filter>6502\Parts\CircleScroller</Filter>
+    </None>
+    <None Include="6502\Parts\CircleScroller\CircleScroller.asm">
+      <Filter>6502\Parts\CircleScroller</Filter>
+    </None>
+    <None Include="6502\Parts\BigScalingScroller\BigScalingScroller.sls">
+      <Filter>6502\Parts\BigScalingScroller</Filter>
+    </None>
+    <None Include="6502\Parts\BigScalingScroller\DISK-BigScalingScroller.asm">
+      <Filter>6502\Parts\BigScalingScroller</Filter>
+    </None>
+    <None Include="6502\Parts\BigScalingScroller\BigScalingScroller.asm">
+      <Filter>6502\Parts\BigScalingScroller</Filter>
+    </None>
+    <None Include="6502\Main\DISK-MementoMori-C.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Parts\RotatingGP\RotatingGP-Bitmap-FadeIn.asm">
+      <Filter>6502\Parts\RotatingGP</Filter>
+    </None>
+    <None Include="6502\Parts\RotatingGP\RotatingGP-Bitmap-FadeOut.asm">
+      <Filter>6502\Parts\RotatingGP</Filter>
+    </None>
+    <None Include="6502\Parts\PlotSkull\PlotSkull.asm">
+      <Filter>6502\Parts\PlotSkull</Filter>
+    </None>
+    <None Include="6502\Parts\PlotSkull\Preps.asm">
+      <Filter>6502\Parts\PlotSkull</Filter>
+    </None>
+    <None Include="6502\Parts\PlotSkull\PlotSkull.sls">
+      <Filter>6502\Parts\PlotSkull</Filter>
+    </None>
+    <None Include="6502\Parts\PlotSkull\DISK-PlotSkull.asm">
+      <Filter>6502\Parts\PlotSkull</Filter>
+    </None>
+    <None Include="6502\Parts\BigMMLogo\BigMMLogo.asm">
+      <Filter>6502\Parts\BigMMLogo</Filter>
+    </None>
+    <None Include="6502\Parts\BigMMLogo\BigMMLogo.sls">
+      <Filter>6502\Parts\BigMMLogo</Filter>
+    </None>
+    <None Include="6502\Parts\BigMMLogo\DISK-BigMMLogo.asm">
+      <Filter>6502\Parts\BigMMLogo</Filter>
+    </None>
+    <None Include="6502\Parts\Sparkle\Sparkle.asm">
+      <Filter>6502\Parts\Sparkle</Filter>
+    </None>
+    <None Include="6502\Parts\Quote\Quote.asm">
+      <Filter>6502\Parts\Quote</Filter>
+    </None>
+    <None Include="6502\Parts\MCPlasma\MCPlasma.asm">
+      <Filter>6502\Parts\MCPlasma</Filter>
+    </None>
+    <None Include="6502\Parts\MCPlasma\MCPlasma.sls">
+      <Filter>6502\Parts\MCPlasma</Filter>
+    </None>
+    <None Include="6502\Parts\MCPlasma\DISK-MCPlasma.asm">
+      <Filter>6502\Parts\MCPlasma</Filter>
+    </None>
+    <None Include="6502\Main\Entry-WithSkullZoomer.asm">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Parts\AllBorderDYPP\AllBorderDYPP-CommonDefines.asm">
+      <Filter>6502\Parts\AllBorderDYPP</Filter>
+    </None>
+    <None Include="6502\Parts\Hourglass\Hourglass.asm">
+      <Filter>6502\Parts\Hourglass</Filter>
+    </None>
+    <None Include="6502\Parts\Hourglass\Hourglass.sls">
+      <Filter>6502\Parts\Hourglass</Filter>
+    </None>
+    <None Include="6502\Parts\Hourglass\DISK-Hourglass.asm">
+      <Filter>6502\Parts\Hourglass</Filter>
+    </None>
+    <None Include="6502\Parts\OdinQuote\OdinQuote.asm">
+      <Filter>6502\Parts\OdinQuote</Filter>
+    </None>
+    <None Include="6502\Parts\Presents\Presents.asm">
+      <Filter>6502\Parts\Presents</Filter>
+    </None>
+    <None Include="6502\Parts\AllBorderDoubleDYPP\AllBorderDoubleDYPP-JustRasters.asm">
+      <Filter>6502\Parts\AllBorderDoubleDYPP</Filter>
+    </None>
+    <None Include="6502\Main\MementoMori1.spindle">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\MementoMori2.spindle">
+      <Filter>6502\Main</Filter>
+    </None>
+    <None Include="6502\Main\MementoMori3.spindle">
+      <Filter>6502\Main</Filter>
+    </None>
+  </ItemGroup>
+</Project>

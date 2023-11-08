@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PC\Common\CodeGen.h" />
+    <ClInclude Include="PC\Common\Common.h" />
+    <ClInclude Include="PC\Common\GPImage.h" />
+    <ClInclude Include="PC\Common\ImageConversion.h" />
+    <ClInclude Include="PC\Common\SinTables.h" />
+    <ClInclude Include="PC\Main.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\chrono.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\color.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\core.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\format-inl.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\format.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\locale.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\ostream.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\posix.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\printf.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\ranges.h" />
+    <ClInclude Include="PC\ThirdParty\FMT\time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PC\Common\CodeGen.cpp" />
+    <ClCompile Include="PC\Common\Common.cpp" />
+    <ClCompile Include="PC\Common\GPImage.cpp" />
+    <ClCompile Include="PC\Common\ImageConversion.cpp" />
+    <ClCompile Include="PC\Common\SinTables.cpp" />
+    <ClCompile Include="PC\Main.cpp" />
+    <ClCompile Include="PC\Parts\SpritePlex.cpp" />
+    <ClCompile Include="PC\Parts\AllBorderDoubleDYPP.cpp" />
+    <ClCompile Include="PC\Parts\AllBorderDYPP.cpp" />
+    <ClCompile Include="PC\Parts\BigMMLogo.cpp" />
+    <ClCompile Include="PC\Parts\BigScalingScroller.cpp" />
+    <ClCompile Include="PC\Parts\CircleScroller.cpp" />
+    <ClCompile Include="PC\Parts\Quote.cpp" />
+    <ClCompile Include="PC\Parts\RotatingGP.cpp" />
+    <ClCompile Include="PC\Parts\SkullZoomer-PetMateOutput.c" />
+    <ClCompile Include="PC\Parts\SkullZoomer.cpp" />
+    <ClCompile Include="PC\Parts\SpriteTransitions.cpp" />
+    <ClCompile Include="PC\Parts\TurnDiskDYPP.cpp" />
+    <ClCompile Include="PC\Parts\VerticalSideBorderBitmap.cpp" />
+    <ClCompile Include="PC\ThirdParty\FMT\src\format.cc" />
+    <ClCompile Include="PC\ThirdParty\FMT\src\posix.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="6502\Main\DISK-MementoMori-A.asm" />
+    <None Include="6502\Main\DISK-MementoMori-B.asm" />
+    <None Include="6502\Main\DISK-MementoMori-C.asm" />
+    <None Include="6502\Main\Entry-WithSkullZoomer.asm" />
+    <None Include="6502\Main\Entry.asm" />
+    <None Include="6502\Main\Main-BaseCode.asm" />
+    <None Include="6502\Main\Main-CommonDefines.asm" />
+    <None Include="6502\Main\Main-CommonMacros.asm" />
+    <None Include="6502\Main\MementoMori.sls" />
+    <None Include="6502\Main\MementoMori1.spindle" />
+    <None Include="6502\Main\MementoMori2.spindle" />
+    <None Include="6502\Main\MementoMori3.spindle" />
+    <None Include="6502\Main\SkullZoomer.asm" />
+    <None Include="6502\makefile" />
+    <None Include="6502\Parts\AllBorderDoubleDYPP\AllBorderDoubleDYPP-JustRasters.asm" />
+    <None Include="6502\Parts\AllBorderDoubleDYPP\AllBorderDoubleDYPP.asm" />
+    <None Include="6502\Parts\AllBorderDoubleDYPP\AllBorderDoubleDYPP.sls" />
+    <None Include="6502\Parts\AllBorderDoubleDYPP\DISK-AllBorderDoubleDYPP.asm" />
+    <None Include="6502\Parts\AllBorderDYPP\AllBorderDYPP-CommonDefines.asm" />
+    <None Include="6502\Parts\AllBorderDYPP\AllBorderDYPP.asm" />
+    <None Include="6502\Parts\AllBorderDYPP\AllBorderDYPP.sls" />
+    <None Include="6502\Parts\AllBorderDYPP\DISK-AllBorderDYPP.asm" />
+    <None Include="6502\Parts\BigMMLogo\BigMMLogo.asm" />
+    <None Include="6502\Parts\BigMMLogo\BigMMLogo.sls" />
+    <None Include="6502\Parts\BigMMLogo\DISK-BigMMLogo.asm" />
+    <None Include="6502\Parts\BigScalingScroller\BigScalingScroller.asm" />
+    <None Include="6502\Parts\BigScalingScroller\BigScalingScroller.sls" />
+    <None Include="6502\Parts\BigScalingScroller\DISK-BigScalingScroller.asm" />
+    <None Include="6502\Parts\CircleScroller\CircleScroller.asm" />
+    <None Include="6502\Parts\CircleScroller\CircleScroller.sls" />
+    <None Include="6502\Parts\CircleScroller\DISK-CircleScroller.asm" />
+    <None Include="6502\Parts\HorseMenPic\HorseMenPic.asm" />
+    <None Include="6502\Parts\Hourglass\DISK-Hourglass.asm" />
+    <None Include="6502\Parts\Hourglass\Hourglass.asm" />
+    <None Include="6502\Parts\Hourglass\Hourglass.sls" />
+    <None Include="6502\Parts\MCPlasma\DISK-MCPlasma.asm" />
+    <None Include="6502\Parts\MCPlasma\MCPlasma.asm" />
+    <None Include="6502\Parts\MCPlasma\MCPlasma.sls" />
+    <None Include="6502\Parts\OdinQuote\OdinQuote.asm" />
+    <None Include="6502\Parts\PlotSkull\DISK-PlotSkull.asm" />
+    <None Include="6502\Parts\PlotSkull\PlotSkull.asm" />
+    <None Include="6502\Parts\PlotSkull\PlotSkull.sls" />
+    <None Include="6502\Parts\PlotSkull\Preps.asm" />
+    <None Include="6502\Parts\Presents\Presents.asm" />
+    <None Include="6502\Parts\Quote\Quote.asm" />
+    <None Include="6502\Parts\RCTunnel\DISK-RCTunnel.asm" />
+    <None Include="6502\Parts\RCTunnel\RCTunnel.asm" />
+    <None Include="6502\Parts\RCTunnel\RCTunnel.sls" />
+    <None Include="6502\Parts\RotatingGP\DISK-RotatingGP.asm" />
+    <None Include="6502\Parts\RotatingGP\RotatingGP-Bitmap-FadeIn.asm" />
+    <None Include="6502\Parts\RotatingGP\RotatingGP-Bitmap-FadeOut.asm" />
+    <None Include="6502\Parts\RotatingGP\RotatingGP-Bitmap.asm" />
+    <None Include="6502\Parts\RotatingGP\RotatingGP-LineCrunch-NoBadLines.asm" />
+    <None Include="6502\Parts\RotatingGP\RotatingGP.asm" />
+    <None Include="6502\Parts\RotatingGP\RotatingGP.sls" />
+    <None Include="6502\Parts\Sparkle\Sparkle.asm" />
+    <None Include="6502\Parts\TurnDiskDYPP\DISK-TurnDiskDYPP.asm" />
+    <None Include="6502\Parts\TurnDiskDYPP\TurnDiskDYPP.asm" />
+    <None Include="6502\Parts\TurnDiskDYPP\TurnDiskDYPP.sls" />
+    <None Include="6502\Parts\VerticalSideBorderBitmap\DISK-VerticalSideBorderBitmap.asm" />
+    <None Include="6502\Parts\VerticalSideBorderBitmap\VerticalSideBorderBitmap.asm" />
+    <None Include="6502\Parts\VerticalSideBorderBitmap\VerticalSideBorderBitmap.sls" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3A7C3A54-1B33-45E1-97DB-3BC491CA2062}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>MementoMori</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Out\VisualStudio\</OutDir>
+    <IntDir>$(SolutionDir)Out\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Out\VisualStudio\</OutDir>
+    <IntDir>$(SolutionDir)Out\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Out\VisualStudio\</OutDir>
+    <IntDir>$(SolutionDir)Out\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)Out\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)Out\VisualStudio\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>PC\ThirdParty</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;winmm.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>PC\ThirdParty</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

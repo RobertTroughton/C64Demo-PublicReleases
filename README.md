@@ -3,7 +3,7 @@
 ===================================================
 
 
-Memento Mori
+Memento Mori (Genesis*Project), https://csdb.dk/release/?id=195841
 ------------
 
 To build and run it:-
@@ -26,7 +26,7 @@ To build and run it:-
 
 ===================================================
 
-X Marks The Spot
+X Marks The Spot (Genesis*Project), https://csdb.dk/release/?id=170919
 ----------------
 
 To build and run it:-
@@ -37,7 +37,7 @@ To build and run it:-
 
 ===================================================
 
-Delirious 11
+Delirious 11 (Genesis*Project), https://csdb.dk/release/?id=165911
 ------------
 
 1) you'll need to open up Delirious11\VisualStudioProject\C64-RaistlinCodeGenerator.sln.

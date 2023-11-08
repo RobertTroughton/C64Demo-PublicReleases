@@ -4,12 +4,8 @@ cd main
 call Build-Main.bat -unattended
 cd ..\Parts\BigDYPP
 call Build-BigDYPP.bat -unattended
-cd ..\BorderBitmap
-call Build-BorderBitmap.bat -unattended
 cd ..\DeepSeaDots
 call Build-DeepSeaDots.bat -unattended
-cd ..\DYPP
-call Build-DYPP.bat -unattended
 cd ..\FullScreenRasterSweep
 call Build-FullScreenRasterSweep.bat -unattended
 cd ..\GPLogo

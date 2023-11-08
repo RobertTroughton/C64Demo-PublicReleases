@@ -1,0 +1,7 @@
+[package]
+name = "nucrunch"
+version = "1.0.1"  # keep this in sync with Makefile and mkbinaries.sh
+authors = ["Christopher Phillips <shrydar@jaruth.com>"]
+
+[dependencies]
+clap = "2.31"

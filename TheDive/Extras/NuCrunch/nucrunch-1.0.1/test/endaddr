@@ -1,0 +1,7 @@
+#!/usr/bin/python
+from __future__ import print_function
+from sys import argv
+from struct import unpack
+data=open(argv[1],'rb').read()
+addr=unpack('<h',data[:2])[0]
+print("$%04x"%(addr+len(data)-2))

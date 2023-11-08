@@ -1,0 +1,12 @@
+#MAINENTRY
+..\..\..\Intermediate\KickAss\FullScreenRasterSweep\Entry.prg 0200 2
+
+#MAIN-BASECODE
+..\..\..\Intermediate\KickAss\FullScreenRasterSweep\Main-BaseCode.prg 0f00 2
+..\..\..\Music\Stinsen-Alla.sid 1000 7e
+
+#MAIN-DISK1
+..\..\..\Intermediate\KickAss\FullScreenRasterSweep\DISK-FullScreenRasterSweep.prg 0800 2
+
+#FULLSCREENRASTERSWEEP
+..\..\..\Intermediate\KickAss\FullScreenRasterSweep\FullScreenRasterSweep.prg 0600 2

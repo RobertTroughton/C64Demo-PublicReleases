@@ -1,0 +1,19 @@
+#MAINENTRY
+..\..\..\Intermediate\KickAss\RotateScroller\Entry.prg 0200 2
+
+#MAIN-BASECODE
+..\..\..\Intermediate\KickAss\RotateScroller\Main-BaseCode.prg 0f00 2
+..\..\..\Music\Drax-FadeIn.sid 1000 7e
+
+#MAIN-DISK1
+..\..\..\Intermediate\KickAss\RotateScroller\DISK-RotateScroller.prg 0800 2
+
+#ROTATESCROLLER
+..\..\..\Intermediate\KickAss\RotateScroller\RotateScroller.prg 2a00 2
+Data\sea.map 4000
+..\..\..\Intermediate\Built\RotateScroller\Font.bin 6000
+Data\sea.scr 6800
+Data\fish.map 6c00
+Data\sea.col 7000
+Data\columndata.bin 7400
+..\..\..\Intermediate\KickAss\RotateScroller\RotateScroller-UnrolledCode.prg e000 2

@@ -1,0 +1,14 @@
+#MAINENTRY
+..\..\..\Intermediate\KickAss\SpinnyShapes\Entry.prg 0200 2
+
+#MAIN-BASECODE
+..\..\..\Intermediate\KickAss\SpinnyShapes\Main-BaseCode.prg 0f00 2
+..\..\..\Music\Drax-FadeIn.sid 1000 7e
+
+#MAIN-DISK1
+..\..\..\Intermediate\KickAss\SpinnyShapes\DISK-SpinnyShapes.prg 0800 2
+
+#SPINNYSHAPES
+..\..\..\Intermediate\KickAss\SpinnyShapes\SpinnyShapes.prg 2a00 2
+Data\BubbleScreen.bin 7400
+Data\Sprites.bin 4000 2

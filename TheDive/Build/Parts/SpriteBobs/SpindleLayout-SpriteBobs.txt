@@ -1,0 +1,16 @@
+#MAINENTRY
+..\..\..\Intermediate\KickAss\SpriteBobs\Entry.prg 0200 2
+
+#MAIN-BASECODE
+..\..\..\Intermediate\KickAss\SpriteBobs\Main-BaseCode.prg 0f00 2
+..\..\..\Music\Dive.sid 1000 7e
+
+#MAIN-DISK1
+..\..\..\Intermediate\KickAss\SpriteBobs\DISK-SpriteBobs.prg 0800 2
+
+#SPRITEBOBS
+..\..\..\Intermediate\KickAss\SpriteBobs\SpriteBobs.prg 2a00 2
+Data\Facet-Octopus.kla c000 2 1f40
+Data\Facet-Octopus.kla e000 1f42 3e8
+Data\Facet-Octopus.kla d800! 232a 3e8
+..\..\..\Intermediate\Built\SpriteBobs\FadeSprites.map e400

@@ -1,0 +1,19 @@
+#MAINENTRY
+..\..\..\Intermediate\KickAss\SideBorderBitmap\Entry.prg 0200 2
+
+#MAIN-BASECODE
+..\..\..\Intermediate\KickAss\SideBorderBitmap\Main-BaseCode.prg 0f00 2
+..\..\..\Music\Psycho8580-CrockettsTheme.sid 1000 7e
+
+#MAIN-DISK1
+..\..\..\Intermediate\KickAss\SideBorderBitmap\DISK-SideBorderBitmap.prg 0800 2
+
+#SBB
+..\..\..\Intermediate\KickAss\SideBorderBitmap\SideBorderBitmap.prg 8000 2
+Data\bitmap.kla 6000 2 1f40
+Data\bitmap.kla e000 1f42 3e8
+Data\bitmap.kla e400 232a 3e8
+..\..\..\Intermediate\Built\SideBorderBitmap\Scrolltext.bin f000
+..\..\..\Intermediate\Built\SideBorderBitmap\sintable.bin 3c00
+..\..\..\Intermediate\Built\SideBorderBitmap\sidebordersprites-interleaved.map 4000
+

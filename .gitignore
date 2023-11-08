@@ -1,0 +1,13 @@
+*.suo
+*.db
+*.opendb
+*.user
+*.ipch
+*.PVS-Studio.*
+out.def
+**/Intermediate
+**/Out
+**/.vs
+**/vstudio/Debug
+**/vstudio/release
+*.o

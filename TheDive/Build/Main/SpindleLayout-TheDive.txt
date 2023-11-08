@@ -1,0 +1,111 @@
+#MAINENTRY
+..\..\Intermediate\KickAss\Main\Entry.prg 0200 2
+
+#MAIN-BASECODE
+..\..\Intermediate\KickAss\ThirdParty\NUDecrunchReverse.prg 0a00 2
+..\..\Intermediate\KickAss\Main\Main-BaseCode.prg 0f00 2
+..\..\Music\Dive.sid 1000 7e
+
+#MAIN-DISK1
+..\..\Intermediate\KickAss\Main\DISK-TheDive.prg 0800 2
+
+#WAVEFADE
+..\..\Intermediate\KickAss\Main\Parts\WaveFade.prg 8000 2
+..\Parts\WaveFade\Data\WaveSprites.map a000
+
+#QUOTE
+..\..\Intermediate\KickAss\Main\Parts\Quote.prg 2a00 2
+..\..\Intermediate\KickAss\Main\Parts\FullScreenRasterSweep.prg 0600 2
+
+#VERTBITMAP
+..\..\Intermediate\Built\VertBitmap\InitialSpriteLogos.bin 5000 0 e00
+..\..\Intermediate\Built\VertBitmap\SpriteXSinTables.bin 4000
+..\..\Intermediate\Built\VertBitmap\BitmapScrollData.bin 8000
+..\..\Intermediate\KickAss\Main\Parts\VertBitmap.prg a800 2
+
+#VERTBITMAP-LOGO2
+..\..\Intermediate\Built\VertBitmap\InitialSpriteLogos.bin 5000 0e00 e00
+
+#VERTBITMAP-LOGO3
+..\Parts\VertBitmap\Data\Dive.col d800! 0 3e8
+..\Parts\VertBitmap\Data\Dive.scr 4c00 0 3e8
+..\Parts\VertBitmap\Data\Dive.map 6000 0 1f40
+..\..\Intermediate\Built\VertBitmap\InitialSpriteLogos.bin 5000 1c00 e00
+
+#ROTATESCROLLER-PRELOAD
+..\..\Intermediate\KickAss\Main\Parts\RotateScroller.prg 2a00 2
+..\..\Intermediate\Built\RotateScroller\Font.bin 6000
+..\Parts\RotateScroller\Data\sea.scr 6800
+..\Parts\RotateScroller\Data\fish.map 6c00
+..\Parts\RotateScroller\Data\sea.col 7000
+..\..\Intermediate\KickAss\Main\Parts\RotateScroller-UnrolledCode.prg e000 2
+
+#ROTATESCROLLER
+..\Parts\RotateScroller\Data\columndata.bin 7400
+..\Parts\RotateScroller\Data\sea.map 4000
+
+#SPINNYSHAPES
+..\..\Intermediate\KickAss\Main\Parts\SpinnyShapes.prg 2a00 2
+..\Parts\SpinnyShapes\Data\Sprites.bin 4000 2
+..\Parts\SpinnyShapes\Data\BubbleScreen.bin 7400
+
+#SPRITEBOBS-PRELOAD
+..\Parts\SpriteBobs\Data\Facet-Octopus.kla c000 2 1f40
+..\Parts\SpriteBobs\Data\Facet-Octopus.kla e000 1f42 3e8
+..\..\Intermediate\Built\SpriteBobs\FadeSprites.map e400
+
+#SPRITEBOBS
+..\..\Intermediate\KickAss\Main\Parts\SpriteBobs.prg 2a00 2
+..\Parts\SpriteBobs\Data\Facet-Octopus.kla d800! 232a 3e8
+
+#DEEPSEADOTS
+..\..\Intermediate\KickAss\Main\Parts\DeepSeaDots.prg e000 2
+..\Parts\DeepSeaDots\Data\creature1.map 6400 0 800
+..\Parts\DeepSeaDots\Data\creature2.map 6c00 0 400
+..\Parts\DeepSeaDots\Data\creature3.map 7000 0 400
+..\Parts\DeepSeaDots\Data\creature4.map 7400 0 800
+..\Parts\DeepSeaDots\Data\creature5.map 7c00 0 400
+..\Parts\DeepSeaDots\Data\bubblesprites.bin 5f40 2
+
+#SBB-PRELOAD
+..\..\Intermediate\KickAss\Main\Parts\SideBorderBitmap.prg 8000 2
+
+#SBB
+..\Parts\SideBorderBitmap\Data\bitmap.kla 6000 2 1f40
+..\Parts\SideBorderBitmap\Data\bitmap.kla e000 1f42 3e8
+..\Parts\SideBorderBitmap\Data\bitmap.kla e400 232a 3e8
+..\..\Intermediate\Built\SideBorderBitmap\sintable.bin 3c00
+..\..\Intermediate\Built\SideBorderBitmap\sidebordersprites-interleaved.map 4000
+..\..\Intermediate\Built\SideBorderBitmap\Scrolltext.bin f000
+
+#BIGDYPP-PRELOAD
+..\..\Intermediate\KickAss\Main\Parts\BigDYPP.prg 2a00 2
+..\..\Intermediate\Built\BigDYPP\Font4.map a800
+..\..\Intermediate\Built\BigDYPP\Font5.map b000
+..\..\Intermediate\Built\BigDYPP\Font0.map c000
+..\..\Intermediate\Built\BigDYPP\Font1.map c800
+..\..\Intermediate\Built\BigDYPP\Font2.map d000
+..\..\Intermediate\Built\BigDYPP\Font3.map d800
+..\..\Intermediate\Built\BigDYPP\ScrollTextUnrolled.bin fc00
+
+#STARWARS
+..\..\Intermediate\Compressed\SW-Plot.nuc 2dc0 2
+..\..\Intermediate\Built\StarWars\SW-RemappedFont.bin c200
+..\..\Intermediate\Built\StarWars\SW-ScrollText.bin bb00
+..\..\Intermediate\Built\StarWars\SW-WaterSinWave.bin c100
+
+#ENDTUNE
+..\..\Music\Deek-Endtune.sid 1000 7e
+..\..\Intermediate\KickAss\Main\Parts\StarWars.prg 2800 2
+..\..\Intermediate\Built\StarWars\SW-FadeYSinWave.bin 2400
+
+#GPLOGO
+..\..\Intermediate\KickAss\Main\Parts\GPLogo.prg 4000 2
+..\..\Intermediate\Built\GPLogo\Ksubi-16x16-ALLCHARS-Inverted.imap ac00
+..\..\Intermediate\Built\GPLogo\UnrolledScrollText.bin b000
+..\..\Intermediate\Built\GPLogo\Shine-GPBoat.kla c000 2 1c00
+..\..\Intermediate\Built\GPLogo\Ksubi-16x16-ALLCHARS-Inverted.imap dc00
+..\..\Intermediate\Built\GPLogo\FishAnim2x2.map e400
+..\..\Intermediate\Built\GPLogo\FishSineWavesSpriteVal.bin f000
+..\..\Intermediate\Built\GPLogo\FishSineWavesX.bin f200
+..\..\Intermediate\Built\GPLogo\FishSineWavesY.bin f400

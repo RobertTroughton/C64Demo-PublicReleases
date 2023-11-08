@@ -1,0 +1,18 @@
+#MAINENTRY
+..\..\..\Intermediate\KickAss\DeepSeaDots\Entry.prg 0200 2
+
+#MAIN-BASECODE
+..\..\..\Intermediate\KickAss\DeepSeaDots\Main-BaseCode.prg 0f00 2
+..\..\..\Music\Stinsen-Alla.sid 1000 7e
+
+#MAIN-DISK1
+..\..\..\Intermediate\KickAss\DeepSeaDots\DISK-DeepSeaDots.prg 0800 2
+
+#DEEPSEADOTS
+..\..\..\Intermediate\KickAss\DeepSeaDots\DeepSeaDots.prg e000 2
+Data\creature1.map 6400 0 800
+Data\creature2.map 6c00 0 400
+Data\creature3.map 7000 0 400
+Data\creature4.map 7400 0 800
+Data\creature5.map 7c00 0 400
+Data\bubblesprites.bin 5f40 2

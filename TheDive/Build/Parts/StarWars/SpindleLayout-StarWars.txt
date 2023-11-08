@@ -1,0 +1,18 @@
+#MAINENTRY
+..\..\..\Intermediate\KickAss\StarWars\Entry.prg 0200 2
+
+#MAIN-BASECODE
+..\..\..\Intermediate\KickAss\StarWars\NUDecrunchReverse.prg 0a00 2
+..\..\..\Intermediate\KickAss\StarWars\Main-BaseCode.prg 0f00 2
+..\..\..\Music\Drax-FadeIn.sid 1000 7e
+
+#MAIN-DISK1
+..\..\..\Intermediate\KickAss\StarWars\DISK-StarWars.prg 0800 2
+
+#STARWARS
+..\..\..\Intermediate\Compressed\SW-Plot.nuc 2dc0 2
+..\..\..\Intermediate\KickAss\StarWars\StarWars.prg 2800 2
+..\..\..\Intermediate\Built\StarWars\SW-RemappedFont.bin c200
+..\..\..\Intermediate\Built\StarWars\SW-ScrollText.bin bb00
+..\..\..\Intermediate\Built\StarWars\SW-WaterSinWave.bin c100
+..\..\..\Intermediate\Built\StarWars\SW-FadeYSinWave.bin 2400

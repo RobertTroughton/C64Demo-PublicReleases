@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3A7C3A54-1B33-45E1-97DB-3BC491CA2062}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>TheDive</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)</OutDir>
+    <IntDir>$(SolutionDir)..\Intermediate\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)</OutDir>
+    <IntDir>$(SolutionDir)..\Intermediate\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)</OutDir>
+    <IntDir>$(SolutionDir)..\Intermediate\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)</OutDir>
+    <IntDir>$(SolutionDir)..\Intermediate\VisualStudio\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Source\ThirdParty</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Source\ThirdParty</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Source\ThirdParty</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Source\ThirdParty</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Common\CodeGen.cpp" />
+    <ClCompile Include="Source\Common\Common.cpp" />
+    <ClCompile Include="Source\DemoParts\4x3FontConv.cpp" />
+    <ClCompile Include="Source\DemoParts\BigDYPP.cpp" />
+    <ClCompile Include="Source\DemoParts\BorderBitmap.cpp" />
+    <ClCompile Include="Source\Common\ImageConversion.cpp" />
+    <ClCompile Include="Source\Common\SinTables.cpp" />
+    <ClCompile Include="Source\DemoParts\ChromeFont.cpp" />
+    <ClCompile Include="Source\DemoParts\DYPP-AnimTree.cpp" />
+    <ClCompile Include="Source\DemoParts\DYPP.cpp" />
+    <ClCompile Include="Source\DemoParts\GPLogo.cpp" />
+    <ClCompile Include="Source\DemoParts\Misc.cpp" />
+    <ClCompile Include="Source\DemoParts\Quote.cpp" />
+    <ClCompile Include="Source\DemoParts\RotateScroller.cpp" />
+    <ClCompile Include="Source\DemoParts\SideBorderBitmap.cpp" />
+    <ClCompile Include="Source\DemoParts\StarWars.cpp" />
+    <ClCompile Include="Source\DemoParts\VertBitmap.cpp" />
+    <ClCompile Include="Source\DemoParts\Waves.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\DemoParts\SpriteBobs.cpp" />
+    <ClCompile Include="Source\ThirdParty\FMT\src\format.cc" />
+    <ClCompile Include="Source\ThirdParty\FMT\src\posix.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Common\CodeGen.h" />
+    <ClInclude Include="Source\Common\Common.h" />
+    <ClInclude Include="Source\Common\ImageConversion.h" />
+    <ClInclude Include="Source\Main.h" />
+    <ClInclude Include="Source\Common\SinTables.h" />
+    <ClInclude Include="Source\ThirdParty\CImg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\Build\Main\SpindleLayout-TheDive.txt" />
+    <Text Include="..\..\Build\Main\TheDiveDirArt.txt" />
+    <Text Include="..\..\Build\Parts\BigDYPP\SpindleLayout-BigDYPP.txt" />
+    <Text Include="..\..\Build\Parts\BorderBitmap\SpindleLayout-BorderBitmap.txt" />
+    <Text Include="..\..\Build\Parts\DeepSeaDots\SpindleLayout-DeepSeaDots.txt" />
+    <Text Include="..\..\Build\Parts\DYPP\SpindleLayout-DYPP.txt" />
+    <Text Include="..\..\Build\Parts\FullScreenRasterSweep\SpindleLayout-FullScreenRasterSweep.txt" />
+    <Text Include="..\..\Build\Parts\GPLogo\SpindleLayout-GPLogo.txt" />
+    <Text Include="..\..\Build\Parts\RotateScroller\SpindleLayout-RotateScroller.txt" />
+    <Text Include="..\..\Build\Parts\SideBorderBitmap\SpindleLayout-SideBorderBitmap.txt" />
+    <Text Include="..\..\Build\Parts\SpinnyShapes\SpindleLayout-SpinnyShapes.txt" />
+    <Text Include="..\..\Build\Parts\SpriteBobs\SpindleLayout-SpriteBobs.txt" />
+    <Text Include="..\..\Build\Parts\StarWars\SpindleLayout-StarWars.txt" />
+    <Text Include="..\..\Build\Parts\VertBitmap\SpindleLayout-VertBitmap.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Build\Main\ASM\DISK-TheDive.asm" />
+    <None Include="..\..\Build\Main\ASM\Entry.asm" />
+    <None Include="..\..\Build\Main\ASM\Main-BaseCode.asm" />
+    <None Include="..\..\Build\Main\ASM\Main-CommonDefines.asm" />
+    <None Include="..\..\Build\Main\ASM\Main-CommonMacros.asm" />
+    <None Include="..\..\Build\Main\Build-Main.bat" />
+    <None Include="..\..\Build\Parts\BigDYPP\ASM\BigDYPP.asm" />
+    <None Include="..\..\Build\Parts\BigDYPP\ASM\DISK-BigDYPP.asm" />
+    <None Include="..\..\Build\Parts\BigDYPP\Build-BigDYPP.bat" />
+    <None Include="..\..\Build\Parts\BorderBitmap\ASM\BorderBitmap.asm" />
+    <None Include="..\..\Build\Parts\BorderBitmap\ASM\DISK-BorderBitmap.asm" />
+    <None Include="..\..\Build\Parts\BorderBitmap\Build-BorderBitmap.bat" />
+    <None Include="..\..\Build\Parts\DeepSeaDots\ASM\DeepSeaDots.asm" />
+    <None Include="..\..\Build\Parts\DeepSeaDots\ASM\DISK-DeepSeaDots.asm" />
+    <None Include="..\..\Build\Parts\DeepSeaDots\Build-DeepSeaDots.bat" />
+    <None Include="..\..\Build\Parts\DYPP\ASM\DISK-DYPP.asm" />
+    <None Include="..\..\Build\Parts\DYPP\ASM\DYPP-BitmapFade.asm" />
+    <None Include="..\..\Build\Parts\DYPP\ASM\DYPP.asm" />
+    <None Include="..\..\Build\Parts\DYPP\Build-DYPP.bat" />
+    <None Include="..\..\Build\Parts\FullScreenRasterSweep\ASM\DISK-FullScreenRasterSweep.asm" />
+    <None Include="..\..\Build\Parts\FullScreenRasterSweep\ASM\FullScreenRasterSweep.asm" />
+    <None Include="..\..\Build\Parts\FullScreenRasterSweep\Build-FullScreenRasterSweep.bat" />
+    <None Include="..\..\Build\Parts\GPLogo\ASM\DISK-GPLogo.asm" />
+    <None Include="..\..\Build\Parts\GPLogo\ASM\GPLogo.asm" />
+    <None Include="..\..\Build\Parts\GPLogo\Build-GPLogo.bat" />
+    <None Include="..\..\Build\Parts\Quote\ASM\Quote.asm" />
+    <None Include="..\..\Build\Parts\RotateScroller\ASM\DISK-RotateScroller.asm" />
+    <None Include="..\..\Build\Parts\RotateScroller\ASM\RotateScroller-UnrolledCode.asm" />
+    <None Include="..\..\Build\Parts\RotateScroller\ASM\RotateScroller.asm" />
+    <None Include="..\..\Build\Parts\RotateScroller\Build-RotateScroller.bat" />
+    <None Include="..\..\Build\Parts\SideBorderBitmap\ASM\DISK-SideBorderBitmap.asm" />
+    <None Include="..\..\Build\Parts\SideBorderBitmap\ASM\SideBorderBitmap.asm" />
+    <None Include="..\..\Build\Parts\SideBorderBitmap\Build-SideBorderBitmap.bat" />
+    <None Include="..\..\Build\Parts\SpinnyShapes\ASM\DISK-SpinnyShapes.asm" />
+    <None Include="..\..\Build\Parts\SpinnyShapes\ASM\SpinnyShapes.asm" />
+    <None Include="..\..\Build\Parts\SpinnyShapes\Build-SpinnyShapes.bat" />
+    <None Include="..\..\Build\Parts\SpriteBobs\ASM\DISK-SpriteBobs.asm" />
+    <None Include="..\..\Build\Parts\SpriteBobs\ASM\SpriteBobs.asm" />
+    <None Include="..\..\Build\Parts\SpriteBobs\Build-SpriteBobs.bat" />
+    <None Include="..\..\Build\Parts\StarWars\ASM\DISK-StarWars.asm" />
+    <None Include="..\..\Build\Parts\StarWars\ASM\StarWars.asm" />
+    <None Include="..\..\Build\Parts\StarWars\Build-StarWars.bat" />
+    <None Include="..\..\Build\Parts\VertBitmap\ASM\DISK-VertBitmap.asm" />
+    <None Include="..\..\Build\Parts\VertBitmap\ASM\VertBitmap.asm" />
+    <None Include="..\..\Build\Parts\VertBitmap\Build-VertBitmap.bat" />
+    <None Include="..\..\Build\Parts\WaveFade\ASM\WaveFade.asm" />
+    <None Include="..\..\Build\ThirdParty\NUDecrunchForward.asm" />
+    <None Include="..\..\Build\ThirdParty\NUDecrunchReverse.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

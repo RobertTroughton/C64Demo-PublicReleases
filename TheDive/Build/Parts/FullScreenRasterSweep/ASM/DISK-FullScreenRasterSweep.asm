@@ -1,0 +1,29 @@
+//; (c) 2018-2019, Genesis*Project
+
+.import source "..\..\..\Main\ASM\Main-CommonDefines.asm"
+.import source "..\..\..\Main\ASM\Main-CommonMacros.asm"
+
+*= DISK_BASE "Disk Base"
+
+.var StarWarsNUC_EndOfMemory = $78b1 //; reverse decrunch ... this is LastByte + 1
+
+Entry:
+
+	//; BEGIN Setup
+		lda #$00
+		sta VIC_D011
+
+		jsr BASECODE_StartMusic
+	//; END Setup
+
+	//; FULL SCREEN RASTER SWEEP -------------------------------------------------------------------------------------------------------
+		jsr IRQLoader_LoadNext //; #FULLSCREENRASTERSWEEP
+
+		ldx #$0e
+		ldy #$03
+		jsr FullScreenRasterSweep_BASE
+	//; FULL SCREEN RASTER SWEEP -------------------------------------------------------------------------------------------------------
+
+	LoopForever:
+		jmp LoopForever
+

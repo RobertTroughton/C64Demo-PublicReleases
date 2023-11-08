@@ -1,0 +1,15 @@
+#MAINENTRY
+..\..\..\Intermediate\KickAss\DYPP\Entry.prg 0200 2
+
+#MAIN-BASECODE
+..\..\..\Intermediate\KickAss\DYPP\Main-BaseCode.prg 0f00 2
+..\..\..\Music\MCH-GirlInTown.sid 1000 7e
+
+#MAIN-DISK1
+..\..\..\Intermediate\KickAss\DYPP\DISK-DYPP.prg 0800 2
+
+#DYPP
+..\..\..\Intermediate\KickAss\DYPP\DYPP.prg 2000 2
+..\..\..\Intermediate\Built\DYPP\FontPP.bin 8400
+..\..\..\Intermediate\Built\DYPP\Facet-Bonsai.map c000
+..\..\..\Intermediate\Built\DYPP\Facet-Bonsai-SplitColours.scr e800

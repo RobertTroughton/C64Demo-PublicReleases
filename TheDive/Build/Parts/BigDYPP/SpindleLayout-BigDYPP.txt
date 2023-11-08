@@ -1,0 +1,19 @@
+#MAINENTRY
+..\..\..\Intermediate\KickAss\BigDYPP\Entry.prg 0200 2
+
+#MAIN-BASECODE
+..\..\..\Intermediate\KickAss\BigDYPP\Main-BaseCode.prg 0f00 2
+..\..\..\Music\Stinsen-Alla.sid 1000 7e
+
+#MAIN-DISK1
+..\..\..\Intermediate\KickAss\BigDYPP\DISK-BigDYPP.prg 0800 2
+
+#BIGDYPP
+..\..\..\Intermediate\KickAss\BigDYPP\BigDYPP.prg 2a00 2
+..\..\..\Intermediate\Built\BigDYPP\Font0.map c000
+..\..\..\Intermediate\Built\BigDYPP\Font1.map c800
+..\..\..\Intermediate\Built\BigDYPP\Font2.map d000
+..\..\..\Intermediate\Built\BigDYPP\Font3.map d800
+..\..\..\Intermediate\Built\BigDYPP\Font4.map a800
+..\..\..\Intermediate\Built\BigDYPP\Font5.map b000
+..\..\..\Intermediate\Built\BigDYPP\ScrollTextUnrolled.bin fc00

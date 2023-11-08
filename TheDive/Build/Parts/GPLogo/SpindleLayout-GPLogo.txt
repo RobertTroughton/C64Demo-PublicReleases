@@ -1,0 +1,20 @@
+#MAINENTRY
+..\..\..\Intermediate\KickAss\GPLogo\Entry.prg 0200 2
+
+#MAIN-BASECODE
+..\..\..\Intermediate\KickAss\GPLogo\Main-BaseCode.prg 0f00 2
+..\..\..\Music\Dive.sid 1000 7e
+
+#MAIN-DISK1
+..\..\..\Intermediate\KickAss\GPLogo\DISK-GPLogo.prg 0800 2
+
+#GPLOGO
+..\..\..\Intermediate\KickAss\GPLogo\GPLogo.prg 4000 2
+..\..\..\Intermediate\Built\GPLogo\Ksubi-16x16-ALLCHARS-Inverted.imap ac00
+..\..\..\Intermediate\Built\GPLogo\UnrolledScrollText.bin b000
+..\..\..\Intermediate\Built\GPLogo\Shine-GPBoat.kla c000 2 1c00
+..\..\..\Intermediate\Built\GPLogo\Ksubi-16x16-ALLCHARS-Inverted.imap dc00
+..\..\..\Intermediate\Built\GPLogo\FishAnim2x2.map e400
+..\..\..\Intermediate\Built\GPLogo\FishSineWavesSpriteVal.bin f000
+..\..\..\Intermediate\Built\GPLogo\FishSineWavesX.bin f200
+..\..\..\Intermediate\Built\GPLogo\FishSineWavesY.bin f400

@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\DemoParts\SpriteBobs.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\Common.cpp">
+      <Filter>CodeGenerator\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\SinTables.cpp">
+      <Filter>CodeGenerator\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>CodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\ImageConversion.cpp">
+      <Filter>CodeGenerator\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\BorderBitmap.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\StarWars.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Common\CodeGen.cpp">
+      <Filter>CodeGenerator\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\BigDYPP.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\FMT\src\format.cc">
+      <Filter>CodeGenerator\ThirdParty\FMT\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ThirdParty\FMT\src\posix.cc">
+      <Filter>CodeGenerator\ThirdParty\FMT\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\DYPP.cpp">
+      <Filter>CodeGenerator\DemoParts\DYPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\DYPP-AnimTree.cpp">
+      <Filter>CodeGenerator\DemoParts\DYPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\4x3FontConv.cpp">
+      <Filter>CodeGenerator\DemoParts\DYPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\ChromeFont.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\SideBorderBitmap.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\VertBitmap.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\Waves.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\Quote.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\RotateScroller.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\Misc.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DemoParts\GPLogo.cpp">
+      <Filter>CodeGenerator\DemoParts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Common\Common.h">
+      <Filter>CodeGenerator\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\SinTables.h">
+      <Filter>CodeGenerator\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Main.h">
+      <Filter>CodeGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\ImageConversion.h">
+      <Filter>CodeGenerator\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ThirdParty\CImg.h">
+      <Filter>CodeGenerator\ThirdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Common\CodeGen.h">
+      <Filter>CodeGenerator\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CodeGenerator">
+      <UniqueIdentifier>{3c9ffb50-2b02-430a-aacd-aa4cf87be745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeGenerator\DemoParts">
+      <UniqueIdentifier>{fa89fef5-1c22-46fc-81db-9fd56f2507ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeGenerator\Common">
+      <UniqueIdentifier>{9146c5cb-4464-40a6-8ace-785096de4d25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeGenerator\ThirdParty">
+      <UniqueIdentifier>{7eae17b4-af86-4078-b76d-5e9e29790943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeGenerator\ThirdParty\FMT">
+      <UniqueIdentifier>{cf138c53-e1de-41bf-b550-737f3d283d35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeGenerator\ThirdParty\FMT\src">
+      <UniqueIdentifier>{26d48052-8a0e-4274-a7d8-93edcec5d0e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeGenerator\DemoParts\DYPP">
+      <UniqueIdentifier>{a7814282-47d2-42bf-966b-caa0d9c0d24b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build">
+      <UniqueIdentifier>{e6b05596-db26-4ca3-82e9-ff5525399387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Main">
+      <UniqueIdentifier>{79b994b9-4a1d-495b-8800-89928be1434d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Main\ASM">
+      <UniqueIdentifier>{c0979133-43e0-4427-ae1d-8ffa51ec0625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts">
+      <UniqueIdentifier>{f5ff5f70-9251-4dcc-b105-2a19234967b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\BigDYPP">
+      <UniqueIdentifier>{50db187c-9734-4bd0-9951-83f54a0c31c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\BigDYPP\ASM">
+      <UniqueIdentifier>{2f70ed02-3900-4ae7-b36e-7e590c7c8b7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\BorderBitmap">
+      <UniqueIdentifier>{13ffff30-820a-4139-a7ce-9a6074e7ac07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\BorderBitmap\ASM">
+      <UniqueIdentifier>{76134d61-c0a5-4a9d-ac7d-4be3b71739bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\DeepSeaDots">
+      <UniqueIdentifier>{958c08ed-e686-499d-90ff-532761151446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\DeepSeaDots\ASM">
+      <UniqueIdentifier>{6e6dee64-e53d-4c03-9624-a236dad2895f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\DYPP">
+      <UniqueIdentifier>{0c18ebcd-f02f-4582-a138-831685db50cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\DYPP\ASM">
+      <UniqueIdentifier>{50a71142-465a-4c3e-9f6e-202cc996c4f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\FullScreenRasterSweep">
+      <UniqueIdentifier>{a18510e3-bd9f-4ded-b967-2cadb8b44cb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\FullScreenRasterSweep\ASM">
+      <UniqueIdentifier>{f5cd519b-bbfa-418b-8982-06a0bb01155b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\GPLogo">
+      <UniqueIdentifier>{72e04892-46cd-4d60-bada-4ceab81f0b7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\GPLogo\ASM">
+      <UniqueIdentifier>{4966c751-7901-443c-8dbc-69d273ffcd80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\Quote">
+      <UniqueIdentifier>{19d21ccd-49a7-4988-937e-e302eb381a9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\Quote\ASM">
+      <UniqueIdentifier>{01c81971-3aad-4108-bd0d-12253898cb1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\RotateScroller">
+      <UniqueIdentifier>{7121d253-e776-4d73-b4ce-95c28580ffe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\RotateScroller\ASM">
+      <UniqueIdentifier>{2fb27ca4-f529-45a0-a25e-1f363ceb0b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\SideBorderBitmap">
+      <UniqueIdentifier>{1ef4a595-9680-4062-915a-2aaf6cf43dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\SideBorderBitmap\ASM">
+      <UniqueIdentifier>{d2e8c43e-df68-469b-8ae6-bb1f19d5948c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\SpinnyShapes">
+      <UniqueIdentifier>{d6c8d906-9e70-465b-892f-79f2d7e4410b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\SpinnyShapes\ASM">
+      <UniqueIdentifier>{7b8347df-3847-4681-9d86-161796aa9c29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\SpriteBobs">
+      <UniqueIdentifier>{3cf1124f-9b18-46e2-bca6-df9272147d97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\SpriteBobs\ASM">
+      <UniqueIdentifier>{b1fb8c8a-d799-43d9-8816-05cd1ab2c8d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\StarWars">
+      <UniqueIdentifier>{927b448e-c54d-4007-9986-db7e5e0f78b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\StarWars\ASM">
+      <UniqueIdentifier>{e465684b-69ce-45fc-a1ce-c07d41f601f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\VertBitmap">
+      <UniqueIdentifier>{f39c8d4f-36ba-4290-a1de-8935cd366129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\VertBitmap\ASM">
+      <UniqueIdentifier>{789ffd37-8f62-417b-a511-77c050ec8101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\WaveFade">
+      <UniqueIdentifier>{c746b85e-6b5c-4926-8c41-dc25aa635f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\Parts\WaveFade\ASM">
+      <UniqueIdentifier>{0874c17a-21a7-4b37-8509-caf1cbf9247b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Build\ThirdParty">
+      <UniqueIdentifier>{8bd8c1c5-ccf8-4805-9af8-ebea5ee6e2ad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\Build\Main\TheDiveDirArt.txt">
+      <Filter>Build\Main</Filter>
+    </Text>
+    <Text Include="..\..\Build\Parts\BigDYPP\SpindleLayout-BigDYPP.txt">
+      <Filter>Build\Parts\BigDYPP</Filter>
+    </Text>
+    <Text Include="..\..\Build\Parts\BorderBitmap\SpindleLayout-BorderBitmap.txt">
+      <Filter>Build\Parts\BorderBitmap</Filter>
+    </Text>
+    <Text Include="..\..\Build\Parts\DeepSeaDots\SpindleLayout-DeepSeaDots.txt">
+      <Filter>Build\Parts\DeepSeaDots</Filter>
+    </Text>
+    <Text Include="..\..\Build\Parts\DYPP\SpindleLayout-DYPP.txt">
+      <Filter>Build\Parts\DYPP</Filter>
+    </Text>
+    <Text Include="..\..\Build\Parts\FullScreenRasterSweep\SpindleLayout-FullScreenRasterSweep.txt">
+      <Filter>Build\Parts\FullScreenRasterSweep</Filter>
+    </Text>
+    <Text Include="..\..\Build\Parts\GPLogo\SpindleLayout-GPLogo.txt">
+      <Filter>Build\Parts\GPLogo</Filter>
+    </Text>
+    <Text Include="..\..\Build\Parts\VertBitmap\SpindleLayout-VertBitmap.txt">
+      <Filter>Build\Parts\VertBitmap</Filter>
+    </Text>
+    <Text Include="..\..\Build\Parts\StarWars\SpindleLayout-StarWars.txt">
+      <Filter>Build\Parts\StarWars</Filter>
+    </Text>
+    <Text Include="..\..\Build\Parts\SpriteBobs\SpindleLayout-SpriteBobs.txt">
+      <Filter>Build\Parts\SpriteBobs</Filter>
+    </Text>
+    <Text Include="..\..\Build\Parts\SpinnyShapes\SpindleLayout-SpinnyShapes.txt">
+      <Filter>Build\Parts\SpinnyShapes</Filter>
+    </Text>
+    <Text Include="..\..\Build\Parts\SideBorderBitmap\SpindleLayout-SideBorderBitmap.txt">
+      <Filter>Build\Parts\SideBorderBitmap</Filter>
+    </Text>
+    <Text Include="..\..\Build\Parts\RotateScroller\SpindleLayout-RotateScroller.txt">
+      <Filter>Build\Parts\RotateScroller</Filter>
+    </Text>
+    <Text Include="..\..\Build\Main\SpindleLayout-TheDive.txt">
+      <Filter>Build\Main</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Build\Main\ASM\Main-BaseCode.asm">
+      <Filter>Build\Main\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Main\ASM\Main-CommonDefines.asm">
+      <Filter>Build\Main\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Main\ASM\Main-CommonMacros.asm">
+      <Filter>Build\Main\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Main\ASM\DISK-TheDive.asm">
+      <Filter>Build\Main\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Main\ASM\Entry.asm">
+      <Filter>Build\Main\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\BigDYPP\ASM\BigDYPP.asm">
+      <Filter>Build\Parts\BigDYPP\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\BigDYPP\ASM\DISK-BigDYPP.asm">
+      <Filter>Build\Parts\BigDYPP\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\BorderBitmap\ASM\BorderBitmap.asm">
+      <Filter>Build\Parts\BorderBitmap\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\BorderBitmap\ASM\DISK-BorderBitmap.asm">
+      <Filter>Build\Parts\BorderBitmap\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\DeepSeaDots\ASM\DeepSeaDots.asm">
+      <Filter>Build\Parts\DeepSeaDots\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\DeepSeaDots\ASM\DISK-DeepSeaDots.asm">
+      <Filter>Build\Parts\DeepSeaDots\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\DYPP\ASM\DISK-DYPP.asm">
+      <Filter>Build\Parts\DYPP\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\DYPP\ASM\DYPP.asm">
+      <Filter>Build\Parts\DYPP\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\DYPP\ASM\DYPP-BitmapFade.asm">
+      <Filter>Build\Parts\DYPP\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\FullScreenRasterSweep\ASM\DISK-FullScreenRasterSweep.asm">
+      <Filter>Build\Parts\FullScreenRasterSweep\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\FullScreenRasterSweep\ASM\FullScreenRasterSweep.asm">
+      <Filter>Build\Parts\FullScreenRasterSweep\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\GPLogo\ASM\DISK-GPLogo.asm">
+      <Filter>Build\Parts\GPLogo\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\GPLogo\ASM\GPLogo.asm">
+      <Filter>Build\Parts\GPLogo\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\Quote\ASM\Quote.asm">
+      <Filter>Build\Parts\Quote\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\RotateScroller\ASM\RotateScroller.asm">
+      <Filter>Build\Parts\RotateScroller\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\RotateScroller\ASM\RotateScroller-UnrolledCode.asm">
+      <Filter>Build\Parts\RotateScroller\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\RotateScroller\ASM\DISK-RotateScroller.asm">
+      <Filter>Build\Parts\RotateScroller\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\SideBorderBitmap\ASM\SideBorderBitmap.asm">
+      <Filter>Build\Parts\SideBorderBitmap\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\SideBorderBitmap\ASM\DISK-SideBorderBitmap.asm">
+      <Filter>Build\Parts\SideBorderBitmap\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\SpinnyShapes\ASM\SpinnyShapes.asm">
+      <Filter>Build\Parts\SpinnyShapes\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\SpinnyShapes\ASM\DISK-SpinnyShapes.asm">
+      <Filter>Build\Parts\SpinnyShapes\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\SpriteBobs\ASM\DISK-SpriteBobs.asm">
+      <Filter>Build\Parts\SpriteBobs\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\SpriteBobs\ASM\SpriteBobs.asm">
+      <Filter>Build\Parts\SpriteBobs\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\StarWars\ASM\StarWars.asm">
+      <Filter>Build\Parts\StarWars\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\StarWars\ASM\DISK-StarWars.asm">
+      <Filter>Build\Parts\StarWars\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\VertBitmap\ASM\DISK-VertBitmap.asm">
+      <Filter>Build\Parts\VertBitmap\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\VertBitmap\ASM\VertBitmap.asm">
+      <Filter>Build\Parts\VertBitmap\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\WaveFade\ASM\WaveFade.asm">
+      <Filter>Build\Parts\WaveFade\ASM</Filter>
+    </None>
+    <None Include="..\..\Build\ThirdParty\NUDecrunchReverse.asm">
+      <Filter>Build\ThirdParty</Filter>
+    </None>
+    <None Include="..\..\Build\ThirdParty\NUDecrunchForward.asm">
+      <Filter>Build\ThirdParty</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\BorderBitmap\Build-BorderBitmap.bat">
+      <Filter>Build\Parts\BorderBitmap</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\DeepSeaDots\Build-DeepSeaDots.bat">
+      <Filter>Build\Parts\DeepSeaDots</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\BigDYPP\Build-BigDYPP.bat">
+      <Filter>Build\Parts\BigDYPP</Filter>
+    </None>
+    <None Include="..\..\Build\Main\Build-Main.bat">
+      <Filter>Build\Main</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\DYPP\Build-DYPP.bat">
+      <Filter>Build\Parts\DYPP</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\FullScreenRasterSweep\Build-FullScreenRasterSweep.bat">
+      <Filter>Build\Parts\FullScreenRasterSweep</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\GPLogo\Build-GPLogo.bat">
+      <Filter>Build\Parts\GPLogo</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\RotateScroller\Build-RotateScroller.bat">
+      <Filter>Build\Parts\RotateScroller</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\SideBorderBitmap\Build-SideBorderBitmap.bat">
+      <Filter>Build\Parts\SideBorderBitmap</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\SpinnyShapes\Build-SpinnyShapes.bat">
+      <Filter>Build\Parts\SpinnyShapes</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\SpriteBobs\Build-SpriteBobs.bat">
+      <Filter>Build\Parts\SpriteBobs</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\StarWars\Build-StarWars.bat">
+      <Filter>Build\Parts\StarWars</Filter>
+    </None>
+    <None Include="..\..\Build\Parts\VertBitmap\Build-VertBitmap.bat">
+      <Filter>Build\Parts\VertBitmap</Filter>
+    </None>
+  </ItemGroup>
+</Project>

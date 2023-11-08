@@ -1,0 +1,24 @@
+#MAINENTRY
+..\..\..\Intermediate\KickAss\VertBitmap\Entry.prg 0200 2
+
+#MAIN-BASECODE
+..\..\..\Intermediate\KickAss\VertBitmap\Main-BaseCode.prg 0f00 2
+..\..\..\Music\Drax-FadeIn.sid 1000 7e
+
+#MAIN-DISK1
+..\..\..\Intermediate\KickAss\VertBitmap\DISK-VertBitmap.prg 0800 2
+
+#VERTBITMAP
+..\..\..\Intermediate\Built\VertBitmap\InitialSpriteLogos.bin 5000 0 e00
+..\..\..\Intermediate\Built\VertBitmap\SpriteXSinTables.bin 4000
+..\..\..\Intermediate\Built\VertBitmap\BitmapScrollData.bin 8000
+..\..\..\Intermediate\KickAss\VertBitmap\VertBitmap.prg a800 2
+
+#VERTBITMAP-LOGO2
+..\..\..\Intermediate\Built\VertBitmap\InitialSpriteLogos.bin 5000 0e00 e00
+
+#VERTBITMAP-LOGO3
+Data\Dive.col d800! 0 3e8
+Data\Dive.scr 4c00 0 3e8
+Data\Dive.map 6000 0 1f40
+..\..\..\Intermediate\Built\VertBitmap\InitialSpriteLogos.bin 5000 1c00 e00

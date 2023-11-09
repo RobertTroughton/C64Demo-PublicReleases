@@ -1,0 +1,25 @@
+.label music_irq=$403e {
+}
+.label endirq2=$4192
+.label bleep_del=$41bb
+.label first_sprite=$4203
+.label fade_tbl=$41ef
+.label storeptr=$4124
+.label endirq=$4059 {
+}
+.label anim_sprites=$4119
+.label stora=$4175
+.label fadetk=$4164
+.label nextirq_lo=$404f
+.label bleep_ct=$4192
+.label rounds=$41d3
+.label delay_irq=$41ad {
+}
+.label init_screen=$4060
+.label plexed_y=$4039
+.label intro_irq=$414c {
+}
+.label fade_ct=$41ee
+.label start=$4000 {
+}
+.label nextirq_hi=$4054

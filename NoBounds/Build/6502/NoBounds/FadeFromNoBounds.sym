@@ -1,0 +1,46 @@
+.label FadeFromNoBounds_RasterData_MinYValues=$9000
+.label MUSIC_FrameHi=$ff
+.label IsRasterTransitionFinished=$c0d5
+.label FadeFromNoBounds_IRQ_Music_Continue=$c07a
+.label BASE_SetDefaultIRQ_QuickAndClean=$86d
+.label FadeFromNoBounds_IRQ_Music=$c072 {
+}
+.label SkipD015=$827
+.label BASE_PLayMusic=$800
+.label FadeFromNoBounds_FirstDelays=$c0be
+.label FadeFromNoBounds_RasterData_YValues=$91e4
+.label FadeFromNoBounds_FrameIndex=$c0d9
+.label D012ValueToSet=$c082
+.label FadeFromNoBounds_Loop=$c0c5
+.label FadeFromNoBounds_RasterData_ColValues=$951a
+.label FadeFromNoBounds_FinishedUpdateRasters=$c128
+.label FadeFromNoBounds_InnerDelays=$c0cd
+.label FadeFromNoBounds_RasterData_NumColourChanges=$90f2
+.label FadeFromNoBounds_UpdateRastersLoop=$c0f3
+.label SkipD020=$82e
+.label FadeFromNoBounds_FinishedFrame=$c11a
+.label MUSIC_FrameLo=$fe
+.label Fade_MinY=$c0c3
+.label NTSC_Msg=$8c7
+.label Dst=$c009
+.label FadeFromNoBounds_Go=$c000
+.label BASE_SetDefaultIRQ=$83b
+.label WaitForEndOfFadeFromNoBounds=$c05d
+.label NTSC=$897
+.label BASE_RestoreIRQ=$881
+.label FadeFromNoBounds_IRQ_Music_FirstFrame=$c063 {
+}
+.label IncZPPointers_A=$c103
+.label BASE_SetIRQandPlayer=$877
+.label IncZPPointers_B=$c110
+.label Src=$c006
+.label BASE_LoadA=$80f
+.label BASE_LoadNext=$809
+.label ClearLoop=$81d
+.label BASE_MusicPlayJmp=$806
+.label BASE_Cleanup=$815
+.label MARKER_IsFullDemo=$8ff
+.label BASE_DetectNTSC=$88f
+.label FadeFromNoBounds_IRQ_Main=$c09c {
+}
+.label NTSC_Msg_End=$8e8

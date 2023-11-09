@@ -1,0 +1,5 @@
+.label FadeToNoBounds_RasterData_NumColourChanges=$e000
+.label FadeToNoBounds_RasterData_MaxYValues=$e174
+.label FadeToNoBounds_RasterData_YValues=$e22e
+.label FadeToNoBounds_RasterData_MinYValues=$e0ba
+.label FadeToNoBounds_RasterData_ColValues=$ebd6

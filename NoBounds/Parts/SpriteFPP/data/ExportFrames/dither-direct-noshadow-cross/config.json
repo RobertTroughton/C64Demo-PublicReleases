@@ -1,0 +1,32 @@
+{
+  "canvasWidth": 190,
+  "canvasHeight": 200,
+  "cameraDistace": 220,
+  "cameraFov": 45,
+  "enableShadows": true,
+  "enabledDithering": true,
+  "lightType": "directionalLight",
+  "lightX": 0,
+  "lightY": 300,
+  "lightZ": 300,
+  "lightIntensity": 0.8,
+  "lightArea": 300,
+  "zSteps": 1,
+  "zStepMultiplier": 4,
+  "currentZStep": 0,
+  "objectDepth": 113,
+  "objectScale": 1.25,
+  "fps": 64,
+  "framesPerRotation": 64,
+  "framesToRecord": 64,
+  "rotation": 0.02454369260617026,
+  "sortedColorRanges": {
+    "0": 0,
+    "50": 25,
+    "100": 51,
+    "130": 85,
+    "170": 119,
+    "210": 153,
+    "245": 187
+  }
+}

@@ -1,0 +1,56 @@
+.label rep1=$2483
+.label accel_sin=$2780
+.label lowirq_pos=$23ba
+.label music_irq=$2422 {
+}
+.label row_horizontal=$261e
+.label mid_irq=$23b1 {
+}
+.label top_c0=$2387
+.label noresy2=$2613
+.label decelerate=$264a
+.label tk0=$24b2
+.label accelerate=$2685
+.label top_c1=$239c
+.label noresy=$25d7
+.label midirq_pos=$2371
+.label nextrow=$25c6
+.label scrtrg=$25cd
+.label enab0=$2475
+.label rowlp=$25ca
+.label nothing=$2405
+.label bottom_c0=$2456
+.label bottom_c1=$2464
+.label final_irq=$2535 {
+}
+.label init_screen=$2548 {
+}
+.label rowct=$25ed
+.label bottom_sprites_mask=$2451
+.label speed_fn=$2480
+.label init_irq=$2336 {
+}
+.label cmp_top=$2380
+.label row_clear=$2619
+.label col_enable_fn=$243d
+.label sprites=$26c0
+.label slowct=$24c4
+.label topirq_pos=$2440
+.label move_slow_irq=$248d {
+}
+.label reposition_trails=$2623
+.label start=$2310 {
+}
+.label enable_c1_center=$23ec
+.label top_irq=$2368 {
+}
+.label disable_c0_bottom=$2406
+.label mid_c0=$23bf
+.label mid_c1=$23cd
+.label next_irq_lo=$2445
+.label next_irq_hi=$244a
+.label sprite_image_1=$2700
+.label sprite_image_0=$26c0
+.label d012cnt=$2335
+.label cmp_top1=$2395
+.label sprite_image_4=$2740

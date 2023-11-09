@@ -3,6 +3,18 @@
 ===================================================
 
 
+No Bounds (Genesis*Project), https://csdb.dk/release/?id=232957
+------------
+
+To build and run it:-
+
+1) you'll need to open up NoBounds\NoBounds.sln.
+2) build and run that. It will output several intermediate files to the "Out" folder.
+3) from a VS commandline, call NMAKE.
+4) This will generate the disk files into the D64 folder.
+
+===================================================
+
 Christmas Megademo (The Santas), https://csdb.dk/release/?id=198283
 ------------
 

@@ -1,0 +1,26 @@
+.label col_index=$22ff
+.label anim_sequence_top=$2278
+.label anim_sequence_bottom=$22a1
+.label nodraw=$23c5
+.label music_irq=$2592 {
+}
+.label frames_index=$23fd
+.label introd=$257c
+.label map_data=$2278
+.label draw_rows=$22f8
+.label unlock_columns=$23d5
+.label unlock_fn=$25ab
+.label sptk=$25a0
+.label delay_irq=$256e {
+}
+.label draw_fn=$25ae
+.label continue_anim=$231b
+.label frame_pointers=$244d
+.label start=$2500 {
+}
+.label can_draw_column=$2425
+.label col_ct=$23ee
+.label init_screen=$22c9
+.label tk=$23d8
+.label charset_end=$2270
+.label can_tk=$23e3

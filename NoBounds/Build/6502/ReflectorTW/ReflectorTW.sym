@@ -1,0 +1,43 @@
+.label columns_appear=$ba53
+.label music_irq=$9b4f {
+}
+.label frame_counters=$8630
+.label first_sprite=$bd17
+.label can_go_anim=$9a17
+.label final_irq=$ba01 {
+}
+.label buf1=$995d
+.label storeptr=$9814
+.label endirq=$9b85 {
+}
+.label anim_sprites=$9809
+.label sprite_enabler0=$9794
+.label next_fn_lo=$bb18
+.label colct=$bb60
+.label init_complete=$9b68
+.label sprite_mapping_table=$97eb
+.label quit_scene=$bb59
+.label effect_wait=$bb23
+.label lut_addr_lo=$85a0
+.label drawnext_fn=$9b75
+.label draw_source_lo=$9900
+.label sprites_bk2=$a000
+.label nextirq_lo=$9b7b
+.label sprites_bk=$6000
+.label drawnext_enable=$9788
+.label columns_fade_fn=$9b78
+.label sprite_anim_table=$97cf
+.label d012add=$ba1e
+.label d012chk=$ba30
+.label plexed_y=$9b4a
+.label roundsfade=$bb03
+.label times=$bb3b
+.label next_fn_hi=$bb1d
+.label draw_column=$86f3
+.label d012_val=$ba00
+.label start=$9b00 {
+}
+.label lut_addr_hi=$85e8
+.label draw_source_hi=$991e
+.label drawnext=$993c
+.label nextirq_hi=$9b80

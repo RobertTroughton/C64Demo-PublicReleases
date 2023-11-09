@@ -1,0 +1,34 @@
+.label blkloop=$20b7
+.label music_irq=$2059 {
+}
+.label fadedl=$a2d7
+.label screen_addr_lo=$a3b4
+.label screen_addr_hi=$a4a4
+.label tk0=$a25c
+.label fade_fn=$2065
+.label draw_fn=$20b7
+.label g0=$a271
+.label blockscnt=$20be
+.label fade_tbl=$a2c4
+.label init_screen=$a1f6
+.label charset_end=$a1d0
+.label draw_square=$a22f
+.label increment_blocks=$a1d8
+.label finish_squares=$a2f7
+.label position_table=$a2ac
+.label set_draw_irq=$2070
+.label goahead=$a256
+.label map_data_tiles=$a353
+.label fade_border=$a2c9
+.label final_frame1=$a34f
+.label draw_irq=$208f {
+}
+.label animend1=$a300
+.label animend0=$a2f7
+.label frame_offset_tbl=$a3a3
+.label last_anim=$a334
+.label increment_fn=$20c2
+.label incrf=$a1db
+.label anim_table=$a294
+.label TransitionScatteredStart=$2000 {
+}

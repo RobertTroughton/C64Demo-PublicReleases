@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main\Common\CodeGen.h" />
+    <ClInclude Include="Main\Common\Common.h" />
+    <ClInclude Include="Main\Common\GPImage.h" />
+    <ClInclude Include="Main\Common\SinTables.h" />
+    <ClInclude Include="Main\Main.h" />
+    <ClInclude Include="Main\ThirdParty\FMT\chrono.h" />
+    <ClInclude Include="Main\ThirdParty\FMT\color.h" />
+    <ClInclude Include="Main\ThirdParty\FMT\core.h" />
+    <ClInclude Include="Main\ThirdParty\FMT\format-inl.h" />
+    <ClInclude Include="Main\ThirdParty\FMT\format.h" />
+    <ClInclude Include="Main\ThirdParty\FMT\locale.h" />
+    <ClInclude Include="Main\ThirdParty\FMT\ostream.h" />
+    <ClInclude Include="Main\ThirdParty\FMT\posix.h" />
+    <ClInclude Include="Main\ThirdParty\FMT\printf.h" />
+    <ClInclude Include="Main\ThirdParty\FMT\ranges.h" />
+    <ClInclude Include="Main\ThirdParty\FMT\time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main\Common\CodeGen.cpp" />
+    <ClCompile Include="Main\Common\Common.cpp" />
+    <ClCompile Include="Main\Common\GPImage.cpp" />
+    <ClCompile Include="Main\Common\SinTables.cpp" />
+    <ClCompile Include="Main\Main.cpp" />
+    <ClCompile Include="Main\ThirdParty\FMT\src\format.cc" />
+    <ClCompile Include="Main\ThirdParty\FMT\src\posix.cc" />
+    <ClCompile Include="Parts\BASICFade\BASICFade.cpp" />
+    <ClCompile Include="Parts\BigDXYCP\BigDXYCP.cpp" />
+    <ClCompile Include="Parts\CheckerBoard\CheckerBoard.cpp" />
+    <ClCompile Include="Parts\CheckerZoomer\CheckerZoomer.cpp" />
+    <ClCompile Include="Parts\ColourCycle\ColourCycle.cpp" />
+    <ClCompile Include="Parts\Earth\Earth.cpp" />
+    <ClCompile Include="Parts\InfiniteBobs\InfiniteBobs.cpp" />
+    <ClCompile Include="Parts\NoBounds\NoBounds.cpp" />
+    <ClCompile Include="Parts\PlasmaVector\PlasmaVector.cpp" />
+    <ClCompile Include="Parts\RotatingGP\RotatingGP.cpp" />
+    <ClCompile Include="Parts\StarWars\StarWars.cpp" />
+    <ClCompile Include="Parts\TinyCircleScroll\TinyCircleScroll.cpp" />
+    <ClCompile Include="Parts\Trailblazer\Trailblazer.cpp" />
+    <ClCompile Include="Parts\Tunnel\Tunnel.cpp" />
+    <ClCompile Include="Parts\TwistScroll\TwistScroll.cpp" />
+    <ClCompile Include="Parts\VerticalBitmapScroll\VerticalBitmapScroll.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Link.bat" />
+    <None Include="Main\DISK-EndOfDisk.asm" />
+    <None Include="Main\Entry.asm" />
+    <None Include="Main\EntryWithBASICFade.asm" />
+    <None Include="Main\EntryWithKefrens.asm" />
+    <None Include="Main\Main-BaseCode.asm" />
+    <None Include="Main\Main-CommonDefines.asm" />
+    <None Include="Main\Main-CommonMacros.asm" />
+    <None Include="Main\Main-CommonMemory.asm" />
+    <None Include="Main\Sparkle 2.2.inc" />
+    <None Include="Main\Sparkle.inc" />
+    <None Include="Main\Sparkle\NoBounds.sls" />
+    <None Include="Main\Sparkle\NoBoundsA.sls" />
+    <None Include="Main\Sparkle\NoBoundsB.sls" />
+    <None Include="makefile" />
+    <None Include="Parts\BASICFade\BASICFade.asm" />
+    <None Include="Parts\BASICFade\BASICFade.sls" />
+    <None Include="Parts\BASICFade\BASICFade2.asm" />
+    <None Include="Parts\BigDXYCP\BigDXYCP.asm" />
+    <None Include="Parts\BigDXYCP\BigDXYCP.sls" />
+    <None Include="Parts\BigDXYCP\BigDXYCPIntro.asm" />
+    <None Include="Parts\BigDXYCP\dali_c000.prg" />
+    <None Include="Parts\BigDXYCP\DISK-BigDXYCP.asm" />
+    <None Include="Parts\BigDXYCP\BigDXYCP-DZX0.asm" />
+    <None Include="Parts\CheckerBoard\CheckerBoard.asm" />
+    <None Include="Parts\CheckerBoard\CheckerBoard.sls" />
+    <None Include="Parts\CheckerBoard\DISK-CheckerBoard.asm" />
+    <None Include="Parts\CheckerZoomer\CheckerZoomer.asm" />
+    <None Include="Parts\CheckerZoomer\CheckerZoomer.sls" />
+    <None Include="Parts\CheckerZoomer\DISK-CheckerZoomer.asm" />
+    <None Include="Parts\ColourCycle\ColourCycle.asm" />
+    <None Include="Parts\ColourCycle\ColourCycle.sls" />
+    <None Include="Parts\ColourCycle\DISK-ColourCycle.asm" />
+    <None Include="Parts\ColourCycle\Tardis.asm" />
+    <None Include="Parts\Earth\DISK-Earth.asm" />
+    <None Include="Parts\Earth\Earth.asm" />
+    <None Include="Parts\Earth\Earth.sls" />
+    <None Include="Parts\Earth\EarthPreps.asm" />
+    <None Include="Parts\InfiniteBobs\DISK-InfiniteBobs.asm" />
+    <None Include="Parts\InfiniteBobs\InfiniteBobs-FinalRasterFade.asm" />
+    <None Include="Parts\InfiniteBobs\InfiniteBobs.asm" />
+    <None Include="Parts\InfiniteBobs\InfiniteBobs.sls" />
+    <None Include="Parts\KefrensPlus\DISK-KefrensPlus.asm" />
+    <None Include="Parts\KefrensPlus\KefrensPlus.asm" />
+    <None Include="Parts\KefrensPlus\KefrensPlus.sls" />
+    <None Include="Parts\KefrensPlus\KefrensPlusFadeIn.asm" />
+    <None Include="Parts\NoBounds\DISK-NoBounds.asm" />
+    <None Include="Parts\NoBounds\FadeFromNoBounds.asm" />
+    <None Include="Parts\NoBounds\NoBounds.asm" />
+    <None Include="Parts\NoBounds\NoBounds.sls" />
+    <None Include="Parts\Parallax\DISK-Parallax.asm" />
+    <None Include="Parts\Parallax\Parallax.asm" />
+    <None Include="Parts\Parallax\Parallax.sls" />
+    <None Include="Parts\PlasmaVector\Build.bat" />
+    <None Include="Parts\PlasmaVector\DISK-PlasmaVector.asm" />
+    <None Include="Parts\PlasmaVector\PlasmaVector.asm" />
+    <None Include="Parts\PlasmaVector\PlasmaVector.sls" />
+    <None Include="Parts\PlasmaVector\PlasmaVectorIntro.asm" />
+    <None Include="Parts\PlotCube\Build.bat" />
+    <None Include="Parts\PlotCube\DISK-PlotCube.asm" />
+    <None Include="Parts\PlotCube\PlotCube.asm" />
+    <None Include="Parts\PlotCube\PlotCube.sls" />
+    <None Include="Parts\PlotCube\PlotCubeIntro.asm" />
+    <None Include="Parts\RaytraceNightmare\data\horizontal_sin.asm" />
+    <None Include="Parts\RaytraceNightmare\data\palette.asm" />
+    <None Include="Parts\RaytraceNightmare\data\parser.asm" />
+    <None Include="Parts\RaytraceNightmare\data\screens.asm" />
+    <None Include="Parts\RaytraceNightmare\data\sintable.asm" />
+    <None Include="Parts\RaytraceNightmare\data\sprite.asm" />
+    <None Include="Parts\RaytraceNightmare\data\sprites_x_tables.asm" />
+    <None Include="Parts\RaytraceNightmare\delay_routines.asm" />
+    <None Include="Parts\RaytraceNightmare\DISK-RaytraceNightmare.asm" />
+    <None Include="Parts\RaytraceNightmare\functions.asm" />
+    <None Include="Parts\RaytraceNightmare\RaytraceNightmare.asm" />
+    <None Include="Parts\RaytraceNightmare\RaytraceNightmare.sls" />
+    <None Include="Parts\RaytraceNightmare\scene_settings.asm" />
+    <None Include="Parts\RaytraceNightmare\unrolled_irq.asm" />
+    <None Include="Parts\RaytraceNightmare\variables.asm" />
+    <None Include="Parts\RaytraceNightmare\vsp.asm" />
+    <None Include="Parts\ReflectorTW\data\color_extractor.asm" />
+    <None Include="Parts\ReflectorTW\data\columns.asm" />
+    <None Include="Parts\ReflectorTW\data\column_parser.asm" />
+    <None Include="Parts\ReflectorTW\data\first_sprite.asm" />
+    <None Include="Parts\ReflectorTW\data\frame_correction_data.asm" />
+    <None Include="Parts\ReflectorTW\data\reflection_anim_parser.asm" />
+    <None Include="Parts\ReflectorTW\DISK-ReflectorTW.asm" />
+    <None Include="Parts\ReflectorTW\functions.asm" />
+    <None Include="Parts\ReflectorTW\intro.asm" />
+    <None Include="Parts\ReflectorTW\ReflectorTransition.asm" />
+    <None Include="Parts\ReflectorTW\ReflectorTW.asm" />
+    <None Include="Parts\ReflectorTW\scene_settings.asm" />
+    <None Include="Parts\ReflectorTW\transition_functions.asm" />
+    <None Include="Parts\ReflectorTW\transition_intro.asm" />
+    <None Include="Parts\ReflectorTW\variables.asm" />
+    <None Include="Parts\RotatingGP\DISK-RotatingGP.asm" />
+    <None Include="Parts\RotatingGP\FadeToNoBounds.asm" />
+    <None Include="Parts\RotatingGP\RotatingGP.asm" />
+    <None Include="Parts\RotatingGP\RotatingGP.sls" />
+    <None Include="Parts\StarWars\DISK-StarWars.asm" />
+    <None Include="Parts\StarWars\RasterTrans.asm" />
+    <None Include="Parts\StarWars\StarWars.asm" />
+    <None Include="Parts\StarWars\StarWars.sls" />
+    <None Include="Parts\TechTech\Build.bat" />
+    <None Include="Parts\TechTech\Build.sh" />
+    <None Include="Parts\TechTech\DISK-TechTech.asm" />
+    <None Include="Parts\TechTech\DISK-TechTech.prg" />
+    <None Include="Parts\TechTech\DISK-TechTech.sym" />
+    <None Include="Parts\TechTech\exomizer.exe" />
+    <None Include="Parts\TechTech\functions_tech.asm" />
+    <None Include="Parts\TechTech\functions_tech_colour.asm" />
+    <None Include="Parts\TechTech\functions_tech_intro.asm" />
+    <None Include="Parts\TechTech\macros.asm" />
+    <None Include="Parts\TechTech\scene_settings_tech.asm" />
+    <None Include="Parts\TechTech\TechTech.asm" />
+    <None Include="Parts\TechTech\TechTech.prg" />
+    <None Include="Parts\TechTech\TechTech.sls" />
+    <None Include="Parts\TechTech\TechTech.sym" />
+    <None Include="Parts\TechTech\TechTech.vs" />
+    <None Include="Parts\TechTech\TechTechCrunch.prg" />
+    <None Include="Parts\TechTech\tech_irqs.asm" />
+    <None Include="Parts\TechTech\tech_irq_bankswitch.asm" />
+    <None Include="Parts\TechTech\unrolled_code_generators.asm" />
+    <None Include="Parts\TechTech\variables.asm" />
+    <None Include="Parts\TinyCircleScroll\DISK-TinyCircleScroll.asm" />
+    <None Include="Parts\TinyCircleScroll\TinyCircleScroll-DZX0.asm" />
+    <None Include="Parts\TinyCircleScroll\TinyCircleScroll.asm" />
+    <None Include="Parts\TinyCircleScroll\TinyCircleScroll.sls" />
+    <None Include="Parts\Trailblazer\DISK-Trailblazer.asm" />
+    <None Include="Parts\Trailblazer\Trailblazer.asm" />
+    <None Include="Parts\Trailblazer\Trailblazer.sls" />
+    <None Include="Parts\Trailblazer\TrailblazerIntro.asm" />
+    <None Include="Parts\Trailblazer\TrailblazerTransition.asm" />
+    <None Include="Parts\Tunnel\DISK-Tunnel.asm" />
+    <None Include="Parts\Tunnel\Tunnel.asm" />
+    <None Include="Parts\Tunnel\Tunnel.sls" />
+    <None Include="Parts\TwistScroll\DISK-TwistScroll.asm" />
+    <None Include="Parts\TwistScroll\TwistScroll-DZX0.asm" />
+    <None Include="Parts\TwistScroll\TwistScroll.asm" />
+    <None Include="Parts\TwistScroll\TwistScroll.sls" />
+    <None Include="Parts\VerticalBitmapScroll\DISK-VerticalBitmapScroll.asm" />
+    <None Include="Parts\VerticalBitmapScroll\VerticalBitmapScroll.asm" />
+    <None Include="Parts\VerticalBitmapScroll\VerticalBitmapScroll.sls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Main\Sparkle\DirArt.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3A7C3A54-1B33-45E1-97DB-3BC491CA2062}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>NoBounds</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\PC\</OutDir>
+    <IntDir>$(SolutionDir)Build\PC\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\PC\</OutDir>
+    <IntDir>$(SolutionDir)Build\PC\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\PC\</OutDir>
+    <IntDir>$(SolutionDir)Build\PC\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)Build\PC\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)Build\PC\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Main\ThirdParty</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;winmm.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Main\ThirdParty</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

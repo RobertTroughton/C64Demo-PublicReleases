@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{8b4c304b-97c2-4318-893c-36852a5c5e9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Common">
+      <UniqueIdentifier>{39ccaa5b-4a04-4379-9eec-aeb0f4275612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\ThirdParty">
+      <UniqueIdentifier>{a3256014-39d4-4e42-b6bb-5c5285e619cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\ThirdParty\FMT">
+      <UniqueIdentifier>{7d8b86d7-f40d-4a7e-83e5-4557630c7fd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\ThirdParty\FMT\src">
+      <UniqueIdentifier>{501377c6-9f77-40f1-8e5e-1d722e892015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts">
+      <UniqueIdentifier>{84a0472c-3d77-491b-959a-e2368118c1dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\BigDXYCP">
+      <UniqueIdentifier>{47a16738-70e7-458b-adcd-9b492f9634b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\ColourCycle">
+      <UniqueIdentifier>{949d65f2-60c2-47a5-a53a-60927830fe2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\PlasmaVector">
+      <UniqueIdentifier>{caebeabe-6051-4a34-98bf-57ecc8e6a383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\PlotCube">
+      <UniqueIdentifier>{fd9c5fa9-5d0f-47d9-b31f-cbcb2750d5a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\StarWars">
+      <UniqueIdentifier>{916b5156-546c-4ec5-8931-18537994a315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\TinyCircleScroll">
+      <UniqueIdentifier>{e2fd8c7f-0814-4ef6-a6e9-b5e0f5fc7152}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\Trailblazer">
+      <UniqueIdentifier>{abefcc07-7518-4973-a0c9-0147e8d6ccfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\Tunnel">
+      <UniqueIdentifier>{7030d880-416c-46a6-b9c9-2641b2a75b1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\TwistScroll">
+      <UniqueIdentifier>{86247d73-65e0-4090-a829-1324a5c6b957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\BASICFade">
+      <UniqueIdentifier>{293140dd-0896-4300-b710-3a842e8ea61e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Sparkle">
+      <UniqueIdentifier>{80987c51-1782-4b03-b620-26e4d876249e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\NoBounds">
+      <UniqueIdentifier>{da955374-edf3-4f3f-a772-aa078cb5900b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\RotatingGP">
+      <UniqueIdentifier>{6dee2766-4327-4592-aa76-7d3b0b32f8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\Earth">
+      <UniqueIdentifier>{ccc98a90-4e2c-46bb-b7c6-90f910538422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\InfiniteBobs">
+      <UniqueIdentifier>{8588cfa2-0c97-41fe-aaf1-bd8afa0f3bfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\Parallax">
+      <UniqueIdentifier>{991f160f-8893-4c63-ad0a-7483c8e20596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\CheckerZoomer">
+      <UniqueIdentifier>{b9f516c4-6bff-4d06-b106-1b2ebca7bf8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\KefrensPlus">
+      <UniqueIdentifier>{d41f3d1d-da46-49fb-b568-363409709f72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\Checkerboard">
+      <UniqueIdentifier>{a942f602-3b1e-46e4-8761-d60620c3ffee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\VerticalBitmapScroll">
+      <UniqueIdentifier>{2e87df36-9e57-4dfa-8a79-56464259e867}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main\Main.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Common\SinTables.h">
+      <Filter>Main\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Common\CodeGen.h">
+      <Filter>Main\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Common\Common.h">
+      <Filter>Main\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Common\GPImage.h">
+      <Filter>Main\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\ThirdParty\FMT\locale.h">
+      <Filter>Main\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\ThirdParty\FMT\ostream.h">
+      <Filter>Main\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\ThirdParty\FMT\posix.h">
+      <Filter>Main\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\ThirdParty\FMT\printf.h">
+      <Filter>Main\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\ThirdParty\FMT\ranges.h">
+      <Filter>Main\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\ThirdParty\FMT\time.h">
+      <Filter>Main\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\ThirdParty\FMT\chrono.h">
+      <Filter>Main\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\ThirdParty\FMT\color.h">
+      <Filter>Main\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\ThirdParty\FMT\core.h">
+      <Filter>Main\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\ThirdParty\FMT\format.h">
+      <Filter>Main\ThirdParty\FMT</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\ThirdParty\FMT\format-inl.h">
+      <Filter>Main\ThirdParty\FMT</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main\Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Common\SinTables.cpp">
+      <Filter>Main\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Common\CodeGen.cpp">
+      <Filter>Main\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Common\Common.cpp">
+      <Filter>Main\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Common\GPImage.cpp">
+      <Filter>Main\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\ThirdParty\FMT\src\format.cc">
+      <Filter>Main\ThirdParty\FMT\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\ThirdParty\FMT\src\posix.cc">
+      <Filter>Main\ThirdParty\FMT\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\BigDXYCP\BigDXYCP.cpp">
+      <Filter>Parts\BigDXYCP</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\ColourCycle\ColourCycle.cpp">
+      <Filter>Parts\ColourCycle</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\StarWars\StarWars.cpp">
+      <Filter>Parts\StarWars</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\TinyCircleScroll\TinyCircleScroll.cpp">
+      <Filter>Parts\TinyCircleScroll</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\Trailblazer\Trailblazer.cpp">
+      <Filter>Parts\Trailblazer</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\Tunnel\Tunnel.cpp">
+      <Filter>Parts\Tunnel</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\TwistScroll\TwistScroll.cpp">
+      <Filter>Parts\TwistScroll</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\NoBounds\NoBounds.cpp">
+      <Filter>Parts\NoBounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\BASICFade\BASICFade.cpp">
+      <Filter>Parts\BASICFade</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\Earth\Earth.cpp">
+      <Filter>Parts\Earth</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\RotatingGP\RotatingGP.cpp">
+      <Filter>Parts\RotatingGP</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\InfiniteBobs\InfiniteBobs.cpp">
+      <Filter>Parts\InfiniteBobs</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\CheckerBoard\CheckerBoard.cpp">
+      <Filter>Parts\Checkerboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\CheckerZoomer\CheckerZoomer.cpp">
+      <Filter>Parts\CheckerZoomer</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\VerticalBitmapScroll\VerticalBitmapScroll.cpp">
+      <Filter>Parts\VerticalBitmapScroll</Filter>
+    </ClCompile>
+    <ClCompile Include="Parts\PlasmaVector\PlasmaVector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile" />
+    <None Include="Link.bat" />
+    <None Include="Main\Main-CommonMemory.asm">
+      <Filter>Main</Filter>
+    </None>
+    <None Include="Main\Sparkle 2.2.inc">
+      <Filter>Main</Filter>
+    </None>
+    <None Include="Main\Sparkle.inc">
+      <Filter>Main</Filter>
+    </None>
+    <None Include="Main\DISK-EndOfDisk.asm">
+      <Filter>Main</Filter>
+    </None>
+    <None Include="Main\Entry.asm">
+      <Filter>Main</Filter>
+    </None>
+    <None Include="Main\Main-BaseCode.asm">
+      <Filter>Main</Filter>
+    </None>
+    <None Include="Main\Main-CommonDefines.asm">
+      <Filter>Main</Filter>
+    </None>
+    <None Include="Main\Main-CommonMacros.asm">
+      <Filter>Main</Filter>
+    </None>
+    <None Include="Parts\BigDXYCP\DISK-BigDXYCP.asm">
+      <Filter>Parts\BigDXYCP</Filter>
+    </None>
+    <None Include="Parts\BigDXYCP\BigDXYCP.asm">
+      <Filter>Parts\BigDXYCP</Filter>
+    </None>
+    <None Include="Parts\ColourCycle\ColourCycle.sls">
+      <Filter>Parts\ColourCycle</Filter>
+    </None>
+    <None Include="Parts\ColourCycle\DISK-ColourCycle.asm">
+      <Filter>Parts\ColourCycle</Filter>
+    </None>
+    <None Include="Parts\ColourCycle\ColourCycle.asm">
+      <Filter>Parts\ColourCycle</Filter>
+    </None>
+    <None Include="Parts\PlasmaVector\PlasmaVector.asm">
+      <Filter>Parts\PlasmaVector</Filter>
+    </None>
+    <None Include="Parts\PlasmaVector\PlasmaVector.sls">
+      <Filter>Parts\PlasmaVector</Filter>
+    </None>
+    <None Include="Parts\PlasmaVector\Build.bat">
+      <Filter>Parts\PlasmaVector</Filter>
+    </None>
+    <None Include="Parts\PlasmaVector\DISK-PlasmaVector.asm">
+      <Filter>Parts\PlasmaVector</Filter>
+    </None>
+    <None Include="Parts\PlotCube\PlotCube.asm">
+      <Filter>Parts\PlotCube</Filter>
+    </None>
+    <None Include="Parts\PlotCube\PlotCube.sls">
+      <Filter>Parts\PlotCube</Filter>
+    </None>
+    <None Include="Parts\PlotCube\Build.bat">
+      <Filter>Parts\PlotCube</Filter>
+    </None>
+    <None Include="Parts\PlotCube\DISK-PlotCube.asm">
+      <Filter>Parts\PlotCube</Filter>
+    </None>
+    <None Include="Parts\StarWars\StarWars.sls">
+      <Filter>Parts\StarWars</Filter>
+    </None>
+    <None Include="Parts\StarWars\DISK-StarWars.asm">
+      <Filter>Parts\StarWars</Filter>
+    </None>
+    <None Include="Parts\StarWars\StarWars.asm">
+      <Filter>Parts\StarWars</Filter>
+    </None>
+    <None Include="Parts\TinyCircleScroll\TinyCircleScroll.sls">
+      <Filter>Parts\TinyCircleScroll</Filter>
+    </None>
+    <None Include="Parts\TinyCircleScroll\DISK-TinyCircleScroll.asm">
+      <Filter>Parts\TinyCircleScroll</Filter>
+    </None>
+    <None Include="Parts\TinyCircleScroll\TinyCircleScroll.asm">
+      <Filter>Parts\TinyCircleScroll</Filter>
+    </None>
+    <None Include="Parts\Trailblazer\Trailblazer.sls">
+      <Filter>Parts\Trailblazer</Filter>
+    </None>
+    <None Include="Parts\Trailblazer\DISK-Trailblazer.asm">
+      <Filter>Parts\Trailblazer</Filter>
+    </None>
+    <None Include="Parts\Trailblazer\Trailblazer.asm">
+      <Filter>Parts\Trailblazer</Filter>
+    </None>
+    <None Include="Parts\Tunnel\Tunnel.asm">
+      <Filter>Parts\Tunnel</Filter>
+    </None>
+    <None Include="Parts\Tunnel\Tunnel.sls">
+      <Filter>Parts\Tunnel</Filter>
+    </None>
+    <None Include="Parts\Tunnel\DISK-Tunnel.asm">
+      <Filter>Parts\Tunnel</Filter>
+    </None>
+    <None Include="Parts\TwistScroll\TwistScroll.asm">
+      <Filter>Parts\TwistScroll</Filter>
+    </None>
+    <None Include="Parts\TwistScroll\TwistScroll.sls">
+      <Filter>Parts\TwistScroll</Filter>
+    </None>
+    <None Include="Parts\TwistScroll\DISK-TwistScroll.asm">
+      <Filter>Parts\TwistScroll</Filter>
+    </None>
+    <None Include="Parts\BASICFade\BASICFade.asm">
+      <Filter>Parts\BASICFade</Filter>
+    </None>
+    <None Include="Main\Sparkle\NoBoundsA.sls">
+      <Filter>Main\Sparkle</Filter>
+    </None>
+    <None Include="Main\Sparkle\NoBoundsB.sls">
+      <Filter>Main\Sparkle</Filter>
+    </None>
+    <None Include="Main\Sparkle\NoBounds.sls">
+      <Filter>Main\Sparkle</Filter>
+    </None>
+    <None Include="Parts\NoBounds\NoBounds.sls">
+      <Filter>Parts\NoBounds</Filter>
+    </None>
+    <None Include="Parts\NoBounds\DISK-NoBounds.asm">
+      <Filter>Parts\NoBounds</Filter>
+    </None>
+    <None Include="Parts\NoBounds\NoBounds.asm">
+      <Filter>Parts\NoBounds</Filter>
+    </None>
+    <None Include="Parts\BASICFade\BASICFade.sls">
+      <Filter>Parts\BASICFade</Filter>
+    </None>
+    <None Include="Parts\Earth\DISK-Earth.asm">
+      <Filter>Parts\Earth</Filter>
+    </None>
+    <None Include="Parts\Earth\Earth.asm">
+      <Filter>Parts\Earth</Filter>
+    </None>
+    <None Include="Parts\Earth\Earth.sls">
+      <Filter>Parts\Earth</Filter>
+    </None>
+    <None Include="Parts\Earth\EarthPreps.asm">
+      <Filter>Parts\Earth</Filter>
+    </None>
+    <None Include="Parts\RotatingGP\RotatingGP.sls">
+      <Filter>Parts\RotatingGP</Filter>
+    </None>
+    <None Include="Parts\RotatingGP\DISK-RotatingGP.asm">
+      <Filter>Parts\RotatingGP</Filter>
+    </None>
+    <None Include="Parts\RotatingGP\RotatingGP.asm">
+      <Filter>Parts\RotatingGP</Filter>
+    </None>
+    <None Include="Parts\InfiniteBobs\InfiniteBobs.asm">
+      <Filter>Parts\InfiniteBobs</Filter>
+    </None>
+    <None Include="Parts\InfiniteBobs\InfiniteBobs.sls">
+      <Filter>Parts\InfiniteBobs</Filter>
+    </None>
+    <None Include="Parts\InfiniteBobs\DISK-InfiniteBobs.asm">
+      <Filter>Parts\InfiniteBobs</Filter>
+    </None>
+    <None Include="Main\EntryWithBASICFade.asm">
+      <Filter>Main</Filter>
+    </None>
+    <None Include="Parts\Trailblazer\TrailblazerIntro.asm">
+      <Filter>Parts\Trailblazer</Filter>
+    </None>
+    <None Include="Parts\Parallax\Parallax.sls">
+      <Filter>Parts\Parallax</Filter>
+    </None>
+    <None Include="Parts\Parallax\Parallax.asm">
+      <Filter>Parts\Parallax</Filter>
+    </None>
+    <None Include="Parts\Parallax\DISK-Parallax.asm">
+      <Filter>Parts\Parallax</Filter>
+    </None>
+    <None Include="Parts\BASICFade\BASICFade2.asm">
+      <Filter>Parts\BASICFade</Filter>
+    </None>
+    <None Include="Parts\CheckerBoard\CheckerBoard.sls">
+      <Filter>Parts\Checkerboard</Filter>
+    </None>
+    <None Include="Parts\CheckerBoard\CheckerBoard.asm">
+      <Filter>Parts\Checkerboard</Filter>
+    </None>
+    <None Include="Parts\CheckerBoard\DISK-CheckerBoard.asm">
+      <Filter>Parts\Checkerboard</Filter>
+    </None>
+    <None Include="Parts\CheckerZoomer\CheckerZoomer.asm">
+      <Filter>Parts\CheckerZoomer</Filter>
+    </None>
+    <None Include="Parts\CheckerZoomer\CheckerZoomer.sls">
+      <Filter>Parts\CheckerZoomer</Filter>
+    </None>
+    <None Include="Parts\CheckerZoomer\DISK-CheckerZoomer.asm">
+      <Filter>Parts\CheckerZoomer</Filter>
+    </None>
+    <None Include="Parts\StarWars\RasterTrans.asm">
+      <Filter>Parts\StarWars</Filter>
+    </None>
+    <None Include="Parts\Trailblazer\TrailblazerTransition.asm">
+      <Filter>Parts\Trailblazer</Filter>
+    </None>
+    <None Include="Parts\NoBounds\FadeFromNoBounds.asm">
+      <Filter>Parts\NoBounds</Filter>
+    </None>
+    <None Include="Parts\BigDXYCP\BigDXYCP.sls">
+      <Filter>Parts\BigDXYCP</Filter>
+    </None>
+    <None Include="Parts\ColourCycle\Tardis.asm">
+      <Filter>Parts\ColourCycle</Filter>
+    </None>
+    <None Include="Parts\KefrensPlus\DISK-KefrensPlus.asm">
+      <Filter>Parts\KefrensPlus</Filter>
+    </None>
+    <None Include="Parts\KefrensPlus\KefrensPlus.asm">
+      <Filter>Parts\KefrensPlus</Filter>
+    </None>
+    <None Include="Parts\KefrensPlus\KefrensPlus.sls">
+      <Filter>Parts\KefrensPlus</Filter>
+    </None>
+    <None Include="Parts\KefrensPlus\KefrensPlusFadeIn.asm">
+      <Filter>Parts\KefrensPlus</Filter>
+    </None>
+    <None Include="Parts\PlotCube\PlotCubeIntro.asm">
+      <Filter>Parts\PlotCube</Filter>
+    </None>
+    <None Include="Parts\VerticalBitmapScroll\VerticalBitmapScroll.asm">
+      <Filter>Parts\VerticalBitmapScroll</Filter>
+    </None>
+    <None Include="Parts\VerticalBitmapScroll\VerticalBitmapScroll.sls">
+      <Filter>Parts\VerticalBitmapScroll</Filter>
+    </None>
+    <None Include="Parts\VerticalBitmapScroll\DISK-VerticalBitmapScroll.asm">
+      <Filter>Parts\VerticalBitmapScroll</Filter>
+    </None>
+    <None Include="Main\EntryWithKefrens.asm">
+      <Filter>Main</Filter>
+    </None>
+    <None Include="Parts\PlasmaVector\PlasmaVectorIntro.asm">
+      <Filter>Parts\PlasmaVector</Filter>
+    </None>
+    <None Include="Parts\BigDXYCP\BigDXYCP-DZX0.asm">
+      <Filter>Parts\BigDXYCP</Filter>
+    </None>
+    <None Include="Parts\TwistScroll\TwistScroll-DZX0.asm">
+      <Filter>Parts\TwistScroll</Filter>
+    </None>
+    <None Include="Parts\TinyCircleScroll\TinyCircleScroll-DZX0.asm">
+      <Filter>Parts\TinyCircleScroll</Filter>
+    </None>
+    <None Include="Parts\BigDXYCP\dali_c000.prg" />
+    <None Include="Parts\TechTech\Build.bat" />
+    <None Include="Parts\TechTech\Build.sh" />
+    <None Include="Parts\TechTech\DISK-TechTech.asm" />
+    <None Include="Parts\TechTech\DISK-TechTech.prg" />
+    <None Include="Parts\TechTech\DISK-TechTech.sym" />
+    <None Include="Parts\TechTech\exomizer.exe" />
+    <None Include="Parts\TechTech\functions_tech.asm" />
+    <None Include="Parts\TechTech\functions_tech_colour.asm" />
+    <None Include="Parts\TechTech\functions_tech_intro.asm" />
+    <None Include="Parts\TechTech\macros.asm" />
+    <None Include="Parts\TechTech\scene_settings_tech.asm" />
+    <None Include="Parts\TechTech\tech_irq_bankswitch.asm" />
+    <None Include="Parts\TechTech\tech_irqs.asm" />
+    <None Include="Parts\TechTech\TechTech.asm" />
+    <None Include="Parts\TechTech\TechTech.prg" />
+    <None Include="Parts\TechTech\TechTech.sls" />
+    <None Include="Parts\TechTech\TechTech.sym" />
+    <None Include="Parts\TechTech\TechTech.vs" />
+    <None Include="Parts\TechTech\TechTechCrunch.prg" />
+    <None Include="Parts\TechTech\unrolled_code_generators.asm" />
+    <None Include="Parts\TechTech\variables.asm" />
+    <None Include="Parts\RaytraceNightmare\data\horizontal_sin.asm" />
+    <None Include="Parts\RaytraceNightmare\data\palette.asm" />
+    <None Include="Parts\RaytraceNightmare\data\parser.asm" />
+    <None Include="Parts\RaytraceNightmare\data\screens.asm" />
+    <None Include="Parts\RaytraceNightmare\data\sintable.asm" />
+    <None Include="Parts\RaytraceNightmare\data\sprite.asm" />
+    <None Include="Parts\RaytraceNightmare\data\sprites_x_tables.asm" />
+    <None Include="Parts\RaytraceNightmare\delay_routines.asm" />
+    <None Include="Parts\RaytraceNightmare\DISK-RaytraceNightmare.asm" />
+    <None Include="Parts\RaytraceNightmare\functions.asm" />
+    <None Include="Parts\RaytraceNightmare\RaytraceNightmare.asm" />
+    <None Include="Parts\RaytraceNightmare\scene_settings.asm" />
+    <None Include="Parts\RaytraceNightmare\unrolled_irq.asm" />
+    <None Include="Parts\RaytraceNightmare\variables.asm" />
+    <None Include="Parts\RaytraceNightmare\vsp.asm" />
+    <None Include="Parts\RaytraceNightmare\RaytraceNightmare.sls" />
+    <None Include="Parts\ReflectorTW\data\color_extractor.asm" />
+    <None Include="Parts\ReflectorTW\data\column_parser.asm" />
+    <None Include="Parts\ReflectorTW\data\columns.asm" />
+    <None Include="Parts\ReflectorTW\data\first_sprite.asm" />
+    <None Include="Parts\ReflectorTW\data\frame_correction_data.asm" />
+    <None Include="Parts\ReflectorTW\data\reflection_anim_parser.asm" />
+    <None Include="Parts\ReflectorTW\DISK-ReflectorTW.asm" />
+    <None Include="Parts\ReflectorTW\functions.asm" />
+    <None Include="Parts\ReflectorTW\intro.asm" />
+    <None Include="Parts\ReflectorTW\ReflectorTransition.asm" />
+    <None Include="Parts\ReflectorTW\ReflectorTW.asm" />
+    <None Include="Parts\ReflectorTW\scene_settings.asm" />
+    <None Include="Parts\ReflectorTW\transition_functions.asm" />
+    <None Include="Parts\ReflectorTW\transition_intro.asm" />
+    <None Include="Parts\ReflectorTW\variables.asm" />
+    <None Include="Parts\InfiniteBobs\InfiniteBobs-FinalRasterFade.asm">
+      <Filter>Parts\InfiniteBobs</Filter>
+    </None>
+    <None Include="Parts\RotatingGP\FadeToNoBounds.asm">
+      <Filter>Parts\RotatingGP</Filter>
+    </None>
+    <None Include="Parts\BigDXYCP\BigDXYCPIntro.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Main\Sparkle\DirArt.txt">
+      <Filter>Main\Sparkle</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

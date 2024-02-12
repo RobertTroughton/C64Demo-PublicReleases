@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="6502">
+      <UniqueIdentifier>{bcc06d61-bc94-4474-8b51-0a818268f018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PC">
+      <UniqueIdentifier>{18f63dd3-0128-476e-b05d-2c7e25f0669f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PC\Common">
+      <UniqueIdentifier>{405eeb89-7014-4937-9aea-6e9c37982dde}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PC\Main.cpp">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Common\SinTables.cpp">
+      <Filter>PC\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Common\Common.cpp">
+      <Filter>PC\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="PC\Common\ImageConversion.cpp">
+      <Filter>PC\Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PC\Main.h">
+      <Filter>PC</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\Common\ImageConversion.h">
+      <Filter>PC\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\Common\SinTables.h">
+      <Filter>PC\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PC\Common\Common.h">
+      <Filter>PC\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="6502\Main-CommonDefines.asm">
+      <Filter>6502</Filter>
+    </None>
+    <None Include="6502\Main-CommonMacros.asm">
+      <Filter>6502</Filter>
+    </None>
+    <None Include="6502\makefile">
+      <Filter>6502</Filter>
+    </None>
+    <None Include="6502\MusicDisk.asm">
+      <Filter>6502</Filter>
+    </None>
+    <None Include="6502\MusicDisk.sls">
+      <Filter>6502</Filter>
+    </None>
+    <None Include="6502\Entry-MusicDisk.asm">
+      <Filter>6502</Filter>
+    </None>
+  </ItemGroup>
+</Project>

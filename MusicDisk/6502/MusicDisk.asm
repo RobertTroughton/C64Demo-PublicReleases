@@ -127,9 +127,12 @@ MUSICPLAYER_LocalData:
 	.align 256
 
 	LoFreqToLookupTable:		.fill 256, i / 4
+	HiFreqToLookupTable:		.fill 4, i * 64
+
 	SustainConversion:			.fill 256, floor(i / 16) * 4 + 20
-	ReleaseConversionHi:		.fill 256, (mod(i, 16) * 32) / 256 + 1
-	ReleaseConversionLo:		.fill 256, mod(mod(i, 16) * 32, 256)
+
+	ReleaseConversionHi:		.fill 256, (mod(i, 16) * 32 + 384) / 256
+	ReleaseConversionLo:		.fill 256, mod(mod(i, 16) * 32 + 384, 256)
 								
 								.byte 0, 0
 	MeterTempHi:				.fill NUM_FREQS_ON_SCREEN, 0
@@ -152,7 +155,6 @@ MUSICPLAYER_LocalData:
 
 	dBMeterValue:				.fill NUM_FREQS_ON_SCREEN,0
 	SID_Ghostbytes:				.fill 32,0
-	HiFreqToLookupTable:		.fill 4, i * 64
 
 	DarkColourLookup:			.byte $00, $0c, $00, $0e, $06, $09, $00, $08
 								.byte $02, $0b, $02, $00, $0b, $05, $06, $0c
@@ -664,6 +666,14 @@ MUSICPLAYER_Spectrometer_PerPlay:
 
 		.for (var ChannelIndex = 0; ChannelIndex < 3; ChannelIndex++)
 		{
+			lda SID_Ghostbytes + (ChannelIndex * 7) + 4
+			and #1
+			bne !continue+
+		!skipUpdate:
+			jmp NoUpdate
+
+		!continue:
+
 			ldy SID_Ghostbytes + (ChannelIndex * 7) + 1	//; hi-freq
 
 			cpy #4
@@ -682,9 +692,12 @@ MUSICPLAYER_Spectrometer_PerPlay:
 		GotFreq:
 
 			ldy SID_Ghostbytes + (ChannelIndex * 7) + 6	//; sustain/release .. top 4 bits are sustain, bottom 4 bits are release
+
 			lda SustainConversion, y
 			cmp MeterTempHi + 0, x
-			bcc NoUpdate
+			bcc !skipUpdate-
+
+		DoUpdate:
 			sta MeterTempHi + 0, x
 			lda ReleaseConversionHi, y
 			sta MeterReleaseHi + 0, x
@@ -693,21 +706,34 @@ MUSICPLAYER_Spectrometer_PerPlay:
 			lda #0
 			sta MeterTempLo + 0, x
 
-			//; LHS neighbour bar
-			lda MeterTempHi + 0, x
+		//; LHS neighbour bar
+			lda MeterTempLo + 0, x
 			clc
+			adc MeterTempLo - 2, x
+			sta !TempLo+ + 1
+
+			lda MeterTempHi + 0, x
 			adc MeterTempHi - 2, x
-			lsr
+			sta !TempHi+ + 1
+
+			lsr !TempHi+ + 1
+			ror !TempLo+ + 1
+
+		!TempHi:
+			lda #$00
 			cmp MeterTempHi - 1, x
 			bcc NoUpdateL
-			sta MeterTempHi - 1, x
-			lda #$00
-			sta MeterTempLo - 1, x
 
-			clc
-			lda MeterReleaseLo + 0, x
-			adc MeterReleaseLo - 2, x
-			sta !LoAvg+ + 1
+			tay
+
+		!TempLo:
+			lda #$00
+			cmp MeterTempLo - 1, x
+			bcc NoUpdateL
+
+			sta MeterTempLo - 1, x
+			tya
+			sta MeterTempHi - 1, x
 
 			lda MeterReleaseHi + 0, x
 			adc MeterReleaseHi - 2, x
@@ -721,21 +747,34 @@ MUSICPLAYER_Spectrometer_PerPlay:
 
 		NoUpdateL:
 
-			//; RHS neighbour bar
-			lda MeterTempHi + 0, x
+		//; RHS neighbour bar
+			lda MeterTempLo + 0, x
 			clc
+			adc MeterTempLo + 2, x
+			sta !TempLo+ + 1
+
+			lda MeterTempHi + 0, x
 			adc MeterTempHi + 2, x
-			lsr
+			sta !TempHi+ + 1
+
+			lsr !TempHi+ + 1
+			ror !TempLo+ + 1
+
+		!TempHi:
+			lda #$00
 			cmp MeterTempHi + 1, x
 			bcc NoUpdateR
-			sta MeterTempHi + 1, x
-			lda #$00
-			sta MeterTempLo + 1, x
 
-			clc
-			lda MeterReleaseLo + 0, x
-			adc MeterReleaseLo + 2, x
-			sta !LoAvg+ + 1
+			tay
+
+		!TempLo:
+			lda #$00
+			cmp MeterTempLo + 1, x
+			bcc NoUpdateR
+
+			sta MeterTempLo + 1, x
+			tya
+			sta MeterTempHi + 1, x
 
 			lda MeterReleaseHi + 0, x
 			adc MeterReleaseHi + 2, x

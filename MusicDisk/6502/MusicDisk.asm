@@ -636,23 +636,27 @@ MUSICPLAYER_IRQ_JustMusic:
 //; MUSICPLAYER_Spectrometer_PerFrame() -------------------------------------------------------------------------------------------------------
 MUSICPLAYER_Spectrometer_PerFrame:
 
-		.for (var i = 0; i < NUM_FREQS_ON_SCREEN; i++)
-		{
-			lda MeterTempLo + i
-			sec
-			sbc MeterReleaseLo + i
-			sta MeterTempLo + i
-			lda MeterTempHi + i
-			sbc MeterReleaseHi + i
-			bpl !good+
-			lda #$00
-			sta MeterTempLo + i
-		!good:
-			sta MeterTempHi + i
-			tay
-			lda SoundbarSine, y
-			sta dBMeterValue + i
-		}
+		ldx #NUM_FREQS_ON_SCREEN - 1
+
+	!loop:
+		sec
+		lda MeterTempLo, x //; + i
+		sbc MeterReleaseLo, x //; + i
+		sta MeterTempLo, x //; + i
+		lda MeterTempHi, x //; + i
+		sbc MeterReleaseHi, x //; + i
+		bpl !good+
+		lda #$00
+		sta MeterTempLo, x //; + i
+	!good:
+		sta MeterTempHi, x //; + i
+		tay
+		lda SoundbarSine, y
+		sta dBMeterValue, x //; + i
+
+		dex
+		bpl !loop-
+
 		rts
 
 //; MUSICPLAYER_Spectrometer_PerPlay() -------------------------------------------------------------------------------------------------------

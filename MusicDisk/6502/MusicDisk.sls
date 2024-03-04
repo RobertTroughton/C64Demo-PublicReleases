@@ -13,14 +13,23 @@ File:	..\Out\Built\FreqTable.bin												e400	0000	0200
 File:	..\Out\Built\SoundbarSine.bin											e100
 File:	..\Out\Built\SpriteSine.bin												e600
 
-File:	..\6502\Music\Psych858o-SabreWulfPrev.sid
-File:	..\Out\Built\MusicData\Psych858o-SabreWulfPrev.bin						e000
-
 File:	..\6502\Music\Psych858o-NoBounds.sid
 File:	..\Out\Built\MusicData\Psych858o-NoBounds.bin							e000
 
 File:	..\6502\Music\Dane-SlowMotionSong.sid
 File:	..\Out\Built\MusicData\Dane-SlowMotionSong.bin							e000
+
+File:	..\6502\Music\Dane-CopperBooze.sid
+File:	..\Out\Built\MusicData\Dane-CopperBooze.bin								e000
+
+File:	..\6502\Music\Toggle-Fireflies.sid
+File:	..\Out\Built\MusicData\Toggle-Fireflies.bin								e000
+
+File:	..\6502\Music\Laxity-LastNightOf89.sid
+File:	..\Out\Built\MusicData\Laxity-LastNightOf89.bin							e000
+
+File:	..\6502\Music\Psych858o-SabreWulfPrev.sid
+File:	..\Out\Built\MusicData\Psych858o-SabreWulfPrev.bin						e000
 
 File:	..\6502\Music\Magnar-MagnumPI.sid
 File:	..\Out\Built\MusicData\Magnar-MagnumPI.bin								e000

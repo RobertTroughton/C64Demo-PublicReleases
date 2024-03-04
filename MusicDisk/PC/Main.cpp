@@ -44,17 +44,6 @@ struct SONG_SETUP
 } SongSetup[] =
 {
 	{
-		L"6502\\Music\\Psych858o-SabreWulfPrev.sid",
-		L"Out\\Built\\MusicData\\Psych858o-SabreWulfPrev.bin",
-		"Sabre Wulf Remastered Prev",
-		"Psych858o",
-		0x1000,
-		0x1003,
-		0x07ff,
-		1
-	},
-
-	{
 		L"6502\\Music\\Psych858o-NoBounds.sid",
 		L"Out\\Built\\MusicData\\Psych858o-NoBounds.bin",
 		"No Bounds",
@@ -72,6 +61,50 @@ struct SONG_SETUP
 		"Dane",
 		0x2400,
 		0x1000,
+		0x07ff,
+		1
+	},
+
+	{
+		L"6502\\Music\\Dane-CopperBooze.sid",
+		L"Out\\Built\\MusicData\\Dane-CopperBooze.bin",
+		"Copper Booze",
+		"Dane",
+		0x12f0,
+		0x0800,
+		0x07ff,
+		1
+	},
+
+	{
+		L"6502\\Music\\Toggle-Fireflies.sid",
+		L"Out\\Built\\MusicData\\Toggle-Fireflies.bin",
+		"Fireflies",
+		"Toggle",
+		0x1000,
+		0x1003,
+		0x07ff,
+		1
+	},
+
+	{
+		L"6502\\Music\\Laxity-LastNightOf89.sid",
+		L"Out\\Built\\MusicData\\Laxity-LastNightOf89.bin",
+		"Last Night of 89",
+		"Laxity",
+		0x1000,
+		0x1006,
+		0x07ff,
+		1
+	},
+
+	{
+		L"6502\\Music\\Psych858o-SabreWulfPrev.sid",
+		L"Out\\Built\\MusicData\\Psych858o-SabreWulfPrev.bin",
+		"Sabre Wulf Remastered Prev",
+		"Psych858o",
+		0x1000,
+		0x1003,
 		0x07ff,
 		1
 	},

@@ -605,7 +605,7 @@ void GenerateSoundSineBar(LPCTSTR SoundSineBarBINFilename)
 	unsigned char SinTable[84];
 	for (int Index = 0; Index < 84; Index++)
 	{
-		if (Index < 36)
+/*		if (Index < 36)
 		{
 			double Angle = (Index * PI) / 36;
 			double SineVal = sin(Angle) * 28.0;
@@ -616,7 +616,10 @@ void GenerateSoundSineBar(LPCTSTR SoundSineBarBINFilename)
 			double Angle = ((Index - 36) * (PI / 2.0)) / 48;
 			double SineVal = sin(Angle) * 79.0;
 			SinTable[Index] = (unsigned char)SineVal;
-		}
+		}*/
+		double Angle = (Index * (PI / 2.0)) / 84;
+		double SineVal = sin(Angle) * 79.0;
+		SinTable[Index] = (unsigned char)SineVal;
 	}
 
 	WriteBinaryFile(SoundSineBarBINFilename, SinTable, 84);

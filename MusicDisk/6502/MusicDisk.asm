@@ -127,10 +127,26 @@ MUSICPLAYER_LocalData:
 	.align 256
 
 	LoFreqToLookupTable:		.fill 256, i / 4
-	Div4Add20Table:				.fill 256, (i / 4) + 20
-	SubtractOneTable:			.byte 0, 0
-								.fill 127, i
-	MeterTemp:					.fill NUM_FREQS_ON_SCREEN * 2,0
+	SustainConversion:			.fill 256, ((i / 16) * 4) + 20
+	ReleaseConversionHi:		.fill 256, (mod(i, 16) * 32) / 256 + 1
+	ReleaseConversionLo:		.fill 256, mod(mod(i, 16) * 32, 256)
+								
+								.byte 0, 0
+	MeterTempHi:				.fill NUM_FREQS_ON_SCREEN, 0
+								.byte 0, 0
+
+								.byte 0, 0
+	MeterTempLo:				.fill NUM_FREQS_ON_SCREEN, 0
+								.byte 0, 0
+
+								.byte 0, 0
+	MeterReleaseHi:				.fill NUM_FREQS_ON_SCREEN, 0
+								.byte 0, 0
+
+								.byte 0, 0
+	MeterReleaseLo:				.fill NUM_FREQS_ON_SCREEN, 0
+								.byte 0, 0
+
 	MeterColourValues_Darker:	.fill 80, $00
 	MeterColourValues:			.fill 80, $0b
 
@@ -622,9 +638,18 @@ MUSICPLAYER_Spectrometer_PerFrame:
 
 		.for (var i = 0; i < NUM_FREQS_ON_SCREEN; i++)
 		{
-			ldx MeterTemp + 2 + i
-			ldy SubtractOneTable, x
-			sty MeterTemp + 2 + i
+			lda MeterTempLo + i
+			sec
+			sbc MeterReleaseLo + i
+			sta MeterTempLo + i
+			lda MeterTempHi + i
+			sbc MeterReleaseHi + i
+			bpl !good+
+			lda #$00
+			sta MeterTempLo + i
+		!good:
+			sta MeterTempHi + i
+			tay
 			lda SoundbarSine, y
 			sta dBMeterValue + i
 		}
@@ -652,29 +677,73 @@ MUSICPLAYER_Spectrometer_PerPlay:
 			ldx FreqLoTable, y
 		GotFreq:
 
-			ldy SID_Ghostbytes + (ChannelIndex * 7) + 6	//; sustain
-			lda Div4Add20Table, y
-			cmp MeterTemp + 2,x
+			ldy SID_Ghostbytes + (ChannelIndex * 7) + 6	//; sustain/release .. top 4 bits are sustain, bottom 4 bits are release
+			lda SustainConversion, y
+			cmp MeterTempHi + 0, x
 			bcc NoUpdate
-			sta MeterTemp + 2,x
+			sta MeterTempHi + 0, x
+			lda ReleaseConversionHi, y
+			sta MeterReleaseHi + 0, x
+			lda ReleaseConversionLo, y
+			sta MeterReleaseLo + 0, x
+			lda #0
+			sta MeterTempLo + 0, x
 
 			//; LHS neighbour bar
+			lda MeterTempHi + 0, x
 			clc
-			adc MeterTemp + 0,x
+			adc MeterTempHi - 2, x
 			lsr
-			cmp MeterTemp + 1,x
+			cmp MeterTempHi - 1, x
 			bcc NoUpdateL
-			sta MeterTemp + 1,x
+			sta MeterTempHi - 1, x
+			lda #$00
+			sta MeterTempLo - 1, x
+
+			clc
+			lda MeterReleaseLo + 0, x
+			adc MeterReleaseLo - 2, x
+			sta !LoAvg+ + 1
+
+			lda MeterReleaseHi + 0, x
+			adc MeterReleaseHi - 2, x
+			sta MeterReleaseHi - 1, x
+
+		!LoAvg:
+			lda #$00
+			ror MeterReleaseHi - 1, x
+			ror
+			sta MeterReleaseLo - 1, x
+
 		NoUpdateL:
 
 			//; RHS neighbour bar
-			lda MeterTemp + 2,x
+			lda MeterTempHi + 0, x
 			clc
-			adc MeterTemp + 4,x
+			adc MeterTempHi + 2, x
 			lsr
-			cmp MeterTemp + 3,x
+			cmp MeterTempHi + 1, x
 			bcc NoUpdateR
-			sta MeterTemp + 3,x
+			sta MeterTempHi + 1, x
+			lda #$00
+			sta MeterTempLo + 1, x
+
+			clc
+			lda MeterReleaseLo + 0, x
+			adc MeterReleaseLo + 2, x
+			sta !LoAvg+ + 1
+
+			lda MeterReleaseHi + 0, x
+			adc MeterReleaseHi + 2, x
+			sta MeterReleaseHi + 1, x
+
+		!LoAvg:
+			lda #$00
+			ror MeterReleaseHi + 1, x
+			ror
+			sta MeterReleaseLo + 1, x
+
+
 		NoUpdateR:
 
 		NoUpdate:
@@ -824,14 +893,19 @@ MUSICPLAYER_SetupNewSong_SkipBlanking:
 		lda SongData_PlayAddr + 1
 		sta JSR_PlayMusic + 2
 
-		ldx #$1f
+		ldx #NUM_FREQS_ON_SCREEN + 3
 		lda #$00
-	BlankMetersLoop:
-		sta MeterTemp, x
-		sta MeterTemp + NUM_FREQS_ON_SCREEN, x
+	!loop:
+		sta MeterTempHi - 2, x
+		sta MeterTempLo - 2, x
+		dex
+		bpl !loop-
+
+		ldx #NUM_FREQS_ON_SCREEN - 1
+	!loop:
 		sta dBMeterValue, x
 		dex
-		bpl BlankMetersLoop
+		bpl !loop-
 
 		ldx SongData_NumPlayCalls
 		jsr MUSICPLAYER_SetSongPlayRateForIRQ

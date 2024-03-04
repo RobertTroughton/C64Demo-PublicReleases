@@ -127,7 +127,7 @@ MUSICPLAYER_LocalData:
 	.align 256
 
 	LoFreqToLookupTable:		.fill 256, i / 4
-	SustainConversion:			.fill 256, ((i / 16) * 4) + 20
+	SustainConversion:			.fill 256, floor((i / 16) * 4) + 20
 	ReleaseConversionHi:		.fill 256, (mod(i, 16) * 32) / 256 + 1
 	ReleaseConversionLo:		.fill 256, mod(mod(i, 16) * 32, 256)
 								

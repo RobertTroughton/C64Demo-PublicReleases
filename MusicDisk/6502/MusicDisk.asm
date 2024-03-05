@@ -882,13 +882,14 @@ MUSICPLAYER_PlayMusic:
 //; MUSICPLAYER_SetupNewSong() -------------------------------------------------------------------------------------------------------
 MUSICPLAYER_SetupNewSong:
 
-		ldy #24
+		ldy #$00
 		lda #$00
 	BlankMusicLoop:
 		sta $d400, y
 		sta SID_Ghostbytes, y
-		dey
-		bpl BlankMusicLoop
+		iny
+		cpy #25
+		bne BlankMusicLoop
 
 		ldy #39
 	SongNameDisplayLoop:

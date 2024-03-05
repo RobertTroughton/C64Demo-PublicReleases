@@ -55,6 +55,17 @@ struct SONG_SETUP
 	},
 
 	{
+		L"6502\\Music\\Flex-Hawkeye.sid",
+		L"Out\\Built\\MusicData\\Flex-Hawkeye.bin",
+		"Hawkeye",
+		"Flex",
+		0x0ff6,
+		0x1003,
+		0x07ff,
+		2
+	},
+
+	{
 		L"6502\\Music\\Dane-SlowMotionSong.sid",
 		L"Out\\Built\\MusicData\\Dane-SlowMotionSong.bin",
 		"Slow Motion Song",

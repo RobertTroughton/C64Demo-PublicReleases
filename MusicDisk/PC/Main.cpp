@@ -22,8 +22,7 @@ static const int NumFreqs = sizeof(FreqTable) / sizeof(FreqTable[0]);
 
 struct OUT_SONG_DATA
 {
-	unsigned char SongName[40];
-	unsigned char ArtistName[40];
+	unsigned char SongName_Artist[40];
 	unsigned char InitAddr[2];
 	unsigned char PlayAddr[2];
 	unsigned char VolumeAddr[2];
@@ -34,8 +33,8 @@ struct SONG_SETUP
 {
 	wchar_t InSIDFilename[64];
 	wchar_t OutBINFilename[64];
-	char SongName[64];
-	char ArtistName[64];
+	char SongName[32];
+	char ArtistName[32];
 	unsigned short InitAddr;
 	unsigned short PlayAddr;
 	unsigned short VolumeAddr;
@@ -58,6 +57,41 @@ struct SONG_SETUP
 		L"Out\\Built\\MusicData\\Flex-Hawkeye.bin",
 		"Hawkeye",
 		"Flex",
+		0x0ff6,
+		0x1003,
+		0x07ff,
+		2
+	},
+
+	{
+		L"6502\\Music\\Nordischsound-MonkeyIslandLeChuck.sid",
+		L"Out\\Built\\MusicData\\Nordischsound-MonkeyIslandLeChuck.bin",
+		"Monkey Island - LeChuck",
+		"Nordischsound",
+		0x1000,
+		0x1003,
+		0x07ff,
+		1
+	},
+
+	
+
+	{
+		L"6502\\Music\\Psych858o-LastNightOnTheLonelyIsland.sid",
+		L"Out\\Built\\MusicData\\Psych858o-LastNightOnTheLonelyIsland.bin",
+		"Last Night",
+		"Psych858o",
+		0x2551,
+		0x2564,
+		0x07ff,
+		6
+	},
+
+	{
+		L"6502\\Music\\DJSpace-MontyIsAManiac.sid",
+		L"Out\\Built\\MusicData\\DJSpace-MontyIsAManiac.bin",
+		"Monty is a Maniac",
+		"DJ Space",
 		0x0ff6,
 		0x1003,
 		0x07ff,
@@ -534,37 +568,45 @@ void OutputSongData(void)
 
 		OutSongData.NumPlayCallsPerFrame = rSong.NumPlayCallsPerFrame;
 
-		//; Song Name
-		int OutIndex_Song = (40 - strlen(rSong.SongName)) / 2;
-		memset(OutSongData.SongName, 0x20, sizeof(OutSongData.SongName));
-		for (int NameIndex = 0; NameIndex < 64; NameIndex++)
+		memset(OutSongData.SongName_Artist, 0x20, sizeof(OutSongData.SongName_Artist));
+
+		int nameStringLen = strlen(rSong.SongName);
+		int artistStringLen = strlen(rSong.ArtistName);
+		int stringLen = 1 + nameStringLen + 5 + artistStringLen;
+
+		int OutIndex = (40 - stringLen) / 2;
+
+		OutSongData.SongName_Artist[OutIndex++] = '\"';
+		for (int i = 0; i < nameStringLen; i++)
 		{
 			unsigned char OutChar = 0;
-			char InChar = rSong.SongName[NameIndex];
+			char InChar = rSong.SongName[i];
 
 			if (InChar == 0)
 				break;
 
 			OutChar = RemapChar(InChar);
 
-			OutSongData.SongName[OutIndex_Song++] = OutChar;
+			OutSongData.SongName_Artist[OutIndex++] = OutChar;
 		}
-
-		//; Song Artist
-		int OutIndex_Artist = (40 - strlen(rSong.ArtistName)) / 2;
-		memset(OutSongData.ArtistName, 0x20, sizeof(OutSongData.ArtistName));
-		for (int NameIndex = 0; NameIndex < 64; NameIndex++)
+		OutSongData.SongName_Artist[OutIndex++] = '\"';
+		OutSongData.SongName_Artist[OutIndex++] = ' ';
+		OutSongData.SongName_Artist[OutIndex++] = RemapChar('b');
+		OutSongData.SongName_Artist[OutIndex++] = RemapChar('y');
+		OutSongData.SongName_Artist[OutIndex++] = ' ';
+		for (int i = 0; i < artistStringLen; i++)
 		{
 			unsigned char OutChar = 0;
-			char InChar = rSong.ArtistName[NameIndex];
+			char InChar = rSong.ArtistName[i];
 
 			if (InChar == 0)
 				break;
 
 			OutChar = RemapChar(InChar);
 
-			OutSongData.ArtistName[OutIndex_Artist++] = OutChar;
+			OutSongData.SongName_Artist[OutIndex++] = OutChar;
 		}
+
 		WriteBinaryFile(rSong.OutBINFilename, &OutSongData, sizeof(OUT_SONG_DATA));
 	}
 }
@@ -610,7 +652,7 @@ void GenerateSoundSineBar(LPCTSTR SoundSineBarBINFilename)
 	for (int Index = 0; Index < SineTableLength; Index++)
 	{
 		double Angle = (Index * (PI / 2.0)) / SineTableLength;
-		double SineVal = sin(Angle) * 79.0;
+		double SineVal = sin(Angle) * 79;
 		SinTable[Index] = (unsigned char)SineVal;
 	}
 

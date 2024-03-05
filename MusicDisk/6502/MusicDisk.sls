@@ -19,8 +19,17 @@ File:	..\Out\Built\MusicData\Psych858o-NoBounds.bin							e000
 File:	..\6502\Music\Dane-SlowMotionSong.sid
 File:	..\Out\Built\MusicData\Dane-SlowMotionSong.bin							e000
 
+File:	..\6502\Music\Nordischsound-MonkeyIslandLeChuck.sid
+File:	..\Out\Built\MusicData\Nordischsound-MonkeyIslandLeChuck.bin			e000
+
 File:	..\6502\Music\Flex-Hawkeye.sid
 File:	..\Out\Built\MusicData\Flex-Hawkeye.bin									e000
+
+File:	..\6502\Music\Psych858o-LastNightOnTheLonelyIsland.sid
+File:	..\Out\Built\MusicData\Psych858o-LastNightOnTheLonelyIsland.bin			e000
+
+File:	..\6502\Music\DJSpace-MontyIsAManiac.sid
+File:	..\Out\Built\MusicData\DJSpace-MontyIsAManiac.bin						e000
 
 File:	..\6502\Music\Dane-CopperBooze.sid
 File:	..\Out\Built\MusicData\Dane-CopperBooze.bin								e000

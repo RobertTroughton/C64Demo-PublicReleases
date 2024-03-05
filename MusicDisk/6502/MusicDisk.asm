@@ -20,17 +20,14 @@
 .var SIDVolumeAddress = $07ff
 
 .var SONGNAME_StartLine = 0
-.var SONGMAKER_StartLine = 2
-.var SPECTROMETER_StartLine = 10
 
-.var SpectrometerHeight = 15
 .var TopSpectrometerHeight = 10
-.var BottomSpectrometerHeight = 4
+.var BottomSpectrometerHeight = 3
+.var SPECTROMETER_StartLine = 25 - (TopSpectrometerHeight + BottomSpectrometerHeight)
 
 .var SongData = $e000
-.var SongData_SongName = SongData + 0
-.var SongData_ArtistName = SongData_SongName + 40
-.var SongData_InitAddr = SongData_ArtistName + 40
+.var SongData_SongName_ArtistName = SongData + 0
+.var SongData_InitAddr = SongData_SongName_ArtistName + 40
 .var SongData_PlayAddr = SongData_InitAddr + 2
 .var SongData_VolumeAddr = SongData_PlayAddr + 2
 .var SongData_NumPlayCalls = SongData_VolumeAddr + 2
@@ -54,7 +51,6 @@
 	.var D018Value = ((ScreenBank * 16) + (CharBankFont * 2))
 
 	.var Colour_SongName = $01
-	.var Colour_Artist = $0b
 
 	.var D012FirstValue = 46
 	.var D012Spacing = 52
@@ -72,19 +68,19 @@ MUSICPLAYER_LocalData:
 	.var NumInitialD000Values = $2f
 	INITIAL_D000Values:
 		.byte $10									//; D000: VIC_Sprite0X
-		.byte $d5									//; D001: VIC_Sprite0Y
+		.byte $e5									//; D001: VIC_Sprite0Y
 		.byte $40									//; D002: VIC_Sprite1X
-		.byte $d5									//; D003: VIC_Sprite1Y
+		.byte $e5									//; D003: VIC_Sprite1Y
 		.byte $70									//; D004: VIC_Sprite2X
-		.byte $d5									//; D005: VIC_Sprite2Y
+		.byte $e5									//; D005: VIC_Sprite2Y
 		.byte $a0									//; D006: VIC_Sprite3X
-		.byte $d5									//; D007: VIC_Sprite3Y
+		.byte $e5									//; D007: VIC_Sprite3Y
 		.byte $d0									//; D008: VIC_Sprite4X
-		.byte $d5									//; D009: VIC_Sprite4Y
+		.byte $e5									//; D009: VIC_Sprite4Y
 		.byte $00									//; D00A: VIC_Sprite5X
-		.byte $d5									//; D00B: VIC_Sprite5Y
+		.byte $e5									//; D00B: VIC_Sprite5Y
 		.byte $30									//; D00C: VIC_Sprite6X
-		.byte $d5									//; D00D: VIC_Sprite6Y
+		.byte $e5									//; D00D: VIC_Sprite6Y
 		.byte $00									//; D00E: VIC_Sprite7X
 		.byte $00									//; D00F: VIC_Sprite7Y
 		.byte $60									//; D010: VIC_SpriteXMSB
@@ -208,10 +204,18 @@ MUSICPLAYER_LocalData:
 	SpecValues_PtrsLo:			.byte 0, <SpecValues_Music1X, <SpecValues_Music2X, <SpecValues_Music3X, <SpecValues_Music4X, <SpecValues_Music5X, <SpecValues_Music6X
 	SpecValues_PtrsHi:			.byte 0, >SpecValues_Music1X, >SpecValues_Music2X, >SpecValues_Music3X, >SpecValues_Music4X, >SpecValues_Music5X, >SpecValues_Music6X
 
+
+	.var MeterToChar_PrePadding = (TopSpectrometerHeight * 8) - 8
+
 .align 256	
-		.fill 72, 224
+		.fill MeterToChar_PrePadding, 224
 	MeterToCharValues:
 		.fill 8, i + 224 + 1
+		.fill 7, 224 + 9
+		.fill 7, 224 + 9
+		.fill 7, 224 + 9
+		.fill 7, 224 + 9
+		.fill 7, 224 + 9
 		.fill 7, 224 + 9
 		.fill 7, 224 + 9
 		.fill 7, 224 + 9
@@ -295,9 +299,6 @@ MUSICPLAYER_Go:
 		lda #Colour_SongName
 		sta VIC_ColourMemory + ((SONGNAME_StartLine + 0) * 40), x
 		sta VIC_ColourMemory + ((SONGNAME_StartLine + 1) * 40), x
-		lda #Colour_Artist
-		sta VIC_ColourMemory + ((SONGMAKER_StartLine + 0) * 40), x
-		sta VIC_ColourMemory + ((SONGMAKER_StartLine + 1) * 40), x
 		dex
 		bpl FillDisplayNameColoursLoop
 
@@ -775,20 +776,45 @@ MUSICPLAYER_Spectrometer_PerPlay:
 		}
 		rts
 
+
+LastFrame_bBMeterValue: .fill 40, 255
+LastFrame_Colours: .fill 40, 255
+
 //; MUSICPLAYER_DrawSpectrum() -------------------------------------------------------------------------------------------------------
 MUSICPLAYER_DrawSpectrum:
 
 		.for (var i = 0; i < NUM_FREQS_ON_SCREEN; i++)
 		{
 			ldx dBMeterValue + i
+			cpx LastFrame_bBMeterValue + i
+			beq !noupdate+
+
+		!doupdate:
+			stx LastFrame_bBMeterValue + i
 
 			.for (var Line = 0; Line < TopSpectrometerHeight; Line++)
 			{
-				lda MeterToCharValues - 72 + (Line * 8), x
+				lda MeterToCharValues - MeterToChar_PrePadding + (Line * 8), x
 				sta ScreenAddress + ((SPECTROMETER_StartLine + Line) * 40) + ((40 - NUM_FREQS_ON_SCREEN) / 2) + i
 			}
 
+			lda Div3, x
+			tay
+			.for (var Line = 0; Line < BottomSpectrometerHeight; Line++)
+			{
+				lda MeterToCharValues - 17 + (Line * 8), y
+				clc
+				adc ReflectionFrameCharVal + 1
+				sta ScreenAddress + ((SPECTROMETER_StartLine + TopSpectrometerHeight + BottomSpectrometerHeight - 1 - Line) * 40) + ((40 - NUM_FREQS_ON_SCREEN) / 2) + i
+			}
+
+		!noupdate:
+
 			lda MeterColourValues, x
+			cmp LastFrame_Colours + i
+			beq !noupdate+
+			sta LastFrame_Colours + i
+
 			.for (var Line = 0; Line < TopSpectrometerHeight; Line++)
 			{
 				sta VIC_ColourMemory + ((SPECTROMETER_StartLine + Line) * 40) + ((40 - NUM_FREQS_ON_SCREEN) / 2) + i
@@ -797,18 +823,10 @@ MUSICPLAYER_DrawSpectrum:
 			lda MeterColourValues_Darker, x
 			.for (var Line = 0; Line < BottomSpectrometerHeight; Line++)
 			{
-				sta VIC_ColourMemory + ((SPECTROMETER_StartLine + SpectrometerHeight - (Line + 2)) * 40) + ((40 - NUM_FREQS_ON_SCREEN) / 2) + i
+				sta VIC_ColourMemory + ((SPECTROMETER_StartLine + TopSpectrometerHeight + BottomSpectrometerHeight - 1 - Line) * 40) + ((40 - NUM_FREQS_ON_SCREEN) / 2) + i
 			}
 
-			lda Div3, x
-			tax
-			.for (var Line = 0; Line < BottomSpectrometerHeight; Line++)
-			{
-				lda MeterToCharValues - 25 + (Line * 8), x
-				clc
-				adc ReflectionFrameCharVal + 1
-				sta ScreenAddress + ((SPECTROMETER_StartLine + SpectrometerHeight - (Line + 2)) * 40) + ((40 - NUM_FREQS_ON_SCREEN) / 2) + i
-			}
+		!noupdate:
 		}
 
 	ReflectionFrameCharVal:
@@ -904,16 +922,10 @@ MUSICPLAYER_SetupNewSong:
 
 		ldy #39
 	SongNameDisplayLoop:
-		lda SongData_SongName, y
+		lda SongData_SongName_ArtistName, y
 		sta ScreenAddress + ((SONGNAME_StartLine + 0) * 40), y
 		ora #$80
 		sta ScreenAddress + ((SONGNAME_StartLine + 1) * 40), y
-
-		lda SongData_ArtistName, y
-		sta ScreenAddress + ((SONGMAKER_StartLine + 0) * 40), y
-		eor #$80
-		sta ScreenAddress + ((SONGMAKER_StartLine + 1) * 40), y
-
 		dey
 		bpl SongNameDisplayLoop
 

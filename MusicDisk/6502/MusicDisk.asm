@@ -129,10 +129,10 @@ MUSICPLAYER_LocalData:
 	LoFreqToLookupTable:		.fill 256, i / 4
 	HiFreqToLookupTable:		.fill 4, i * 64
 
-	SustainConversion:			.fill 256, floor(i / 16) * 4 + 20
+	SustainConversion:			.fill 256, floor(i / 16) * 6 + 32 + 3
 
-	ReleaseConversionHi:		.fill 256, (mod(i, 16) * 32 + 384) / 256
-	ReleaseConversionLo:		.fill 256, mod(mod(i, 16) * 32 + 384, 256)
+	ReleaseConversionHi:		.fill 256, (mod(i, 16) * 64 + 768) / 256
+	ReleaseConversionLo:		.fill 256, mod(mod(i, 16) * 64 + 768, 256)
 								
 								.byte 0, 0
 	MeterChannel:				.fill NUM_FREQS_ON_SCREEN, 0
@@ -212,17 +212,17 @@ MUSICPLAYER_LocalData:
 		.fill 72, 224
 	MeterToCharValues:
 		.fill 8, i + 224 + 1
-		.fill 7, i + 224 + 9
-		.fill 7, i + 224 + 9
-		.fill 7, i + 224 + 9
-		.fill 7, i + 224 + 9
-		.fill 7, i + 224 + 9
-		.fill 7, i + 224 + 9
-		.fill 7, i + 224 + 9
-		.fill 7, i + 224 + 9
-		.fill 7, i + 224 + 9
-		.fill 7, i + 224 + 9
-		.fill 7, i + 224 + 9
+		.fill 7, 224 + 9
+		.fill 7, 224 + 9
+		.fill 7, 224 + 9
+		.fill 7, 224 + 9
+		.fill 7, 224 + 9
+		.fill 7, 224 + 9
+		.fill 7, 224 + 9
+		.fill 7, 224 + 9
+		.fill 7, 224 + 9
+		.fill 7, 224 + 9
+		.fill 7, 224 + 9
 
 	.print "* $" + toHexString(MUSICPLAYER_LocalData) + "-$" + toHexString(EndMUSICPLAYER_LocalData - 1) + " MUSICPLAYER_LocalData"
 
@@ -669,6 +669,7 @@ MUSICPLAYER_Spectrometer_PerPlay:
 		.for (var ChannelIndex = 0; ChannelIndex < 3; ChannelIndex++)
 		{
 			lda SID_Ghostbytes + (ChannelIndex * 7) + 4
+			bmi !skipUpdate+
 			and #1
 			bne !continue+
 		!skipUpdate:
@@ -804,10 +805,20 @@ MUSICPLAYER_DrawSpectrum:
 			.for (var Line = 0; Line < BottomSpectrometerHeight; Line++)
 			{
 				lda MeterToCharValues - 25 + (Line * 8), x
-				ora #$10
+				clc
+				adc ReflectionFrameCharVal + 1
 				sta ScreenAddress + ((SPECTROMETER_StartLine + SpectrometerHeight - (Line + 2)) * 40) + ((40 - NUM_FREQS_ON_SCREEN) / 2) + i
 			}
 		}
+
+	ReflectionFrameCharVal:
+		lda #10
+		sec
+		sbc #10
+		bne !good+
+		lda #20
+	!good:
+		sta ReflectionFrameCharVal + 1
 
 		rts
 

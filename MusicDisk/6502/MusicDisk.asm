@@ -21,7 +21,7 @@
 
 .var SONGNAME_StartLine = 0
 .var SONGMAKER_StartLine = 2
-.var SPECTROMETER_StartLine = 4
+.var SPECTROMETER_StartLine = 10
 
 .var SpectrometerHeight = 15
 .var TopSpectrometerHeight = 10
@@ -72,19 +72,19 @@ MUSICPLAYER_LocalData:
 	.var NumInitialD000Values = $2f
 	INITIAL_D000Values:
 		.byte $10									//; D000: VIC_Sprite0X
-		.byte $a5									//; D001: VIC_Sprite0Y
+		.byte $d5									//; D001: VIC_Sprite0Y
 		.byte $40									//; D002: VIC_Sprite1X
-		.byte $a5									//; D003: VIC_Sprite1Y
+		.byte $d5									//; D003: VIC_Sprite1Y
 		.byte $70									//; D004: VIC_Sprite2X
-		.byte $a5									//; D005: VIC_Sprite2Y
+		.byte $d5									//; D005: VIC_Sprite2Y
 		.byte $a0									//; D006: VIC_Sprite3X
-		.byte $a5									//; D007: VIC_Sprite3Y
+		.byte $d5									//; D007: VIC_Sprite3Y
 		.byte $d0									//; D008: VIC_Sprite4X
-		.byte $a5									//; D009: VIC_Sprite4Y
+		.byte $d5									//; D009: VIC_Sprite4Y
 		.byte $00									//; D00A: VIC_Sprite5X
-		.byte $a5									//; D00B: VIC_Sprite5Y
+		.byte $d5									//; D00B: VIC_Sprite5Y
 		.byte $30									//; D00C: VIC_Sprite6X
-		.byte $a5									//; D00D: VIC_Sprite6Y
+		.byte $d5									//; D00D: VIC_Sprite6Y
 		.byte $00									//; D00E: VIC_Sprite7X
 		.byte $00									//; D00F: VIC_Sprite7Y
 		.byte $60									//; D010: VIC_SpriteXMSB
@@ -135,6 +135,11 @@ MUSICPLAYER_LocalData:
 	ReleaseConversionLo:		.fill 256, mod(mod(i, 16) * 32 + 384, 256)
 								
 								.byte 0, 0
+	MeterChannel:				.fill NUM_FREQS_ON_SCREEN, 0
+								.byte 0, 0
+
+
+								.byte 0, 0
 	MeterTempHi:				.fill NUM_FREQS_ON_SCREEN, 0
 								.byte 0, 0
 
@@ -142,13 +147,9 @@ MUSICPLAYER_LocalData:
 	MeterTempLo:				.fill NUM_FREQS_ON_SCREEN, 0
 								.byte 0, 0
 
-								.byte 0, 0
-	MeterReleaseHi:				.fill NUM_FREQS_ON_SCREEN, 0
-								.byte 0, 0
+	MeterReleaseHiPerChannel:	.fill 3, 0
+	MeterReleaseLoPerChannel:	.fill 3, 0
 
-								.byte 0, 0
-	MeterReleaseLo:				.fill NUM_FREQS_ON_SCREEN, 0
-								.byte 0, 0
 
 	MeterColourValues_Darker:	.fill 80, $00
 	MeterColourValues:			.fill 80, $0b
@@ -327,7 +328,7 @@ MUSICPLAYER_Go:
 
 		cli
 	
-		jsr MUSICPLAYER_SetupNewSong_SkipBlanking
+		jsr MUSICPLAYER_SetupNewSong
 
 	LoopForever:
 
@@ -641,20 +642,21 @@ MUSICPLAYER_Spectrometer_PerFrame:
 		ldx #NUM_FREQS_ON_SCREEN - 1
 
 	!loop:
+		ldy MeterChannel, x
 		sec
-		lda MeterTempLo, x //; + i
-		sbc MeterReleaseLo, x //; + i
-		sta MeterTempLo, x //; + i
-		lda MeterTempHi, x //; + i
-		sbc MeterReleaseHi, x //; + i
+		lda MeterTempLo, x
+		sbc MeterReleaseLoPerChannel, y
+		sta MeterTempLo, x
+		lda MeterTempHi, x
+		sbc MeterReleaseHiPerChannel, y
 		bpl !good+
 		lda #$00
-		sta MeterTempLo, x //; + i
+		sta MeterTempLo, x
 	!good:
-		sta MeterTempHi, x //; + i
+		sta MeterTempHi, x
 		tay
 		lda SoundbarSine, y
-		sta dBMeterValue, x //; + i
+		sta dBMeterValue, x
 
 		dex
 		bpl !loop-
@@ -692,6 +694,10 @@ MUSICPLAYER_Spectrometer_PerPlay:
 		GotFreq:
 
 			ldy SID_Ghostbytes + (ChannelIndex * 7) + 6	//; sustain/release .. top 4 bits are sustain, bottom 4 bits are release
+			lda ReleaseConversionHi, y
+			sta MeterReleaseHiPerChannel + ChannelIndex
+			lda ReleaseConversionLo, y
+			sta MeterReleaseLoPerChannel + ChannelIndex
 
 			lda SustainConversion, y
 			cmp MeterTempHi + 0, x
@@ -699,10 +705,6 @@ MUSICPLAYER_Spectrometer_PerPlay:
 
 		DoUpdate:
 			sta MeterTempHi + 0, x
-			lda ReleaseConversionHi, y
-			sta MeterReleaseHi + 0, x
-			lda ReleaseConversionLo, y
-			sta MeterReleaseLo + 0, x
 			lda #0
 			sta MeterTempLo + 0, x
 
@@ -735,16 +737,6 @@ MUSICPLAYER_Spectrometer_PerPlay:
 			tya
 			sta MeterTempHi - 1, x
 
-			lda MeterReleaseHi + 0, x
-			adc MeterReleaseHi - 2, x
-			sta MeterReleaseHi - 1, x
-
-		!LoAvg:
-			lda #$00
-			ror MeterReleaseHi - 1, x
-			ror
-			sta MeterReleaseLo - 1, x
-
 		NoUpdateL:
 
 		//; RHS neighbour bar
@@ -775,17 +767,6 @@ MUSICPLAYER_Spectrometer_PerPlay:
 			sta MeterTempLo + 1, x
 			tya
 			sta MeterTempHi + 1, x
-
-			lda MeterReleaseHi + 0, x
-			adc MeterReleaseHi + 2, x
-			sta MeterReleaseHi + 1, x
-
-		!LoAvg:
-			lda #$00
-			ror MeterReleaseHi + 1, x
-			ror
-			sta MeterReleaseLo + 1, x
-
 
 		NoUpdateR:
 
@@ -909,8 +890,6 @@ MUSICPLAYER_SetupNewSong:
 		dey
 		bpl BlankMusicLoop
 
-MUSICPLAYER_SetupNewSong_SkipBlanking:
-
 		ldy #39
 	SongNameDisplayLoop:
 		lda SongData_SongName, y
@@ -939,12 +918,22 @@ MUSICPLAYER_SetupNewSong_SkipBlanking:
 		ldx #NUM_FREQS_ON_SCREEN + 3
 		lda #$00
 	!loop:
+		sta MeterChannel - 2, x
 		sta MeterTempHi - 2, x
 		sta MeterTempLo - 2, x
 		dex
 		bpl !loop-
 
+		ldx #$02
+		lda #$00
+	!loop:
+		sta MeterReleaseLoPerChannel, x
+		sta MeterReleaseHiPerChannel, x
+		dex
+		bpl !loop-
+
 		ldx #NUM_FREQS_ON_SCREEN - 1
+		lda #$00
 	!loop:
 		sta dBMeterValue, x
 		dex

@@ -2,6 +2,8 @@
 //; (c) 2018-20 Genesis Project
 //; ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+.import source "Sparkle.inc"
+
 //; GP_Header
 	.var GP_HEADER_Init						= 3
 	.var GP_HEADER_MainThreadFunc			= 6
@@ -25,8 +27,16 @@
 	.var DISK_BASE							= $0400
 
 //; SPARKLE
-	.var IRQLoader_LoadNext					= $01f9
-	.var IRQLoader_LoadA					= $0160
+	.var IRQLoader_SendCmd						= Sparkle_SendCmd
+	.var IRQLoader_LoadA						= Sparkle_LoadA			//; Sparkle index-based loader call (A=bundle index, 0-based)
+	.var IRQLoader_LoadFetched					= Sparkle_LoadFetched
+	.var IRQLoader_LoadNext						= Sparkle_LoadNext		//; Sparkle sequential loader call
+	.var IRQLoader_DefaultIRQ					= Sparkle_IRQ			//; Sparkle Default IRQ address
+	.var IRQLoader_JSR							= Sparkle_IRQ_JSR		//; JSR instruction in Defailt IRQ
+	.var IRQLoader_RTI							= Sparkle_IRQ_RTI		//; RTI instruction for NMI lock	
+	.var IRQLoader_Save							= Sparkle_Save
+	.var IRQLoader_BundleIndex					= $02ff					//; Last 4 bytes of page 2 are not used by Sparkle
+	.var IRQLoader_DetectNTSC					= $019d					//; Transfer loop address that gets overwritten on NTSC machines ($DD -> $DC)
 
 //; NUCRUNCH
 	.var NUCRUNCH_BASE						= $0a00

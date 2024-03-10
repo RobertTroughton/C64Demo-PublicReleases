@@ -5,6 +5,9 @@ Header:	MusicDisk-a
 ID:		MusicDisk-a
 Name:	MusicDisk-a
 Start:	A000
+IL0:		4
+IL1:		3
+ProdID:		9F32
 
 File:	..\Out\6502\MusicDisk.prg
 File:	..\SourceData\WaterSprites.map											ec00

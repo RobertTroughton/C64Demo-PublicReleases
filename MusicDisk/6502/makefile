@@ -1,7 +1,7 @@
 #define macros
 DIR_EXTRAS = ..\extras
 DIR_SPARKLE = $(DIR_EXTRAS)\Sparkle
-SPARKLE = $(DIR_SPARKLE)\Sparkle2MM.exe
+SPARKLE = $(DIR_SPARKLE)\Sparkle2.exe
 DIR_KICKASS = $(DIR_EXTRAS)\KickAss
 KICKASS = Java -jar $(DIR_KICKASS)\KickAss.jar
 

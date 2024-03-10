@@ -248,7 +248,7 @@ MUSICPLAYER_Go:
 		lda #$00
 		sta VIC_D011
 
-		jsr $1f9
+		jsr IRQLoader_LoadNext
 
 		sei
 
@@ -368,7 +368,7 @@ MUSICPLAYER_Go:
 	NotLastSong:
 		stx SongIndex + 1
 		txa
-		jsr $160
+		jsr IRQLoader_LoadA
 		
 		jsr MUSICPLAYER_SetupNewSong
 

@@ -66,7 +66,7 @@ struct SONG_SETUP
 	{
 		L"6502\\Music\\Nordischsound-MonkeyIslandLeChuck.sid",
 		L"Out\\Built\\MusicData\\Nordischsound-MonkeyIslandLeChuck.bin",
-		"Monkey Island - LeChuck",
+		"Monkey Island LeChuck",
 		"Nordischsound",
 		0x1000,
 		0x1003,
@@ -145,7 +145,7 @@ struct SONG_SETUP
 	{
 		L"6502\\Music\\Psych858o-SabreWulfPrev.sid",
 		L"Out\\Built\\MusicData\\Psych858o-SabreWulfPrev.bin",
-		"Sabre Wulf Remastered Prev",
+		"Sabre Wulf Remastered Prv",
 		"Psych858o",
 		0x1000,
 		0x1003,
@@ -548,6 +548,18 @@ unsigned char RemapChar(unsigned char InChar)
 	return OutChar;
 }
 
+int AddCharToSongLine(OUT_SONG_DATA& OutSongData, int OutIndex, unsigned char OutChar)
+{
+	if ((OutIndex >= 0) && (OutIndex < 40))
+	{
+		OutSongData.SongName_Artist[OutIndex] = OutChar;
+	}
+	OutIndex++;
+	return OutIndex;
+}
+
+
+
 void OutputSongData(void)
 {
 	OUT_SONG_DATA OutSongData;
@@ -570,41 +582,36 @@ void OutputSongData(void)
 
 		memset(OutSongData.SongName_Artist, 0x20, sizeof(OutSongData.SongName_Artist));
 
-		int nameStringLen = strlen(rSong.SongName);
-		int artistStringLen = strlen(rSong.ArtistName);
+		int nameStringLen =  static_cast<int>(strlen(rSong.SongName));
+		int artistStringLen = static_cast<int>(strlen(rSong.ArtistName));
 		int stringLen = 1 + nameStringLen + 5 + artistStringLen;
 
 		int OutIndex = (40 - stringLen) / 2;
 
-		OutSongData.SongName_Artist[OutIndex++] = '\"';
+		OutIndex = AddCharToSongLine(OutSongData, OutIndex, '\"');
 		for (int i = 0; i < nameStringLen; i++)
 		{
-			unsigned char OutChar = 0;
 			char InChar = rSong.SongName[i];
-
 			if (InChar == 0)
+			{
 				break;
-
-			OutChar = RemapChar(InChar);
-
-			OutSongData.SongName_Artist[OutIndex++] = OutChar;
+			}
+			OutIndex = AddCharToSongLine(OutSongData, OutIndex, RemapChar(InChar));
 		}
-		OutSongData.SongName_Artist[OutIndex++] = '\"';
-		OutSongData.SongName_Artist[OutIndex++] = ' ';
-		OutSongData.SongName_Artist[OutIndex++] = RemapChar('b');
-		OutSongData.SongName_Artist[OutIndex++] = RemapChar('y');
-		OutSongData.SongName_Artist[OutIndex++] = ' ';
+		OutIndex = AddCharToSongLine(OutSongData, OutIndex, '\"');
+		OutIndex = AddCharToSongLine(OutSongData, OutIndex, ' ');
+		OutIndex = AddCharToSongLine(OutSongData, OutIndex, RemapChar('b'));
+		OutIndex = AddCharToSongLine(OutSongData, OutIndex, RemapChar('y'));
+		OutIndex = AddCharToSongLine(OutSongData, OutIndex, ' ');
+
 		for (int i = 0; i < artistStringLen; i++)
 		{
-			unsigned char OutChar = 0;
 			char InChar = rSong.ArtistName[i];
-
 			if (InChar == 0)
+			{
 				break;
-
-			OutChar = RemapChar(InChar);
-
-			OutSongData.SongName_Artist[OutIndex++] = OutChar;
+			}
+			OutIndex = AddCharToSongLine(OutSongData, OutIndex, RemapChar(InChar));
 		}
 
 		WriteBinaryFile(rSong.OutBINFilename, &OutSongData, sizeof(OUT_SONG_DATA));

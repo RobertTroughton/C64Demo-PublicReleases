@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{4723EC23-6A60-A72A-D1DC-490D8F572099}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\Common.cpp" />
+    <ClCompile Include="Common\GPImage.cpp" />
+    <ClCompile Include="Common\PaletteLoader.cpp" />
+    <ClCompile Include="Common\UpdatedPaletteManager.cpp" />
+    <ClCompile Include="CompoEntryProcessors.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="asm\dali.inc" />
+    <None Include="asm\GPLogoData.inc" />
+    <None Include="asm\LogoDisplay.asm" />
+    <None Include="asm\picdata.inc" />
+    <None Include="asm\Sparkle.inc" />
+    <None Include="binpatch\239476.bin" />
+    <None Include="binpatch\239523.bin" />
+    <None Include="binpatch\239629.bin" />
+    <None Include="binpatch\240328.bin" />
+    <None Include="binpatch\240475.bin" />
+    <None Include="bin\239275.bin" />
+    <None Include="bin\239281.bin" />
+    <None Include="bin\239294.bin" />
+    <None Include="bin\239301.bin" />
+    <None Include="bin\239303.bin" />
+    <None Include="bin\239332.bin" />
+    <None Include="bin\239334.bin" />
+    <None Include="bin\239455.bin" />
+    <None Include="bin\239461.bin" />
+    <None Include="bin\239476.bin" />
+    <None Include="bin\239490.bin" />
+    <None Include="bin\239491.bin" />
+    <None Include="bin\239494.bin" />
+    <None Include="bin\239496.bin" />
+    <None Include="bin\239502.bin" />
+    <None Include="bin\239503.bin" />
+    <None Include="bin\239504.bin" />
+    <None Include="bin\239506.bin" />
+    <None Include="bin\239513.bin" />
+    <None Include="bin\239518.bin" />
+    <None Include="bin\239519.bin" />
+    <None Include="bin\239520.bin" />
+    <None Include="bin\239521.bin" />
+    <None Include="bin\239523.bin" />
+    <None Include="bin\239531.bin" />
+    <None Include="bin\239532.bin" />
+    <None Include="bin\239554.bin" />
+    <None Include="bin\239566.bin" />
+    <None Include="bin\239588.bin" />
+    <None Include="bin\239629.bin" />
+    <None Include="bin\239666.bin" />
+    <None Include="bin\239708.bin" />
+    <None Include="bin\239709.bin" />
+    <None Include="bin\239711.bin" />
+    <None Include="bin\239712.bin" />
+    <None Include="bin\239713.bin" />
+    <None Include="bin\239727.bin" />
+    <None Include="bin\239730.bin" />
+    <None Include="bin\239748.bin" />
+    <None Include="bin\239749.bin" />
+    <None Include="bin\239765.bin" />
+    <None Include="bin\239775.bin" />
+    <None Include="bin\239776.bin" />
+    <None Include="bin\239777.bin" />
+    <None Include="bin\239784.bin" />
+    <None Include="bin\239846.bin" />
+    <None Include="bin\239847.bin" />
+    <None Include="bin\239853.bin" />
+    <None Include="bin\239865.bin" />
+    <None Include="bin\239866.bin" />
+    <None Include="bin\239873.bin" />
+    <None Include="bin\239874.bin" />
+    <None Include="bin\239894.bin" />
+    <None Include="bin\239903.bin" />
+    <None Include="bin\239914.bin" />
+    <None Include="bin\239915.bin" />
+    <None Include="bin\239934.bin" />
+    <None Include="bin\239971.bin" />
+    <None Include="bin\239979.bin" />
+    <None Include="bin\240009.bin" />
+    <None Include="bin\240019.bin" />
+    <None Include="bin\240030.bin" />
+    <None Include="bin\240058.bin" />
+    <None Include="bin\240066.bin" />
+    <None Include="bin\240067.bin" />
+    <None Include="bin\240083.bin" />
+    <None Include="bin\240096.bin" />
+    <None Include="bin\240099.bin" />
+    <None Include="bin\240106.bin" />
+    <None Include="bin\240107.bin" />
+    <None Include="bin\240110.bin" />
+    <None Include="bin\240124.bin" />
+    <None Include="bin\240126.bin" />
+    <None Include="bin\240127.bin" />
+    <None Include="bin\240130.bin" />
+    <None Include="bin\240131.bin" />
+    <None Include="bin\240171.bin" />
+    <None Include="bin\240193.bin" />
+    <None Include="bin\240201.bin" />
+    <None Include="bin\240203.bin" />
+    <None Include="bin\240206.bin" />
+    <None Include="bin\240230.bin" />
+    <None Include="bin\240246.bin" />
+    <None Include="bin\240249.bin" />
+    <None Include="bin\240272.bin" />
+    <None Include="bin\240274.bin" />
+    <None Include="bin\240295.bin" />
+    <None Include="bin\240328.bin" />
+    <None Include="bin\240330.bin" />
+    <None Include="bin\240332.bin" />
+    <None Include="bin\240338.bin" />
+    <None Include="bin\240341.bin" />
+    <None Include="bin\240357.bin" />
+    <None Include="bin\240358.bin" />
+    <None Include="bin\240360.bin" />
+    <None Include="bin\240366.bin" />
+    <None Include="bin\240376.bin" />
+    <None Include="bin\240392.bin" />
+    <None Include="bin\240455.bin" />
+    <None Include="bin\240475.bin" />
+    <None Include="bin\240483.bin" />
+    <None Include="bin\240577.bin" />
+    <None Include="bin\240594.bin" />
+    <None Include="bin\240605.bin" />
+    <None Include="bin\240613.bin" />
+    <None Include="bin\240649.bin" />
+    <None Include="bin\240651.bin" />
+    <None Include="bin\240696.bin" />
+    <None Include="bin\240788.bin" />
+    <None Include="bin\240789.bin" />
+    <None Include="bin\240812.bin" />
+    <None Include="bin\240890.bin" />
+    <None Include="bin\240892.bin" />
+    <None Include="bin\241333.bin" />
+    <None Include="bin\241351.bin" />
+    <None Include="bin\241715.bin" />
+    <None Include="bin\241979.bin" />
+    <None Include="bin\242240.bin" />
+    <None Include="bin\242334.bin" />
+    <None Include="bin\242373.bin" />
+    <None Include="bin\242374.bin" />
+    <None Include="bin\242447.bin" />
+    <None Include="bin\242452.bin" />
+    <None Include="bin\242493.bin" />
+    <None Include="bin\242494.bin" />
+    <None Include="bin\242511.bin" />
+    <None Include="bin\242519.bin" />
+    <None Include="bin\242521.bin" />
+    <None Include="bin\242529.bin" />
+    <None Include="bin\242532.bin" />
+    <None Include="bin\242534.bin" />
+    <None Include="bin\242535.bin" />
+    <None Include="bin\242555.bin" />
+    <None Include="bin\242558.bin" />
+    <None Include="bin\242559.bin" />
+    <None Include="bin\242560.bin" />
+    <None Include="bin\242562.bin" />
+    <None Include="charset.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\Common.h" />
+    <ClInclude Include="Common\GPImage.h" />
+    <ClInclude Include="Common\PaletteLoader.h" />
+    <ClInclude Include="Common\UpdatedPaletteManager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

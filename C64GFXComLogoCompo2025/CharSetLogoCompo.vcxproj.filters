@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CompoEntryProcessors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\GPImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\PaletteLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\UpdatedPaletteManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="asm\LogoDisplay.asm">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="asm\dali.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="asm\GPLogoData.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="asm\picdata.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="asm\Sparkle.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="charset.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239275.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239281.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239294.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239301.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239303.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239332.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239334.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239455.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239461.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239476.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239490.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239491.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239494.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239496.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239502.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239503.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239504.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239506.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239513.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239518.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239519.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239520.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239521.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239523.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239531.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239532.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239554.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239566.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239588.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239629.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239666.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239708.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239709.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239711.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239712.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239713.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239727.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239730.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239748.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239749.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239765.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239775.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239776.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239777.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239784.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239846.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239847.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239853.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239865.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239866.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239873.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239874.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239894.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239903.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239914.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239915.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239934.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239971.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\239979.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240009.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240019.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240030.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240058.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240066.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240067.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240083.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240096.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240099.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240106.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240107.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240110.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240124.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240126.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240127.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240130.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240131.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240171.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240193.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240201.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240203.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240206.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240230.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240246.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240249.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240272.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240274.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240295.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240328.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240330.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240332.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240338.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240341.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240357.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240358.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240360.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240366.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240376.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240392.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240455.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240475.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240483.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240577.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240594.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240605.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240613.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240649.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240651.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240696.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240788.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240789.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240812.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240890.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\240892.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\241333.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\241351.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\241715.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\241979.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242240.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242334.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242373.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242374.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242447.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242452.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242493.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242494.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242511.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242519.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242521.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242529.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242532.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242534.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242535.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242555.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242558.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242559.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242560.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="bin\242562.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="binpatch\239476.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="binpatch\239523.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="binpatch\239629.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="binpatch\240328.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="binpatch\240475.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\GPImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\PaletteLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\UpdatedPaletteManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

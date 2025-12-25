@@ -1,0 +1,8 @@
+MC pics:
+2c00-2fe7 -> d800-dbe7
+2000-27ff: charset
+2800-2bff: screen
+2fe8 -> d020
+2fe9 -> d021
+2fea -> d022
+2feb -> d023
